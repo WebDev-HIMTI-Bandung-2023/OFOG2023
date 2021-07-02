@@ -1,0 +1,464 @@
+.title,
+.titlewhite {
+  text-align: center;
+  font-size: 300%;
+  margin-top: 2%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.title span {
+  padding-left: 16px;
+  padding-right: 16px;
+  border-bottom: 5px solid #0c0217;
+}
+.titlewhite span {
+  padding-left: 16px;
+  padding-right: 16px;
+  border-bottom: 5px solid white;
+  color: white;
+}
+.upcomingeventdata {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2%;
+}
+.upcomingeventrow {
+  position: relative;
+  width: 40%;
+  height: 200px;
+  border-radius: 20px;
+  background-color: #050a2b;
+  color: white;
+}
+.upcomingeventrow:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.upcomingeventitem {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 7%;
+  margin-left: 7%;
+}
+.upcomingeventrow p {
+  margin: 0;
+  bottom: 0;
+}
+.testimonidata {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.testimonirow {
+  width: 20%;
+  border-radius: 50px;
+}
+.testimoniitem p {
+  margin: 0;
+}
+.viewtestimoni {
+  display: flex;
+  justify-content: space-around;
+}
+.viewtestimoni a {
+  text-decoration: none;
+  color: white;
+}
+.buttontestimoni {
+  padding: 10px;
+  background-color: #0c0217;
+  color: white;
+  border-radius: 30px;
+}
+.buttontestimoni:hover {
+  background-color: rgb(44, 44, 44);
+}
+
+.ourarticledata {
+  display: flex;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.ourarticle2 {
+  display: flex;
+}
+.ourarticlerow {
+  position: relative;
+  border-radius: 10px;
+}
+.ourarticleitem {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  color: white;
+  margin-bottom: 25%;
+  margin-left: 7%;
+}
+
+.OURJOURNEY {
+  padding-top: 50px;
+  background-color: #0c0217;
+  overflow: hidden;
+}
+.backgroundtab {
+  position: absolute;
+  right: -6.5em;
+  bottom: 11.7em;
+  z-index: -1;
+  width: 14em;
+  height: 14em;
+}
+.circular-menu {
+  position: relative;
+  z-index: 4;
+}
+.circular-menu .items-wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+.circular-menu .menu-item {
+  position: absolute;
+  top: -20em;
+  right: -1em;
+  display: block;
+  color: white;
+  opacity: 0.5;
+  font-size: 1em;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3;
+  /* background-color: #37d4c9; */
+  border: none;
+  background-color: transparent;
+  transition: transform 0.3s ease, background 0.2s ease;
+}
+.circular-menu .activetab {
+  font-size: 1.5em !important;
+  top: -12em;
+  right: -1em;
+  font-weight: bold;
+  opacity: 1;
+}
+/* 12em = half the width of the wrapper */
+.deg0 {
+  transform: translate(7em);
+}
+.deg36 {
+  transform: rotate(36deg) translate(7em) rotate(-36deg);
+}
+.deg72 {
+  transform: rotate(72deg) translate(7em) rotate(-72deg);
+}
+.deg108 {
+  transform: rotate(108deg) translate(7em) rotate(-108deg);
+}
+.deg144 {
+  transform: rotate(144deg) translate(7em) rotate(-144deg);
+}
+.deg180 {
+  transform: rotate(180deg) translate(5.6em, 2em) rotate(-180deg);
+}
+.deg216 {
+  transform: rotate(216deg) translate(7em) rotate(-216deg);
+}
+.deg252 {
+  transform: rotate(252deg) translate(7em) rotate(-252deg);
+}
+.deg288 {
+  transform: rotate(288deg) translate(7em) rotate(-288deg);
+}
+.deg324 {
+  transform: rotate(324deg) translate(7em) rotate(-324deg);
+}
+.datajourney {
+  display: none;
+  width: 75%;
+  color: white;
+}
+.active {
+  display: block;
+}
+.journeylist {
+  margin-bottom: 10%;
+  margin-left: 3%;
+  height: 350px; /*bergantung data*/
+}
+/* Carousel */
+.testimonicarousel {
+  display: flex;
+  background-color: #0c0217;
+  color: white;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-radius: 20px;
+}
+.left {
+  width: 150%;
+}
+.left img {
+  width: 100%;
+}
+.left p {
+  margin: 0;
+}
+.right {
+  padding: 5%;
+}
+
+.testimoniname {
+  font-weight: bold;
+  font-size: 150%;
+}
+.testimoniposition {
+  font-weight: 100%;
+  font-weight: bold;
+}
+
+#carouselExampleIndicators1 {
+  margin-top: 2%;
+}
+
+/* FAQ */
+.FAQ {
+  padding-top: 2%;
+}
+.collapsible-link::before {
+  content: "";
+  width: 14px;
+  height: 2px;
+  background: #333;
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 1rem;
+  display: block;
+  transition: all 0.3s;
+}
+
+/* Vertical line */
+.collapsible-link::after {
+  content: "";
+  width: 2px;
+  height: 14px;
+  background: #333;
+  position: absolute;
+  top: calc(50% - 7px);
+  right: calc(1rem + 6px);
+  display: block;
+  transition: all 0.3s;
+}
+
+.collapsible-link[aria-expanded="true"]::after {
+  transform: rotate(90deg) translateX(-1px);
+}
+
+.collapsible-link[aria-expanded="true"]::before {
+  transform: rotate(180deg);
+}
+.pattern {
+  position: relative;
+  margin-bottom: -10px;
+  height: 100px;
+  background-image: linear-gradient(to bottom, #0c0217, white);
+}
+.objectdata {
+  position: absolute;
+  bottom: 0;
+}
+@media (max-width: 830px) {
+  .title,
+  .titlewhite {
+    font-size: 200%;
+  }
+}
+@media (max-width: 768px) {
+  .ourarticledata {
+    display: block;
+  }
+  .ourarticle2 {
+    width: 100%;
+  }
+  .ourarticle2 .ourarticlerow {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .lastarticle {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .testimonicarousel {
+    display: block;
+  }
+  .left {
+    display: flex;
+    width: 100%;
+  }
+  .left img {
+    width: 25%;
+    margin-right: 6%;
+  }
+  .testimonidata {
+    display: block;
+  }
+  .testimonirow {
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+  }
+  .testimonirow img {
+    width: 40%;
+  }
+}
+@media (max-width: 495px) {
+  .ourarticle2 {
+    display: block;
+  }
+  .ourarticle2 .ourarticlerow {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .lastarticle {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .ourarticlerow {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 549px) {
+  .left {
+    display: block;
+    text-align: center;
+  }
+  .left img {
+    width: 65%;
+    margin-right: 0;
+  }
+  .right {
+    text-align: center;
+  }
+}
+
+@media (max-width: 675px) {
+  .datajourney {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .circular-menu .menu-item {
+    top: 0.1em;
+    right: 45%;
+  }
+  .deg0 {
+    transform: rotate(90deg) translate(7em) rotate(-90deg);
+  }
+  .deg36 {
+    transform: rotate(126deg) translate(7em) rotate(-126deg);
+  }
+  .deg72 {
+    transform: rotate(162deg) translate(7em) rotate(-162deg);
+  }
+  .deg108 {
+    transform: rotate(198deg) translate(7em) rotate(-198deg);
+  }
+  .deg144 {
+    transform: rotate(234deg) translate(7em) rotate(-234deg);
+  }
+  .deg180 {
+    transform: rotate(270deg) translate(7em) rotate(-270deg);
+  }
+  .deg216 {
+    transform: rotate(306deg) translate(7em) rotate(-306deg);
+  }
+  .deg252 {
+    transform: rotate(342deg) translate(7em) rotate(-342deg);
+  }
+  .deg288 {
+    transform: rotate(378deg) translate(7em) rotate(-378deg);
+  }
+  .deg324 {
+    transform: rotate(414deg) translate(7em) rotate(-414deg);
+  }
+  .backgroundtab {
+    right: 30%;
+    bottom: -9em;
+    transform: rotate(90deg);
+  }
+  .circular-menu .activetab {
+    top: 1em;
+    right: 42%;
+    font-weight: bold;
+    opacity: 1;
+  }
+  .journeylist {
+    margin-bottom: 40%;
+    height: auto;
+  }
+  .journeylist img {
+    width: 75%;
+  }
+}
+@media (max-width: 580px) {
+  .backgroundtab {
+    right: 29%;
+  }
+}
+
+@media (max-width: 523px) {
+  .backgroundtab {
+    right: 27%;
+  }
+}
+@media (max-width: 454px) {
+  .backgroundtab {
+    right: 25%;
+  }
+}
+@media (max-width: 419px) {
+  .backgroundtab {
+    right: 24%;
+  }
+}
+@media (max-width: 375px) {
+  .backgroundtab {
+    right: 21%;
+  }
+}
+@media (max-width: 347px) {
+  .backgroundtab {
+    right: 20%;
+  }
+}
+@media (max-width: 328px) {
+  .backgroundtab {
+    right: 18%;
+  }
+}
+@media (max-width: 576px) {
+  .upcomingeventdata {
+    display: block;
+    width: 100%;
+  }
+  .upcomingeventrow {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 5%;
+  }
+  .upcomingeventrow:hover {
+    transform: scale(1.05);
+  }
+}
