@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <?php
-        $TITLE = "FAQ";
+        $TITLE = 'FAQ';
         require('components/head.php');
     ?>
 </head>
@@ -218,7 +218,7 @@
         </div>
     </div>
 
-    <div class="container-fluid text-white row p-5 justify-content-center" style="background-color: #0C0217;"id="location">
+    <div class="container-fluid text-white row p-5 justify-content-center" style="background-color: #0C0217;" id="location">
         <div class="col-12 col-md-4">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7932.9600455831915!2d106.78103213488771!3d-6.2002268999999925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6c2f89d2b67%3A0xe18cf42b220d8e7d!2sBINUS%20University%2C%20Kampus%20Syahdan!5e0!3m2!1sen!2sid!4v1625144645165!5m2!1sen!2sid" style="border:0; width: 90%; height: 400px" allowfullscreen="" loading="lazy"></iframe>
         </div>
