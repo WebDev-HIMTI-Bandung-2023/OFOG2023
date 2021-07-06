@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;400;500;700&display=swap");
 html {
   overflow-x: hidden;
-  font-family: "Poppins", sans-serif;
+  font-family: "Public Sans", sans-serif;
 }
 p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Public Sans", sans-serif;
 }
 .title,
 .titlewhite {
@@ -13,19 +13,47 @@ p {
   padding-top: 10%;
   text-transform: uppercase;
   font-weight: bold;
-  font-family: "Poppins", sans-serif;
+  font-family: "Public Sans", sans-serif;
+  width: auto;
 }
 .title span {
   padding-left: 16px;
   padding-right: 16px;
-  border-bottom: 5px solid #0c0217;
-  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  margin: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 .titlewhite span {
   padding-left: 16px;
   padding-right: 16px;
-  border-bottom: 5px solid white;
   color: white;
+  display: inline-block;
+  margin: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.title span::after {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #0c0217;
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+}
+.titlewhite span::after {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #ffffff;
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+}
+@media (max-width: 575px){
+  .title span::after, .titlewhite span::after {
+    margin: auto;
+    max-width: 90vw;
+  }
 }
 .upcomingeventdata {
   display: flex;
@@ -198,7 +226,7 @@ p {
   height: 400px;
   margin-left: 3%;
   transition: 2s;
-  font-family: "Poppins", sans-serif;
+  font-family: "Public Sans", sans-serif;
 }
 /* Carousel */
 .testimonicarousel {
@@ -663,7 +691,7 @@ a.animated-button.thar-four:before {
 
 /* Custom Button */
 button {
-  font-family: "Poppins", sans-serif;
+  font-family: "Public Sans", sans-serif;
 }
 
 /* Custom Accordation */
