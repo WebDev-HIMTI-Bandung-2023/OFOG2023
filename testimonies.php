@@ -106,7 +106,7 @@
                 <div class="card p-3 m-3 me-xl-1">
                     <div class="row">
                         <div class="col-12 col-xl-5 d-flex flex-column">
-                            <img src="../assets/Felicia angeline.jpg" class="img-thumbnail rounded p-0">
+                            <img src="/testimonies/assets/Felicia angeline.jpg" class="img-thumbnail rounded p-0">
                             <div class="name">
                                 Felicia Angeline
                             </div>
@@ -142,7 +142,7 @@
                 <div class="card m-3 p-3 ms-xl-1">
                     <div class="row">
                         <div class="col-12 col-xl-5 d-flex flex-column">
-                            <img src="../assets/Erika Natalia Nugroho.jpg" class="img-thumbnail rounded p-0">
+                            <img src="/testimonies/assets/Erika Natalia Nugroho.jpg" class="img-thumbnail rounded p-0">
                             <div class="name">
                                 Erika Natalia Nugroho
                             </div>
@@ -169,7 +169,7 @@
         <div class="row d-flex flex-row align-items-stretch justify-content-between align-items-center">
             <div class="col-12 col-xl-3 d-flex flex-column">
                 <div class="card p-3 m-3 me-xl-1 flex-grow-1">
-                    <img src="../assets/Javier Fransiscus.jpg" class="img-thumbnail rounded p-0">
+                    <img src="/testimonies/assets/Javier Fransiscus.jpg" class="img-thumbnail rounded p-0">
                     <div class="name">
                         Javier Fransiscus
                     </div>
@@ -195,7 +195,7 @@
             </div>
             <div class="col-12 col-xl-3 d-flex flex-column">
                 <div class="card p-3 m-3 mx-xl-1 flex-grow-1">
-                    <img src="../assets/Kenny Ongko.jpg" class="img-thumbnail rounded p-0">
+                    <img src="/testimonies/assets/Kenny Ongko.jpg" class="img-thumbnail rounded p-0">
                     <div class="name">
                         Kenny Ongko
                     </div>
@@ -223,7 +223,7 @@
                         <div class="card m-3 p-3 ms-xl-1">
                             <div class="row">
                                 <div class="col-12 col-xl-5 d-flex flex-column">
-                                    <img src="../assets/Felix.jpg" class="img-thumbnail rounded p-0">
+                                    <img src="/testimoniesassets/Felix.jpg" class="img-thumbnail rounded p-0">
                                     <div class="name">
                                         Felix
                                     </div>
@@ -254,7 +254,7 @@
                         <div class="card m-3 p-3 ms-xl-1">
                             <div class="row">
                                 <div class="col-12 col-xl-5 d-flex flex-column">
-                                    <img src="../assets/Marissa Leviani.jpg" class="img-thumbnail rounded p-0">
+                                    <img src="/testimoniesassets/Marissa Leviani.jpg" class="img-thumbnail rounded p-0">
                                     <div class="name">
                                         Marissa Leviana
                                     </div>
@@ -289,7 +289,7 @@
                         <div class="card m-3 p-3 me-xl-1">
                             <div class="row">
                                 <div class="col-12 col-xl-5 d-flex flex-column">
-                                    <img src="../assets/Hanif Kusuma.jpg" class="img-thumbnail rounded p-0">
+                                    <img src="/testimoniesassets/Hanif Kusuma.jpg" class="img-thumbnail rounded p-0">
                                     <div class="name">
                                         Hanif Kusuma
                                     </div>
@@ -326,7 +326,7 @@
                         <div class="card m-3 p-3 me-xl-1">
                             <div class="row">
                                 <div class="col-12 col-xl-5 d-flex flex-column">
-                                    <img src="../assets/Mesyella.jpg" class="img-thumbnail rounded p-0">
+                                    <img src="/testimoniesassets/Mesyella.jpg" class="img-thumbnail rounded p-0">
                                     <div class="name">
                                         Mesyella
                                     </div>
@@ -354,7 +354,7 @@
             </div>
             <div class="col-12 col-xl-3 d-flex flex-column">
                 <div class="card p-3 m-3 mx-xl-1 flex-grow-1">
-                    <img src="../assets/Bayu Ardana.jpeg" class="img-thumbnail rounded p-0">
+                    <img src="/testimoniesassets/Bayu Ardana.jpeg" class="img-thumbnail rounded p-0">
                     <div class="name">
                         Bayu Ardana
                     </div>
@@ -388,7 +388,7 @@
             </div>
             <div class="col-12 col-xl-3 d-flex flex-column">
                 <div class="card p-3 m-3 ms-xl-1 flex-grow-1">
-                    <img src="../assets/Salsabila Azaria.jpg" class="img-thumbnail rounded p-0">
+                    <img src="/testimoniesassets/Salsabila Azaria.jpg" class="img-thumbnail rounded p-0">
                     <div class="name" >
                         Salsabila Azaria
                     </div>
