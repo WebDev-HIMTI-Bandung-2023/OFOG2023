@@ -2,6 +2,7 @@
     $req_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
     switch ($req_path){
         case '/faq': header("Location: /faq.php"); die(); break;
+        case '/testimonies': header("Location: /testimonies.php"); die(); break;
     }
 ?>
 
@@ -26,12 +27,12 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <object data="Assets/OFOGAnimation.svg" type=""
+                <object data="assets/OFOGAnimation.svg" type=""
                     style="background-color: black; border-bottom-left-radius: 50px;border-bottom-right-radius: 50px;"></object>
-                <!-- <img class="d-block w-100" src="Assets/Carouselfoto2.png" alt="Second slide"> -->
+                <!-- <img class="d-block w-100" src="assets/Carouselfoto2.png" alt="Second slide"> -->
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="Assets/Carouselfoto1.png" alt="First slide">
+                <img class="d-block w-100" src="assets/Carouselfoto1.png" alt="First slide">
             </div>
 
         </div>
@@ -55,7 +56,7 @@
             <a href="http://http.himti.or.id/" class="linkupcoming" target="_blank">
                 <div class="upcomingeventrow">
                     <div style="height: 100%; display: flex;">
-                        <img src="Assets/TECHNOLOGO.png" alt="" class="logo">
+                        <img src="assets/TECHNOLOGO.png" alt="" class="logo">
                     </div>
 
                     <div class="upcomingeventitem">
@@ -68,7 +69,7 @@
             <a href="http://hishot.himti.or.id/" class="linkupcoming" target="_blank">
                 <div class="upcomingeventrow">
                     <div style="height: 100%; display: flex;">
-                        <img src="Assets/HISHOTLOGO.png" alt="" class="logo">
+                        <img src="assets/HISHOTLOGO.png" alt="" class="logo">
                     </div>
                     <div class="upcomingeventitem">
                         <p>HISHOT 2021: Stronger</p>
@@ -82,7 +83,7 @@
             <a href="http://http.himti.or.id/" class="linkupcoming" target="_blank">
                 <div class="upcomingeventrow">
                     <div style="height: 100%; display: flex;">
-                        <img src="Assets/TECHNOLOGO.png" alt="" class="logo">
+                        <img src="assets/TECHNOLOGO.png" alt="" class="logo">
                     </div>
 
                     <div class="upcomingeventitem">
@@ -95,7 +96,7 @@
             <a href="http://hishot.himti.or.id/" class="linkupcoming" target="_blank">
                 <div class="upcomingeventrow">
                     <div style="height: 100%; display: flex;">
-                        <img src="Assets/HISHOTLOGO.png" alt="" class="logo">
+                        <img src="assets/HISHOTLOGO.png" alt="" class="logo">
                     </div>
                     <div class="upcomingeventitem">
                         <p>HISHOT 2021: Stronger</p>
@@ -137,7 +138,7 @@
                 <div class="carousel-item active">
                     <div class="testimonicarousel">
                         <div class="left">
-                            <img src="Assets/JavierPhoto.png" alt="">
+                            <img src="assets/JavierPhoto.png" alt="">
                             <div class="testimoniprofile">
                                 <p class="testimoniname">Javier Fransiscus</p>
                                 <p class="testimoniposition">Apple Developer Academy ( Learner)</p>
@@ -154,14 +155,14 @@
                                 pembelajaran. Bagi aktivis HIMTI enjoy the moment while you can dan bagi para calon
                                 aktivis disini tempat yang tepat untuk berpengalaman berorganisasi.
                             </p>
-                            <a href="" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More...</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="testimonicarousel">
                         <div class="left">
-                            <img src="Assets/FelixPhoto.png" alt="">
+                            <img src="assets/FelixPhoto.png" alt="">
                             <div class="testimoniprofile">
                                 <p class="testimoniname">Felix</p>
                                 <p class="testimoniposition">Application Developer di PT Mayora Indah Tbk<br>
@@ -181,14 +182,14 @@
                                 yang penting bukan masalah bagus atau jelek, tapi berbeda itu jauh lebih bagus.
 
                             </p>
-                            <a href="" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More...</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="testimonicarousel">
                         <div class="left">
-                            <img src="Assets/BayuArdanaPhoto.png" alt="">
+                            <img src="assets/BayuArdanaPhoto.png" alt="">
                             <div class="testimoniprofile">
                                 <p class="testimoniname">Bayu Ardana</p>
                                 <p class="testimoniposition">Co-Founder of ignitevent.id</p>
@@ -215,14 +216,14 @@
                                 tetep ikhlas dan enjoy.
 
                             </p>
-                            <a href="" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More...</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="testimonicarousel">
                         <div class="left">
-                            <img src="Assets/HanifKusumaPhoto.png" alt="">
+                            <img src="assets/HanifKusumaPhoto.png" alt="">
                             <div class="testimoniprofile">
                                 <p class="testimoniname">Hanif Kusuma</p>
                                 <p class="testimoniposition">Web Developer Intern at PT Kalbe Farma, Tbk <br> Co-Founder
@@ -246,14 +247,14 @@
                                 mau dilakuin itu masuk akal. Bisa saja, itu menjadi inovasi baru di HIMTI. Semangat
                                 terus di HIMTI, kalau ketemu masalah ajak teman sebanyak-banyaknya buat stress bareng.
                             </p>
-                            <a href="" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More...</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="testimonicarousel">
                         <div class="left">
-                            <img src="Assets/SalsabilaPhoto.png" alt="">
+                            <img src="assets/SalsabilaPhoto.png" alt="">
                             <div class="testimoniprofile">
                                 <p class="testimoniname">Salsabila Azaria</p>
                                 <p class="testimoniposition">Software Development Engineer Intern at DANA Indonesia</p>
@@ -277,14 +278,14 @@
                                 terus berguna untuk sekitar! #OneFamilyOneGoal
 
                             </p>
-                            <a href="" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More...</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="testimonicarousel">
                         <div class="left">
-                            <img src="Assets/KennyOngkoPhoto.png" alt="">
+                            <img src="assets/KennyOngkoPhoto.png" alt="">
                             <div class="testimoniprofile">
                                 <p class="testimoniname">Kenny Ongko</p>
                                 <p class="testimoniposition">Google Bangkit, Cloud Computing</p>
@@ -299,14 +300,14 @@
                                 sebagai tempat bereskperimen untuk tumbuh dan berkembang. Good luck! Tetap semangat and
                                 have fun di HIMTI. Selamat bereksperimen!
                             </p>
-                            <a href="" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More...</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="testimonicarousel">
                         <div class="left">
-                            <img src="Assets/MesyellaPhoto.png" alt="">
+                            <img src="assets/MesyellaPhoto.png" alt="">
                             <div class="testimoniprofile">
                                 <p class="testimoniname">Mesyella</p>
                                 <p class="testimoniposition">Data Science di PT Global Digital Niaga (Blibli.com)</p>
@@ -323,14 +324,14 @@
                                 kuliah. I feel lucky and grateful to become one of this family and I hope u can feel and
                                 experience what I feel too!
                             </p>
-                            <a href="" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More...</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="testimonicarousel">
                         <div class="left">
-                            <img src="Assets/MarissaLevianiPhoto.png" alt="">
+                            <img src="assets/MarissaLevianiPhoto.png" alt="">
                             <div class="testimoniprofile">
                                 <p class="testimoniname">Marissa Leviani </p>
                                 <p class="testimoniposition">Google Bangkit, Cloud Computing</p>
@@ -348,14 +349,14 @@
                                 positif dari HIMTI kaya hal-hal positif yang aku dapet dari ikut himpunan ini yaitu
                                 bukan cuma tentang relasi, tetapi juga tentang skill kalian. Semangat
                             </p>
-                            <a href="" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More...</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="testimonicarousel">
                         <div class="left">
-                            <img src="Assets/ErikaNataliaNugrohoPhoto.png" alt="">
+                            <img src="assets/ErikaNataliaNugrohoPhoto.png" alt="">
                             <div class="testimoniprofile">
                                 <p class="testimoniname">Erika Natalia Nugroho</p>
                                 <p class="testimoniposition">Front end developer maybank</p>
@@ -370,14 +371,14 @@
                                 desc nya! dan jangan sia-siakan kesempatan ini untuk upgrade softskill kalian. untuk
                                 calon aktivis nanti, jangan ragu-ragu buat masuk himti karena disini kalian banyak dapet
                                 ilmu-ilmu baru yang ga kalian dapetin di kuliah. semangat semuanya!!. </p>
-                            <a href="" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More...</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="testimonicarousel">
                         <div class="left">
-                            <img src="Assets/FeliciaAngelinePhoto.png" alt="">
+                            <img src="assets/FeliciaAngelinePhoto.png" alt="">
                             <div class="testimoniprofile">
                                 <p class="testimoniname">Felicia Angeline</p>
                                 <p class="testimoniposition">Data Engineer BCA</p>
@@ -396,7 +397,7 @@
                                 yang mutusin untuk gabung sama HIMTI, bisa juga dapat pengalaman berharga sama rasa
                                 kekeluargaan yang gw rasain.
                             </p>
-                            <a href="" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More...</a>
                         </div>
                     </div>
                 </div>
@@ -405,7 +406,7 @@
 
         <div class="testimonidata container">
             <div class="testimonirow">
-                <img src="Assets/FeliciaAngelinePhoto.png" alt="" width="100%">
+                <img src="assets/FeliciaAngelinePhoto.png" alt="" width="100%">
                 <div class="testimoniitem">
                     <p class="testimoniname">Felicia Angeline</p>
                     <p class="testimoniposition">Data Engineer BCA</p>
@@ -414,7 +415,7 @@
                 </div>
             </div>
             <div class="testimonirow">
-                <img src="Assets/SalsabilaPhoto.png" alt="" width="100%">
+                <img src="assets/SalsabilaPhoto.png" alt="" width="100%">
                 <div class="testimoniitem">
                     <p class="testimoniname">Salsabila Azaria</p>
                     <p class="testimoniposition">Software Development Engineer Intern at DANA Indonesia</p>
@@ -423,7 +424,7 @@
                 </div>
             </div>
             <div class="testimonirow">
-                <img src="Assets/FelixPhoto.png" alt="" width="100%">
+                <img src="assets/FelixPhoto.png" alt="" width="100%">
                 <div class="testimoniitem">
                     <p class="testimoniname">Felix</p>
                     <p class="testimoniposition">Application Developer di PT Mayora Indah Tbk<br>
@@ -433,7 +434,7 @@
                 </div>
             </div>
             <div class="testimonirow">
-                <img src="Assets/KennyOngkoPhoto.png" alt="" width="100%">
+                <img src="assets/KennyOngkoPhoto.png" alt="" width="100%">
                 <div class="testimoniitem">
                     <p class="testimoniname">Kenny Ongko</p>
                     <p class="testimoniposition">Google Bangkit, Cloud Computing</p>
@@ -442,7 +443,7 @@
                 </div>
             </div>
         </div>
-        <div class="viewtestimoni"><a href="#" class="btn btn-sm animated-button thar-three ">Testimoni</a>
+        <div class="viewtestimoni"><a href="/testimonies" class="btn btn-sm animated-button thar-three ">Testimoni</a>
         </div>
     </div>
     <div class="ourarticle">
@@ -461,7 +462,7 @@
         <div class="card-carouselcustom">
             <!-- <div class="my-card1">
                 <div class="ourarticlerow">
-                    <img src="Assets/Artikel1.png" alt="" width="100%">
+                    <img src="assets/Artikel1.png" alt="" width="100%">
                     <div class="ourarticleitem">
 
                         <p>Mitos dan Fakta mengenai 5G yang ada di Indonesia</p>
@@ -469,7 +470,7 @@
                 </div>
             </div>
             <div class="my-card1">
-                <div class="ourarticlerow"><img src="Assets/Artikel2.png" alt="" width="100%">
+                <div class="ourarticlerow"><img src="assets/Artikel2.png" alt="" width="100%">
                     <div class="ourarticleitem">
 
                         <p>Perusahaan Berbasis Data Lebih Optimistis Hadapi Masa Depan</p>
@@ -478,7 +479,7 @@
             </div>
             <div class="my-card1">
                 <div class="ourarticlerow">
-                    <img src="Assets/Artikel3.png" alt="" width="100%">
+                    <img src="assets/Artikel3.png" alt="" width="100%">
                     <div class="ourarticleitem">
                         <p>Ingin Coba Sinyal 5G Indosat? Ini Syarat yang Harus Dipenuhi
                         </p>
@@ -487,7 +488,7 @@
             </div>
             <div class="my-card1">
                 <div class="ourarticlerow">
-                    <img src="Assets/Artikel4.png" alt="" width="100%">
+                    <img src="assets/Artikel4.png" alt="" width="100%">
                     <div class="ourarticleitem">
                         <p>Marak "Google Terus Berhenti" di Android, Begini Cara Mengatasinya
                         </p>
@@ -496,7 +497,7 @@
             </div>
             <div class="my-card1">
                 <div class="ourarticlerow">
-                    <img src="Assets/Artikel1.png" alt="" width="100%">
+                    <img src="assets/Artikel1.png" alt="" width="100%">
                     <div class="ourarticleitem">
                         <p>Mitos dan Fakta mengenai 5G yang ada di Indonesia</p>
                     </div>
@@ -532,7 +533,7 @@
 
                 </div>
                 <div id="journey3" class="datajourney activejourney">
-                    <img src="Assets/HEXIONLOGO.png" alt="" width="25%"><br>
+                    <img src="assets/HEXIONLOGO.png" alt="" width="25%"><br>
                     Tahun ini menjadi tahun pertama HIMTI menyelenggarakan acara “HEXION”. HEXION merupakan HIMTI
                     Expo
                     and
@@ -606,13 +607,13 @@
 
 
                 </menu>
-                <img src="Assets//CircleTab.png" alt="" class="backgroundtab">
+                <img src="assets//CircleTab.png" alt="" class="backgroundtab">
             </div>
         </div>
 
     </div>
     <div class="pattern">
-        <object data="Assets/Transition.svg" alt="pattern-contact" class="objectdata"></object>
+        <object data="assets/Transition.svg" alt="pattern-contact" class="objectdata"></object>
     </div>
     <div class="FAQ">
         <div class="title" style="padding-top: 0;">
@@ -704,7 +705,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>
-    <script src="Assets/JS/vanilla-tilt.min.js"></script>
+    <script src="assets/JS/vanilla-tilt.min.js"></script>
     <script>
         VanillaTilt.init(document.querySelectorAll(".upcomingeventrow"), {
             max: 25,

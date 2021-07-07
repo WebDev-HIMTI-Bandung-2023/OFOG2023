@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonies</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://allfont.net/allfont.css?fonts=franklin-gothic-book" rel="stylesheet" type="text/css" />
-    <link href="https://allfont.net/allfont.css?fonts=franklin-gothic-heavy" rel="stylesheet" type="text/css" />
-    <link href="https://allfont.net/allfont.css?fonts=franklin-gothic-demi" rel="stylesheet" type="text/css" />
+    <?php
+        $TITLE = 'Testimonies';
+        require_once('components/head.php');
+    ?>
     <style>
         body{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             background-color: #0C0217;
-            font-family: 'Franklin Gothic Book', arial;
         }
 
-        .title > h1{
+        /*.title > h1{
             font-size: 3rem;
             margin: 0;
-            font-family: 'Franklin Gothic Heavy', arial;
-        }
+            font-weight: 900;
+        }*/
 
         .title > hr{
             width: 30vw;
@@ -44,12 +40,12 @@
 
         .name{
             font-size: 1.5rem;
-            font-family: 'Franklin Gothic Heavy', arial;
+            font-weight: 900;
         }
 
         .job{
             font-size: 1rem;
-            font-family: 'Franklin Gothic Demi', arial;
+            font-weight: 600;
         }
 
         .experience{
@@ -97,16 +93,21 @@
 </head>
 <body>
     <main>
-        <div class="title d-flex flex-column justify-content-center align-items-center">
-            <h1 class="text-white">TESTIMONIES</h1>
-            <hr>
-        </div>
+        <h1 class="titlewhite">
+            <span>TESTIMONIES</span>
+        </h1>
         <div class="row d-flex flex-row align-items-stretch justify-content-around align-items-center">
             <div class="col-12 col-xl-6 d-flex flex-row justify-content-center testimony-card">
                 <div class="card p-3 m-3 me-xl-1">
                     <div class="row">
                         <div class="col-12 col-xl-5 d-flex flex-column">
-                            <img src="/testimonies/assets/Felicia angeline.jpg" class="img-thumbnail rounded p-0">
+                            <picture class="img-thumbnail rounded p-0">
+                                <source srcset="/assets/img/testimonies/Felicia%20Angeline.webp" type="image/webp">
+                                <source srcset="/assets/img/testimonies/Felicia%20Angeline.jxr" type="image/jxr">
+                                <source srcset="/assets/img/testimonies/Felicia%20Angeline.jp2" type="image/jp2">
+                                <source srcset="/assets/img/testimonies/Felicia%20Angeline.jpg" type="image/jpeg">
+                                <img class="img-thumbnail rounded p-0" src="/assets/img/testimonies/Felicia%20Angeline.jpg" alt="Felicia Angeline" />
+                            </picture>
                             <div class="name">
                                 Felicia Angeline
                             </div>
@@ -142,7 +143,13 @@
                 <div class="card m-3 p-3 ms-xl-1">
                     <div class="row">
                         <div class="col-12 col-xl-5 d-flex flex-column">
-                            <img src="/testimonies/assets/Erika Natalia Nugroho.jpg" class="img-thumbnail rounded p-0">
+                            <picture class="img-thumbnail rounded p-0">
+                                <source srcset="/assets/img/testimonies/Erika%20Natalia%20Nugroho.webp" type="image/webp">
+                                <source srcset="/assets/img/testimonies/Erika%20Natalia%20Nugroho.jxr" type="image/jxr">
+                                <source srcset="/assets/img/testimonies/Erika%20Natalia%20Nugroho.jp2" type="image/jp2">
+                                <source srcset="/assets/img/testimonies/Erika%20Natalia%20Nugroho.jpg" type="image/jpeg">
+                                <img class="img-thumbnail rounded p-0" src="/assets/img/testimonies/Erika%20Natalia%20Nugroho.jpg" alt="Erika Natalia Nugroho" />
+                            </picture>
                             <div class="name">
                                 Erika Natalia Nugroho
                             </div>
@@ -169,7 +176,13 @@
         <div class="row d-flex flex-row align-items-stretch justify-content-between align-items-center">
             <div class="col-12 col-xl-3 d-flex flex-column">
                 <div class="card p-3 m-3 me-xl-1 flex-grow-1">
-                    <img src="/testimonies/assets/Javier Fransiscus.jpg" class="img-thumbnail rounded p-0">
+                    <picture class="img-thumbnail rounded p-0">
+                        <source srcset="/assets/img/testimonies/Javier%20Fransiscus.webp" type="image/webp">
+                        <source srcset="/assets/img/testimonies/Javier%20Fransiscus.jxr" type="image/jxr">
+                        <source srcset="/assets/img/testimonies/Javier%20Fransiscus.jp2" type="image/jp2">
+                        <source srcset="/assets/img/testimonies/Javier%20Fransiscus.jpg" type="image/jpeg">
+                        <img class="img-thumbnail rounded p-0" src="/assets/img/testimonies/Javier%20Fransiscus.jpg" alt="Javier Fransiscus" />
+                    </picture>
                     <div class="name">
                         Javier Fransiscus
                     </div>
@@ -195,7 +208,13 @@
             </div>
             <div class="col-12 col-xl-3 d-flex flex-column">
                 <div class="card p-3 m-3 mx-xl-1 flex-grow-1">
-                    <img src="/testimonies/assets/Kenny Ongko.jpg" class="img-thumbnail rounded p-0">
+                    <picture class="img-thumbnail rounded p-0">
+                        <source srcset="/assets/img/testimonies/Kenny%20Ongko.webp" type="image/webp">
+                        <source srcset="/assets/img/testimonies/Kenny%20Ongko.jxr" type="image/jxr">
+                        <source srcset="/assets/img/testimonies/Kenny%20Ongko.jp2" type="image/jp2">
+                        <source srcset="/assets/img/testimonies/Kenny%20Ongko.jpg" type="image/jpeg">
+                        <img class="img-thumbnail rounded p-0" src="/assets/img/testimonies/Kenny%20Ongko.jpg" alt="Kenny Ongko" />
+                    </picture>
                     <div class="name">
                         Kenny Ongko
                     </div>
@@ -223,7 +242,13 @@
                         <div class="card m-3 p-3 ms-xl-1">
                             <div class="row">
                                 <div class="col-12 col-xl-5 d-flex flex-column">
-                                    <img src="/testimoniesassets/Felix.jpg" class="img-thumbnail rounded p-0">
+                                    <picture class="img-thumbnail rounded p-0">
+                                        <source srcset="/assets/img/testimonies/Felix.webp" type="image/webp">
+                                        <source srcset="/assets/img/testimonies/Felix.jxr" type="image/jxr">
+                                        <source srcset="/assets/img/testimonies/Felix.jp2" type="image/jp2">
+                                        <source srcset="/assets/img/testimonies/Felix.jpg" type="image/jpeg">
+                                        <img class="img-thumbnail rounded p-0" src="/assets/img/testimonies/Felix.jpg" alt="Felix" />
+                                    </picture>
                                     <div class="name">
                                         Felix
                                     </div>
@@ -254,7 +279,13 @@
                         <div class="card m-3 p-3 ms-xl-1">
                             <div class="row">
                                 <div class="col-12 col-xl-5 d-flex flex-column">
-                                    <img src="/testimoniesassets/Marissa Leviani.jpg" class="img-thumbnail rounded p-0">
+                                    <picture class="img-thumbnail rounded p-0">
+                                        <source srcset="/assets/img/testimonies/Marissa%20Leviana.webp" type="image/webp">
+                                        <source srcset="/assets/img/testimonies/Marissa%20Leviana.jxr" type="image/jxr">
+                                        <source srcset="/assets/img/testimonies/Marissa%20Leviana.jp2" type="image/jp2">
+                                        <source srcset="/assets/img/testimonies/Marissa%20Leviana.jpg" type="image/jpeg">
+                                        <img class="img-thumbnail rounded p-0" src="/assets/img/testimonies/Marissa%20Leviana.jpg" alt="Marissa Leviana" />
+                                    </picture>
                                     <div class="name">
                                         Marissa Leviana
                                     </div>
@@ -289,7 +320,13 @@
                         <div class="card m-3 p-3 me-xl-1">
                             <div class="row">
                                 <div class="col-12 col-xl-5 d-flex flex-column">
-                                    <img src="/testimoniesassets/Hanif Kusuma.jpg" class="img-thumbnail rounded p-0">
+                                    <picture class="img-thumbnail rounded p-0">
+                                        <source srcset="/assets/img/testimonies/Hanif%20Kusuma.webp" type="image/webp">
+                                        <source srcset="/assets/img/testimonies/Hanif%20Kusuma.jxr" type="image/jxr">
+                                        <source srcset="/assets/img/testimonies/Hanif%20Kusuma.jp2" type="image/jp2">
+                                        <source srcset="/assets/img/testimonies/Hanif%20Kusuma.jpg" type="image/jpeg">
+                                        <img class="img-thumbnail rounded p-0" src="/assets/img/testimonies/Hanif%20Kusuma.jpg" alt="Hanif Kusuma" />
+                                    </picture>
                                     <div class="name">
                                         Hanif Kusuma
                                     </div>
@@ -326,7 +363,13 @@
                         <div class="card m-3 p-3 me-xl-1">
                             <div class="row">
                                 <div class="col-12 col-xl-5 d-flex flex-column">
-                                    <img src="/testimoniesassets/Mesyella.jpg" class="img-thumbnail rounded p-0">
+                                    <picture class="img-thumbnail rounded p-0">
+                                        <source srcset="/assets/img/testimonies/Mesyella.webp" type="image/webp">
+                                        <source srcset="/assets/img/testimonies/Mesyella.jxr" type="image/jxr">
+                                        <source srcset="/assets/img/testimonies/Mesyella.jp2" type="image/jp2">
+                                        <source srcset="/assets/img/testimonies/Mesyella.jpg" type="image/jpeg">
+                                        <img class="img-thumbnail rounded p-0" src="/assets/img/testimonies/Mesyella.jpg" alt="Mesyella" />
+                                    </picture>
                                     <div class="name">
                                         Mesyella
                                     </div>
@@ -354,7 +397,13 @@
             </div>
             <div class="col-12 col-xl-3 d-flex flex-column">
                 <div class="card p-3 m-3 mx-xl-1 flex-grow-1">
-                    <img src="/testimoniesassets/Bayu Ardana.jpeg" class="img-thumbnail rounded p-0">
+                    <picture class="img-thumbnail rounded p-0">
+                        <source srcset="/assets/img/testimonies/Bayu%20Ardana.webp" type="image/webp">
+                        <source srcset="/assets/img/testimonies/Bayu%20Ardana.jxr" type="image/jxr">
+                        <source srcset="/assets/img/testimonies/Bayu%20Ardana.jp2" type="image/jp2">
+                        <source srcset="/assets/img/testimonies/Bayu%20Ardana.jpg" type="image/jpeg">
+                        <img class="img-thumbnail rounded p-0" src="/assets/img/testimonies/Bayu%20Ardana.jpg" alt="Bayu Ardana" />
+                    </picture>
                     <div class="name">
                         Bayu Ardana
                     </div>
@@ -388,7 +437,13 @@
             </div>
             <div class="col-12 col-xl-3 d-flex flex-column">
                 <div class="card p-3 m-3 ms-xl-1 flex-grow-1">
-                    <img src="/testimoniesassets/Salsabila Azaria.jpg" class="img-thumbnail rounded p-0">
+                    <picture class="img-thumbnail rounded p-0">
+                        <source srcset="/assets/img/testimonies/Salsabila%20Azaria.webp" type="image/webp">
+                        <source srcset="/assets/img/testimonies/Salsabila%20Azaria.jxr" type="image/jxr">
+                        <source srcset="/assets/img/testimonies/Salsabila%20Azaria.jp2" type="image/jp2">
+                        <source srcset="/assets/img/testimonies/Salsabila%20Azaria.jpg" type="image/jpeg">
+                        <img class="img-thumbnail rounded p-0" src="/assets/img/testimonies/Salsabila%20Azaria.jpg" alt="Salsabila Azaria" />
+                    </picture>
                     <div class="name" >
                         Salsabila Azaria
                     </div>

@@ -74,7 +74,7 @@ $.ajax({
             console.log(dataarticle.enclosure["@attributes"].url);
             var linkimg = dataarticle.enclosure["@attributes"].url
             const template = `
-                <a href="${dataarticle.guid}" class="card">
+                <a href="${dataarticle.guid}" class="card article">
                     <div >
                         <div class="imagecontainer">
                             <img src="${linkimg}">
