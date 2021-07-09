@@ -8,6 +8,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <?php
         $TITLE = 'HOME';
@@ -155,7 +156,7 @@
                                 pembelajaran. Bagi aktivis HIMTI enjoy the moment while you can dan bagi para calon
                                 aktivis disini tempat yang tepat untuk berpengalaman berorganisasi.
                             </p>
-                            <a href="/testimonies" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -182,7 +183,7 @@
                                 yang penting bukan masalah bagus atau jelek, tapi berbeda itu jauh lebih bagus.
 
                             </p>
-                            <a href="/testimonies" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -216,7 +217,7 @@
                                 tetep ikhlas dan enjoy.
 
                             </p>
-                            <a href="/testimonies" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -247,7 +248,7 @@
                                 mau dilakuin itu masuk akal. Bisa saja, itu menjadi inovasi baru di HIMTI. Semangat
                                 terus di HIMTI, kalau ketemu masalah ajak teman sebanyak-banyaknya buat stress bareng.
                             </p>
-                            <a href="/testimonies" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -278,7 +279,7 @@
                                 terus berguna untuk sekitar! #OneFamilyOneGoal
 
                             </p>
-                            <a href="/testimonies" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -300,7 +301,7 @@
                                 sebagai tempat bereskperimen untuk tumbuh dan berkembang. Good luck! Tetap semangat and
                                 have fun di HIMTI. Selamat bereksperimen!
                             </p>
-                            <a href="/testimonies" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -324,7 +325,7 @@
                                 kuliah. I feel lucky and grateful to become one of this family and I hope u can feel and
                                 experience what I feel too!
                             </p>
-                            <a href="/testimonies" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -349,7 +350,7 @@
                                 positif dari HIMTI kaya hal-hal positif yang aku dapet dari ikut himpunan ini yaitu
                                 bukan cuma tentang relasi, tetapi juga tentang skill kalian. Semangat
                             </p>
-                            <a href="/testimonies" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -371,7 +372,7 @@
                                 desc nya! dan jangan sia-siakan kesempatan ini untuk upgrade softskill kalian. untuk
                                 calon aktivis nanti, jangan ragu-ragu buat masuk himti karena disini kalian banyak dapet
                                 ilmu-ilmu baru yang ga kalian dapetin di kuliah. semangat semuanya!!. </p>
-                            <a href="/testimonies" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -397,7 +398,7 @@
                                 yang mutusin untuk gabung sama HIMTI, bisa juga dapat pengalaman berharga sama rasa
                                 kekeluargaan yang gw rasain.
                             </p>
-                            <a href="/testimonies" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -458,51 +459,6 @@
         </div>
         <div class="articledata d-flex" style="overflow-x: auto;">
 
-        </div>
-        <div class="card-carouselcustom">
-            <!-- <div class="my-card1">
-                <div class="ourarticlerow">
-                    <img src="assets/Artikel1.png" alt="" width="100%">
-                    <div class="ourarticleitem">
-
-                        <p>Mitos dan Fakta mengenai 5G yang ada di Indonesia</p>
-                    </div>
-                </div>
-            </div>
-            <div class="my-card1">
-                <div class="ourarticlerow"><img src="assets/Artikel2.png" alt="" width="100%">
-                    <div class="ourarticleitem">
-
-                        <p>Perusahaan Berbasis Data Lebih Optimistis Hadapi Masa Depan</p>
-                    </div>
-                </div>
-            </div>
-            <div class="my-card1">
-                <div class="ourarticlerow">
-                    <img src="assets/Artikel3.png" alt="" width="100%">
-                    <div class="ourarticleitem">
-                        <p>Ingin Coba Sinyal 5G Indosat? Ini Syarat yang Harus Dipenuhi
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="my-card1">
-                <div class="ourarticlerow">
-                    <img src="assets/Artikel4.png" alt="" width="100%">
-                    <div class="ourarticleitem">
-                        <p>Marak "Google Terus Berhenti" di Android, Begini Cara Mengatasinya
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="my-card1">
-                <div class="ourarticlerow">
-                    <img src="assets/Artikel1.png" alt="" width="100%">
-                    <div class="ourarticleitem">
-                        <p>Mitos dan Fakta mengenai 5G yang ada di Indonesia</p>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
     <div class="titlewhite" style="background-color: #0c0217;">
@@ -701,19 +657,46 @@
         <div class="viewtestimoni"><a href="/faq" class="btn btn-sm animated-button thar-three ">View FAQ</a>
         </div>
     </div>
+    <div class="gallery min-vh-100">
+        <div class="title" style="padding-top: 0;">
+            <span>Gallery</span>
+        </div>
+        <div class="container-lg pt-5">
+            <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+                <div class="col">
+                    <img src="Assets/img/gallery/1.JPG" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="Assets/img/gallery/2.JPG" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="Assets/img/gallery/3.JPG" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="Assets/img/gallery/4.JPG" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="Assets/img/gallery/5.JPG" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="Assets/img/gallery/6.JPG" class="gallery-item" alt="gallery">
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="assets/JS/vanilla-tilt.min.js"></script>
     <script>
-        VanillaTilt.init(document.querySelectorAll(".upcomingeventrow"), {
-            max: 25,
-            speed: 400
-        });
+    VanillaTilt.init(document.querySelectorAll(".upcomingeventrow"), {
+        max: 25,
+        speed: 400
+    });
 
-        //It also supports NodeList
-        VanillaTilt.init(document.querySelectorAll(".upcomingeventrow"));
+    //It also supports NodeList
+    VanillaTilt.init(document.querySelectorAll(".upcomingeventrow"));
     </script>
 </body>
 
