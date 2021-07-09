@@ -156,7 +156,7 @@
                                 pembelajaran. Bagi aktivis HIMTI enjoy the moment while you can dan bagi para calon
                                 aktivis disini tempat yang tepat untuk berpengalaman berorganisasi.
                             </p>
-                            <a href="/testimonies" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -183,7 +183,7 @@
                                 yang penting bukan masalah bagus atau jelek, tapi berbeda itu jauh lebih bagus.
 
                             </p>
-                            <a href="/testimonies" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -217,7 +217,7 @@
                                 tetep ikhlas dan enjoy.
 
                             </p>
-                            <a href="/testimonies" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -248,7 +248,7 @@
                                 mau dilakuin itu masuk akal. Bisa saja, itu menjadi inovasi baru di HIMTI. Semangat
                                 terus di HIMTI, kalau ketemu masalah ajak teman sebanyak-banyaknya buat stress bareng.
                             </p>
-                            <a href="/testimonies" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -279,7 +279,7 @@
                                 terus berguna untuk sekitar! #OneFamilyOneGoal
 
                             </p>
-                            <a href="/testimonies" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -301,7 +301,7 @@
                                 sebagai tempat bereskperimen untuk tumbuh dan berkembang. Good luck! Tetap semangat and
                                 have fun di HIMTI. Selamat bereksperimen!
                             </p>
-                            <a href="/testimonies" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -325,7 +325,7 @@
                                 kuliah. I feel lucky and grateful to become one of this family and I hope u can feel and
                                 experience what I feel too!
                             </p>
-                            <a href="/testimonies" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -350,7 +350,7 @@
                                 positif dari HIMTI kaya hal-hal positif yang aku dapet dari ikut himpunan ini yaitu
                                 bukan cuma tentang relasi, tetapi juga tentang skill kalian. Semangat
                             </p>
-                            <a href="/testimonies" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -372,7 +372,7 @@
                                 desc nya! dan jangan sia-siakan kesempatan ini untuk upgrade softskill kalian. untuk
                                 calon aktivis nanti, jangan ragu-ragu buat masuk himti karena disini kalian banyak dapet
                                 ilmu-ilmu baru yang ga kalian dapetin di kuliah. semangat semuanya!!. </p>
-                            <a href="/testimonies" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -398,7 +398,7 @@
                                 yang mutusin untuk gabung sama HIMTI, bisa juga dapat pengalaman berharga sama rasa
                                 kekeluargaan yang gw rasain.
                             </p>
-                            <a href="/testimonies" class="readmorebutton">Read More...</a>
+                            <a href="/testimonies" class="readmorebutton">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -664,22 +664,22 @@
         <div class="container-lg pt-5">
             <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
                 <div class="col">
-                    <img src="Assets/GalleryImage/1.JPG" class="gallery-item" alt="gallery">
+                    <img src="Assets/gallery/1.JPG" class="gallery-item" alt="gallery">
                 </div>
                 <div class="col">
-                    <img src="Assets/GalleryImage/2.JPG" class="gallery-item" alt="gallery">
+                    <img src="Assets/gallery/2.JPG" class="gallery-item" alt="gallery">
                 </div>
                 <div class="col">
-                    <img src="Assets/GalleryImage/3.JPG" class="gallery-item" alt="gallery">
+                    <img src="Assets/gallery/3.JPG" class="gallery-item" alt="gallery">
                 </div>
                 <div class="col">
-                    <img src="Assets/GalleryImage/4.JPG" class="gallery-item" alt="gallery">
+                    <img src="Assets/gallery/4.JPG" class="gallery-item" alt="gallery">
                 </div>
                 <div class="col">
-                    <img src="Assets/GalleryImage/5.JPG" class="gallery-item" alt="gallery">
+                    <img src="Assets/gallery/5.JPG" class="gallery-item" alt="gallery">
                 </div>
                 <div class="col">
-                    <img src="Assets/GalleryImage/6.JPG" class="gallery-item" alt="gallery">
+                    <img src="Assets/gallery/6.JPG" class="gallery-item" alt="gallery">
                 </div>
             </div>
         </div>
