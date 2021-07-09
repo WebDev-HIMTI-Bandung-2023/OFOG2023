@@ -664,22 +664,22 @@
         <div class="container-lg pt-5">
             <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
                 <div class="col">
-                    <img src="Assets/gallery/1.JPG" class="gallery-item" alt="gallery">
+                    <img src="Assets/img/gallery/1.JPG" class="gallery-item" alt="gallery">
                 </div>
                 <div class="col">
-                    <img src="Assets/gallery/2.JPG" class="gallery-item" alt="gallery">
+                    <img src="Assets/img/gallery/2.JPG" class="gallery-item" alt="gallery">
                 </div>
                 <div class="col">
-                    <img src="Assets/gallery/3.JPG" class="gallery-item" alt="gallery">
+                    <img src="Assets/img/gallery/3.JPG" class="gallery-item" alt="gallery">
                 </div>
                 <div class="col">
-                    <img src="Assets/gallery/4.JPG" class="gallery-item" alt="gallery">
+                    <img src="Assets/img/gallery/4.JPG" class="gallery-item" alt="gallery">
                 </div>
                 <div class="col">
-                    <img src="Assets/gallery/5.JPG" class="gallery-item" alt="gallery">
+                    <img src="Assets/img/gallery/5.JPG" class="gallery-item" alt="gallery">
                 </div>
                 <div class="col">
-                    <img src="Assets/gallery/6.JPG" class="gallery-item" alt="gallery">
+                    <img src="Assets/img/gallery/6.JPG" class="gallery-item" alt="gallery">
                 </div>
             </div>
         </div>
