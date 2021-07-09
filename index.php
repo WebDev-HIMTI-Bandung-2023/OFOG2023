@@ -8,6 +8,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <?php
         $TITLE = 'HOME';
@@ -459,51 +460,6 @@
         <div class="articledata d-flex" style="overflow-x: auto;">
 
         </div>
-        <div class="card-carouselcustom">
-            <!-- <div class="my-card1">
-                <div class="ourarticlerow">
-                    <img src="assets/Artikel1.png" alt="" width="100%">
-                    <div class="ourarticleitem">
-
-                        <p>Mitos dan Fakta mengenai 5G yang ada di Indonesia</p>
-                    </div>
-                </div>
-            </div>
-            <div class="my-card1">
-                <div class="ourarticlerow"><img src="assets/Artikel2.png" alt="" width="100%">
-                    <div class="ourarticleitem">
-
-                        <p>Perusahaan Berbasis Data Lebih Optimistis Hadapi Masa Depan</p>
-                    </div>
-                </div>
-            </div>
-            <div class="my-card1">
-                <div class="ourarticlerow">
-                    <img src="assets/Artikel3.png" alt="" width="100%">
-                    <div class="ourarticleitem">
-                        <p>Ingin Coba Sinyal 5G Indosat? Ini Syarat yang Harus Dipenuhi
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="my-card1">
-                <div class="ourarticlerow">
-                    <img src="assets/Artikel4.png" alt="" width="100%">
-                    <div class="ourarticleitem">
-                        <p>Marak "Google Terus Berhenti" di Android, Begini Cara Mengatasinya
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="my-card1">
-                <div class="ourarticlerow">
-                    <img src="assets/Artikel1.png" alt="" width="100%">
-                    <div class="ourarticleitem">
-                        <p>Mitos dan Fakta mengenai 5G yang ada di Indonesia</p>
-                    </div>
-                </div>
-            </div> -->
-        </div>
     </div>
     <div class="titlewhite" style="background-color: #0c0217;">
         <span>Our Journey</span>
@@ -701,19 +657,46 @@
         <div class="viewtestimoni"><a href="/faq" class="btn btn-sm animated-button thar-three ">View FAQ</a>
         </div>
     </div>
+    <div class="gallery min-vh-100">
+        <div class="title" style="padding-top: 0;">
+            <span>Gallery</span>
+        </div>
+        <div class="container-lg pt-5">
+            <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+                <div class="col">
+                    <img src="Assets/GalleryImage/1.JPG" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="Assets/GalleryImage/2.JPG" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="Assets/GalleryImage/3.JPG" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="Assets/GalleryImage/4.JPG" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="Assets/GalleryImage/5.JPG" class="gallery-item" alt="gallery">
+                </div>
+                <div class="col">
+                    <img src="Assets/GalleryImage/6.JPG" class="gallery-item" alt="gallery">
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="assets/JS/vanilla-tilt.min.js"></script>
     <script>
-        VanillaTilt.init(document.querySelectorAll(".upcomingeventrow"), {
-            max: 25,
-            speed: 400
-        });
+    VanillaTilt.init(document.querySelectorAll(".upcomingeventrow"), {
+        max: 25,
+        speed: 400
+    });
 
-        //It also supports NodeList
-        VanillaTilt.init(document.querySelectorAll(".upcomingeventrow"));
+    //It also supports NodeList
+    VanillaTilt.init(document.querySelectorAll(".upcomingeventrow"));
     </script>
 </body>
 
