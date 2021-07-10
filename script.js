@@ -1,6 +1,17 @@
-// const listyear = ["deg0", "deg36", "deg72", "deg108", "deg144", "deg180", "deg216", "deg252", "deg288", "deg324"];
+// EDITABLE ITEM START 
+
+// JUST ADD THE NEW DEGREE TO ADD A NEW ITEM
 const listyear = ["deg108", "deg144", "deg180", "deg216", "deg252", "deg288", "deg324"];
 
+// JUST ADD A NEW EVENT ID AND ADD TIME WITH THE SAME FORMAT
+// MAKE SURE TO PUT THE EVENT AND TIME IN THE SAME INDEX
+const listevent= ["timetechno", "timehishot"];
+const listtime = ["Sep 18, 2021 15:37:25", "Sep 18, 2021 15:37:25"];
+
+// EDITABLE ITEM END
+
+
+const totalposition = listyear.length;
 const slides = document.getElementsByClassName('datajourney');
 const tablist = document.getElementsByClassName('menu-item');
 function changeposition(id) {
@@ -19,17 +30,10 @@ function changeposition(id) {
     // console.log(id);
     for (var i = 0; i < tablist.length; i++) {
         var position = listyear.indexOf(tablist[i].classList[1]);
-        // console.log(position)
-        // tablist[i].classList.remove('deg0');
-        // tablist[i].classList.remove('deg36');
-        // tablist[i].classList.remove('deg72');
-        tablist[i].classList.remove('deg108');
-        tablist[i].classList.remove('deg144');
-        tablist[i].classList.remove('deg180');
-        tablist[i].classList.remove('deg216');
-        tablist[i].classList.remove('deg252');
-        tablist[i].classList.remove('deg288');
-        tablist[i].classList.remove('deg324');
+        // console.log(position);
+        for(var j=0; j<totalposition;j++){
+            tablist[i].classList.remove(listyear[j]);
+        }
         let perubahan;
         if (datalama > id) {
             perubahan = datalama - id;
@@ -39,10 +43,10 @@ function changeposition(id) {
         }
         perubahan = position + perubahan;
         if (perubahan < 0) {
-            perubahan = 7 + perubahan;
+            perubahan = totalposition + perubahan;
         }
         // console.log(perubahan);
-        tablist[i].classList.add(listyear[(perubahan) % 7])
+        tablist[i].classList.add(listyear[(perubahan) % totalposition])
     }
     tablist[id - 1].classList.add('activetab');
 }
@@ -55,50 +59,27 @@ var y = setInterval(function () {
         }
     }
     if (datalama <= 1) {
-        datalama = 8;
+        datalama = totalposition+1;
     }
     changeposition((datalama - 1));
 }, 10000);
-// Time For Techno Event
-const timetechnotext = document.getElementById("timetechno")
-var datetechnoevent = new Date("Sep 18, 2021 15:37:25").getTime();
 
-//Time For Hishot Event
-const timehishottext = document.getElementById("timehishot")
-var datehishotevent = new Date("Sep 18, 2021 15:37:25").getTime();
-
-//Time For ... Event
-const timeannivtext = document.getElementById("timetechno")
-var dateannivevent = new Date("Aug 1, 2021 15:37:25").getTime();
-
-//Time For ... Event
-const timebalontext = document.getElementById("timetechno")
-var datebalonevent = new Date("Aug 1, 2021 15:37:25").getTime();
 
 var x = setInterval(function () {
     var now = new Date().getTime();
-    // Techno
-    var distance = datetechnoevent - now;
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    timetechnotext.innerHTML = days + "D " + hours + "H "
-        + minutes + "M " + seconds + "S ";
-    if (distance < 0) {
-        clearInterval(x);
-        timetechnotext.innerHTML = "Now";
-    }
-    // HISHOT
-    distance = datehishotevent - now;
-    days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    timehishot.innerHTML = days + "D " + hours + "H "
-        + minutes + "M " + seconds + "S ";
-    if (distance < 0) {
-        clearInterval(x);
-        timehishot.innerHTML = "Now";
+    for(var i =0; i<listevent.length;i++){
+        // console.log(listtime[i]);
+        var eventtime = new Date(listtime[i]).getTime();
+        var distance = eventtime - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById(listevent[i]).innerHTML = days + "D " + hours + "H "
+            + minutes + "M " + seconds + "S ";
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById(listevent[i]).innerHTML = "Now";
+        }
     }
 }, 1000);
