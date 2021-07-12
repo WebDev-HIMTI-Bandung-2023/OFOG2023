@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;400;500;700&display=swap");
 /* Editable DEGREE */
 .deg0 {
   transform: translate(7em);
@@ -61,8 +62,6 @@
     transform: rotate(414deg) translate(7em) rotate(-414deg);
   }
 }
-/* Editable DEGREE */
-@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;400;500;700&display=swap");
 html {
   overflow-x: hidden;
 }

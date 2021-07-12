@@ -1,8 +1,9 @@
 <?php
     $req_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-    switch ($req_path){
-        case '/faq': header("Location: /faq.php"); die(); break;
-        case '/testimonies': header("Location: /testimonies.php"); die(); break;
+    $path_alias = ['faq', 'tellus', 'tellus-thanks', 'testimonies'];
+    for ($i = 0; $i < count($path_alias); $i++) if ($req_path == "/$path_alias[$i]"){
+        header("Location: /$path_alias[$i].php");
+        die();
     }
 ?>
 
