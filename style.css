@@ -66,16 +66,15 @@ html {
   overflow-x: hidden;
 }
 body {
-  --bs-font-sans-serif: "Public Sans", sans-serif;
+  --bs-font-sans-serif: "Public Sans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Cantarell, Ubuntu, 'Noto Sans', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Public Sans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Cantarell, Ubuntu, 'Noto Sans', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.title,
-.titlewhite {
+.title {
   text-align: center;
   font-size: 300%;
   padding-top: 10%;
   text-transform: uppercase;
   font-weight: bold;
-  font-family: "Public Sans", sans-serif;
   width: auto;
 }
 .title span {
@@ -86,14 +85,8 @@ body {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
-.titlewhite span {
-  padding-left: 16px;
-  padding-right: 16px;
+.title.white span {
   color: white;
-  display: inline-block;
-  margin: auto;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 .title span::after {
   content: "";
@@ -103,17 +96,11 @@ body {
   margin-left: -1.25rem;
   margin-right: -1.25rem;
 }
-.titlewhite span::after {
-  content: "";
-  display: block;
-  height: 5px;
+.title.white span::after {
   background-color: #ffffff;
-  margin-left: -1.25rem;
-  margin-right: -1.25rem;
 }
 @media (max-width: 575px) {
-  .title span::after,
-  .titlewhite span::after {
+  .title span::after {
     margin: auto;
     max-width: 90vw;
   }

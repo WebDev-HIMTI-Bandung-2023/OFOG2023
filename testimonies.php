@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <?php
+        $USE_BOOTSTRAP = true;
         $TITLE = 'Testimonies';
         require_once('components/head.php');
     ?>

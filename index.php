@@ -1,6 +1,6 @@
 <?php
     $req_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-    $path_alias = ['faq', 'tellus', 'tellus-thanks', 'testimonies'];
+    $path_alias = ['about', 'faq', 'tellus', 'tellus-thanks', 'testimonies'];
     for ($i = 0; $i < count($path_alias); $i++) if ($req_path == "/$path_alias[$i]"){
         header("Location: /$path_alias[$i].php");
         die();
@@ -12,7 +12,7 @@
 
 <head>
     <?php
-        $TITLE = 'HOME';
+        $USE_BOOTSTRAP = true;
         require('components/head.php');
     ?>
     <script src="./RSShandle.js"></script>
@@ -140,7 +140,11 @@
                 <div class="carousel-item active">
                     <div class="testimonicarousel">
                         <div class="left">
-                            <img src="assets/JavierPhoto.png" alt="">
+                            <picture width="100%">
+                                <source srcset="assets/img/testimonies-thumbnail/JavierPhoto.webp" type="image/webp">
+                                <source srcset="assets/img/testimonies-thumbnail/JavierPhoto.png" type="image/png">
+                                <img width="100%" src="assets/img/testimonies-thumbnail/JavierPhoto.png" alt="Javier">
+                            </picture>
                             <div class="testimoniprofile">
                                 <p class="testimoniname">Javier Fransiscus</p>
                                 <p class="testimoniposition">Apple Developer Academy ( Learner)</p>
@@ -164,7 +168,11 @@
                 <div class="carousel-item">
                     <div class="testimonicarousel">
                         <div class="left">
-                            <img src="assets/FelixPhoto.png" alt="">
+                            <picture width="100%">
+                                <source srcset="assets/img/testimonies-thumbnail/FelixPhoto.webp" type="image/webp">
+                                <source srcset="assets/img/testimonies-thumbnail/FelixPhoto.png" type="image/png">
+                                <img width="100%" src="assets/img/testimonies-thumbnail/FelixPhoto.png" alt="Felix">
+                            </picture>
                             <div class="testimoniprofile">
                                 <p class="testimoniname">Felix</p>
                                 <p class="testimoniposition">Application Developer di PT Mayora Indah Tbk<br>
@@ -191,7 +199,11 @@
                 <div class="carousel-item">
                     <div class="testimonicarousel">
                         <div class="left">
-                            <img src="assets/BayuArdanaPhoto.png" alt="">
+                            <picture width="100%">
+                                <source srcset="assets/img/testimonies-thumbnail/BayuArdanaPhoto.webp" type="image/webp">
+                                <source srcset="assets/img/testimonies-thumbnail/BayuArdanaPhoto.png" type="image/png">
+                                <img width="100%" src="assets/img/testimonies-thumbnail/BayuArdanaPhoto.png" alt="Bayu Ardana">
+                            </picture>
                             <div class="testimoniprofile">
                                 <p class="testimoniname">Bayu Ardana</p>
                                 <p class="testimoniposition">Co-Founder of ignitevent.id</p>
@@ -225,7 +237,11 @@
                 <div class="carousel-item">
                     <div class="testimonicarousel">
                         <div class="left">
-                            <img src="assets/HanifKusumaPhoto.png" alt="">
+                            <picture width="100%">
+                                <source srcset="assets/img/testimonies-thumbnail/HanifKusumaPhoto.webp" type="image/webp">
+                                <source srcset="assets/img/testimonies-thumbnail/HanifKusumaPhoto.png" type="image/png">
+                                <img width="100%" src="assets/img/testimonies-thumbnail/HanifKusumaPhoto.png" alt="Hanif Kusuma">
+                            </picture>
                             <div class="testimoniprofile">
                                 <p class="testimoniname">Hanif Kusuma</p>
                                 <p class="testimoniposition">Web Developer Intern at PT Kalbe Farma, Tbk <br> Co-Founder
@@ -256,7 +272,11 @@
                 <div class="carousel-item">
                     <div class="testimonicarousel">
                         <div class="left">
-                            <img src="assets/SalsabilaPhoto.png" alt="">
+                            <picture width="100%">
+                                <source srcset="assets/img/testimonies-thumbnail/SalsabilaAzariaPhoto.webp" type="image/webp">
+                                <source srcset="assets/img/testimonies-thumbnail/SalsabilaAzariaPhoto.png" type="image/png">
+                                <img width="100%" src="assets/img/testimonies-thumbnail/SalsabilaAzariaPhoto.png" alt="Salsabila Azaria">
+                            </picture>
                             <div class="testimoniprofile">
                                 <p class="testimoniname">Salsabila Azaria</p>
                                 <p class="testimoniposition">Software Development Engineer Intern at DANA Indonesia</p>
@@ -287,7 +307,11 @@
                 <div class="carousel-item">
                     <div class="testimonicarousel">
                         <div class="left">
-                            <img src="assets/KennyOngkoPhoto.png" alt="">
+                            <picture width="100%">
+                                <source srcset="assets/img/testimonies-thumbnail/KennyOngkoPhoto.webp" type="image/webp">
+                                <source srcset="assets/img/testimonies-thumbnail/KennyOngkoPhoto.png" type="image/png">
+                                <img width="100%" src="assets/img/testimonies-thumbnail/KennyOngkoPhoto.png" alt="Kenny Ongko">
+                            </picture>
                             <div class="testimoniprofile">
                                 <p class="testimoniname">Kenny Ongko</p>
                                 <p class="testimoniposition">Google Bangkit, Cloud Computing</p>
@@ -309,7 +333,12 @@
                 <div class="carousel-item">
                     <div class="testimonicarousel">
                         <div class="left">
-                            <img src="assets/MesyellaPhoto.png" alt="">
+                            <picture width="100%">
+                                <source srcset="assets/img/testimonies-thumbnail/MesyellaPhoto.webp" type="image/webp">
+                                <source srcset="assets/img/testimonies-thumbnail/MesyellaPhoto.png" type="image/png">
+                                <img width="100%" src="assets/img/testimonies-thumbnail/MesyellaPhoto.png" alt="Mesyella">
+                            </picture>
+                            <img src="assets/img/testimonies-home/MesyellaPhoto.png" alt="">
                             <div class="testimoniprofile">
                                 <p class="testimoniname">Mesyella</p>
                                 <p class="testimoniposition">Data Science di PT Global Digital Niaga (Blibli.com)</p>
@@ -333,7 +362,11 @@
                 <div class="carousel-item">
                     <div class="testimonicarousel">
                         <div class="left">
-                            <img src="assets/MarissaLevianiPhoto.png" alt="">
+                            <picture width="100%">
+                                <source srcset="assets/img/testimonies-thumbnail/MarissaLevianiPhoto.webp" type="image/webp">
+                                <source srcset="assets/img/testimonies-thumbnail/MarissaLevianiPhoto.png" type="image/png">
+                                <img width="100%" src="assets/img/testimonies-thumbnail/MarissaLevianiPhoto.png" alt="Marrisa Leviani">
+                            </picture>
                             <div class="testimoniprofile">
                                 <p class="testimoniname">Marissa Leviani </p>
                                 <p class="testimoniposition">Google Bangkit, Cloud Computing</p>
@@ -358,7 +391,11 @@
                 <div class="carousel-item">
                     <div class="testimonicarousel">
                         <div class="left">
-                            <img src="assets/ErikaNataliaNugrohoPhoto.png" alt="">
+                            <picture width="100%">
+                                <source srcset="assets/img/testimonies-thumbnail/ErikaNataliaNugrohoPhoto.webp" type="image/webp">
+                                <source srcset="assets/img/testimonies-thumbnail/ErikaNataliaNugrohoPhoto.png" type="image/png">
+                                <img width="100%" src="assets/img/testimonies-thumbnail/ErikaNataliaNugrohoPhoto.png" alt="Erika Natalia Nugroho">
+                            </picture>
                             <div class="testimoniprofile">
                                 <p class="testimoniname">Erika Natalia Nugroho</p>
                                 <p class="testimoniposition">Front end developer maybank</p>
@@ -380,7 +417,11 @@
                 <div class="carousel-item">
                     <div class="testimonicarousel">
                         <div class="left">
-                            <img src="assets/FeliciaAngelinePhoto.png" alt="">
+                            <picture width="100%">
+                                <source srcset="assets/img/testimonies-thumbnail/FeliciaAngelinePhoto.webp" type="image/webp">
+                                <source srcset="assets/img/testimonies-thumbnail/FeliciaAngelinePhoto.png" type="image/png">
+                                <img width="100%" src="assets/img/testimonies-thumbnail/FeliciaAngelinePhoto.png" alt="Felicia Angeline">
+                            </picture>
                             <div class="testimoniprofile">
                                 <p class="testimoniname">Felicia Angeline</p>
                                 <p class="testimoniposition">Data Engineer BCA</p>
@@ -408,7 +449,11 @@
 
         <div class="testimonidata container">
             <div class="testimonirow">
-                <img src="assets/FeliciaAngelinePhoto.png" alt="" width="100%">
+                <picture width="100%">
+                    <source srcset="assets/img/testimonies-thumbnail/FeliciaAngelinePhoto.webp" type="image/webp">
+                    <source srcset="assets/img/testimonies-thumbnail/FeliciaAngelinePhoto.png" type="image/png">
+                    <img width="100%" src="assets/img/testimonies-thumbnail/FeliciaAngelinePhoto.png" alt="Felicia Angeline">
+                </picture>
                 <div class="testimoniitem">
                     <p class="testimoniname">Felicia Angeline</p>
                     <p class="testimoniposition">Data Engineer BCA</p>
@@ -417,7 +462,11 @@
                 </div>
             </div>
             <div class="testimonirow">
-                <img src="assets/SalsabilaPhoto.png" alt="" width="100%">
+                <picture width="100%">
+                    <source srcset="assets/img/testimonies-thumbnail/SalsabilaAzariaPhoto.webp" type="image/webp">
+                    <source srcset="assets/img/testimonies-thumbnail/SalsabilaAzariaPhoto.png" type="image/png">
+                    <img width="100%" src="assets/img/testimonies-thumbnail/SalsabilaAzariaPhoto.png" alt="Salsabila Azaria">
+                </picture>
                 <div class="testimoniitem">
                     <p class="testimoniname">Salsabila Azaria</p>
                     <p class="testimoniposition">Software Development Engineer Intern at DANA Indonesia</p>
@@ -426,7 +475,11 @@
                 </div>
             </div>
             <div class="testimonirow">
-                <img src="assets/FelixPhoto.png" alt="" width="100%">
+                <picture width="100%">
+                    <source srcset="assets/img/testimonies-thumbnail/FelixPhoto.webp" type="image/webp">
+                    <source srcset="assets/img/testimonies-thumbnail/FelixPhoto.png" type="image/png">
+                    <img width="100%" src="assets/img/testimonies-thumbnail/FelixPhoto.png" alt="Felix">
+                </picture>
                 <div class="testimoniitem">
                     <p class="testimoniname">Felix</p>
                     <p class="testimoniposition">Application Developer di PT Mayora Indah Tbk<br>
@@ -436,7 +489,11 @@
                 </div>
             </div>
             <div class="testimonirow">
-                <img src="assets/KennyOngkoPhoto.png" alt="" width="100%">
+                <picture width="100%">
+                    <source srcset="assets/img/testimonies-thumbnail/KennyOngkoPhoto.webp" type="image/webp">
+                    <source srcset="assets/img/testimonies-thumbnail/KennyOngkoPhoto.png" type="image/png">
+                    <img width="100%" src="assets/img/testimonies-thumbnail/KennyOngkoPhoto.png" alt="Kenny Ongko">
+                </picture>
                 <div class="testimoniitem">
                     <p class="testimoniname">Kenny Ongko</p>
                     <p class="testimoniposition">Google Bangkit, Cloud Computing</p>

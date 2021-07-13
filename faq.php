@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <?php
+        $USE_BOOTSTRAP = true;
         $TITLE = 'FAQ';
         require('components/head.php');
     ?>
