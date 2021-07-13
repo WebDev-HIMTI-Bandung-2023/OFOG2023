@@ -94,7 +94,7 @@
 </head>
 <body>
     <main>
-        <h1 class="titlewhite">
+        <h1 class="title white">
             <span>TESTIMONIES</span>
         </h1>
         <div class="row d-flex flex-row align-items-stretch justify-content-around align-items-center">
