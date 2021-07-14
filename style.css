@@ -667,7 +667,7 @@ a.animated-button.thar-four:before {
 }
 
 @media (max-width: 768px) {
-  .card {
+  .card.article {
     flex-basis: 55%;
   }
 }
