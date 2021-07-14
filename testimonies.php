@@ -40,54 +40,45 @@
         }
 
         .name{
-            font-size: 1.5rem;
+            /* font-size: 1.5rem; */
             font-weight: 900;
         }
 
         .job{
-            font-size: 1rem;
+            /* font-size: 1rem; */
             font-weight: 600;
         }
 
         .experience{
-            font-size: 1rem;
+            /* font-size: 1rem; */
         }
 
         .story{
-            font-size: 1rem;
+            /* font-size: 1rem; */
             text-align: justify;
         }
 
-        main > div > div > div > .story{
+        /* main > div > div > div > .story{
             margin-top: 0;
-        }
+        } */
 
         @media screen and (max-width:768px){
             main > div:nth-child(3) > div:nth-child(1) > *, main > div:nth-child(3) > .card, main > div:nth-child(4) > div:nth-child(2) > *, main > div:nth-child(4) > div:nth-child(3) > *{
                 margin: 0 3vw;
             }
-
-            .story{
-                margin-top: 5.5vw;
-            }
         }
 
         @media screen and (min-width:768px) and (max-width:1024px){
             .name{
-                font-size: 3rem;
+                /* font-size: 3rem; */
             }
 
             .job{
-                font-size: 2.5rem;
+                /* font-size: 2.5rem; */
             }
 
             .experience{
-                font-size: 2rem;
-            }
-
-            .story{
-                font-size: 2rem;
-                margin-top: 5vw;
+                /* font-size: 2rem; */
             }
         }
     </style>
@@ -102,23 +93,27 @@
                 <div class="card p-3 m-3 me-xl-1">
                     <div class="row">
                         <div class="col-12 col-xl-5 d-flex flex-column">
-                            <picture class="img-thumbnail rounded p-0">
-                                <source srcset="/assets/img/testimonies/Felicia%20Angeline.webp" type="image/webp">
-                                <source srcset="/assets/img/testimonies/Felicia%20Angeline.jxr" type="image/jxr">
-                                <source srcset="/assets/img/testimonies/Felicia%20Angeline.jp2" type="image/jp2">
-                                <source srcset="/assets/img/testimonies/Felicia%20Angeline.jpg" type="image/jpeg">
-                                <img class="img-thumbnail rounded p-0" src="/assets/img/testimonies/Felicia%20Angeline.jpg" alt="Felicia Angeline" />
-                            </picture>
-                            <div class="name">
-                                Felicia Angeline
-                            </div>
-                            <div class="job">
-                                Data Engineer BCA
-                            </div>
-                            <div class="experience">
-                                Kepengurusan HIMTI : 2019 - 2020 <br>
-                                Divisi PM (2019) <br>
-                                Chairman HIMTI (2020)
+                            <div class="row">
+                                <picture class="col-12 col-sm-4 col-md-3 col-xl-12">
+                                    <source srcset="assets/img/testimonies-thumbnail/FeliciaAngelinePhoto.webp" type="image/webp">
+                                    <source srcset="assets/img/testimonies-thumbnail/FeliciaAngelinePhoto.png" type="image/png">
+                                    <img width="100%" src="assets/img/testimonies-thumbnail/FeliciaAngelinePhoto.png" alt="Felicia Angeline">
+                                </picture>
+                                <div class="col-12 col-md-9 col-xl-12 p-lg-3">
+                                    <h1 class="name fs-3">
+                                        Felicia Angeline
+                                    </h1>
+                                    <p class="job">
+                                        Data Engineer, PT. Bank Central Asia (BCA) Tbk.
+                                    </p>
+                                    <p class="experience">
+                                        <b>Kepengurusan HIMTI:</b> 2019 - 2020
+                                    </p>
+                                    <ul class="experience">
+                                        <li><b>Anggota Divisi Publication and Marketing</b> (2019)</li>
+                                        <li><b>Chairman HIMTI BINUS University</b> (2020)</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="story col-12 col-xl-7">
@@ -144,22 +139,26 @@
                 <div class="card m-3 p-3 ms-xl-1">
                     <div class="row">
                         <div class="col-12 col-xl-5 d-flex flex-column">
-                            <picture class="img-thumbnail rounded p-0">
-                                <source srcset="/assets/img/testimonies/Erika%20Natalia%20Nugroho.webp" type="image/webp">
-                                <source srcset="/assets/img/testimonies/Erika%20Natalia%20Nugroho.jxr" type="image/jxr">
-                                <source srcset="/assets/img/testimonies/Erika%20Natalia%20Nugroho.jp2" type="image/jp2">
-                                <source srcset="/assets/img/testimonies/Erika%20Natalia%20Nugroho.jpg" type="image/jpeg">
-                                <img class="img-thumbnail rounded p-0" src="/assets/img/testimonies/Erika%20Natalia%20Nugroho.jpg" alt="Erika Natalia Nugroho" />
-                            </picture>
-                            <div class="name">
-                                Erika Natalia Nugroho
-                            </div>
-                            <div class="job">
-                                Front End Developer Maybank
-                            </div>
-                            <div class="experience">
-                                Kepengurusan HIMTI : 2019 - 2020 <br>
-                                Sekretaris Kemanggisan
+                            <div class="row">
+                                <picture class="col-12 col-sm-4 col-md-3 col-xl-12">
+                                    <source srcset="assets/img/testimonies-thumbnail/ErikaNataliaNugrohoPhoto.webp" type="image/webp">
+                                    <source srcset="assets/img/testimonies-thumbnail/ErikaNataliaNugrohoPhoto.png" type="image/png">
+                                    <img width="100%" src="assets/img/testimonies-thumbnail/ErikaNataliaNugrohoPhoto.png" alt="Erika Natalia Nugroho">
+                                </picture>
+                                <div class="col-12 col-md-9 col-xl-12 p-lg-3">
+                                    <h1 class="name fs-3">
+                                        Erika Natalia Nugroho
+                                    </h1>
+                                    <p class="job">
+                                        Front End Developer, PT. Bank Maybank Indonesia Tbk.
+                                    </p>
+                                    <p class="experience">
+                                        <b>Kepengurusan HIMTI:</b> 2019 - 2020
+                                    </p>
+                                    <ul class="experience">
+                                        <li><b>Secretary of HIMTI Kemanggisan</b> (2020)</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="story col-12 col-xl-7">
@@ -177,25 +176,29 @@
         <div class="row d-flex flex-row align-items-stretch justify-content-between align-items-center">
             <div class="col-12 col-xl-3 d-flex flex-column">
                 <div class="card p-3 m-3 me-xl-1 flex-grow-1">
-                    <picture class="img-thumbnail rounded p-0">
-                        <source srcset="/assets/img/testimonies/Javier%20Fransiscus.webp" type="image/webp">
-                        <source srcset="/assets/img/testimonies/Javier%20Fransiscus.jxr" type="image/jxr">
-                        <source srcset="/assets/img/testimonies/Javier%20Fransiscus.jp2" type="image/jp2">
-                        <source srcset="/assets/img/testimonies/Javier%20Fransiscus.jpg" type="image/jpeg">
-                        <img class="img-thumbnail rounded p-0" src="/assets/img/testimonies/Javier%20Fransiscus.jpg" alt="Javier Fransiscus" />
-                    </picture>
-                    <div class="name">
-                        Javier Fransiscus
-                    </div>
-                    <div class="job">
-                        Apple Developer Academy (Learner)
-                    </div>
-                    <div class="experience">
-                        Kepengurusan HIMTI : 2019 - 2020 <br>
-                        Koor WebDev
+                    <div class="row">
+                        <picture class="col-12 col-sm-4 col-md-3 col-xl-12">
+                            <source srcset="assets/img/testimonies-thumbnail/JavierFransiscusPhoto.webp" type="image/webp">
+                            <source srcset="assets/img/testimonies-thumbnail/JavierFransiscusPhoto.png" type="image/png">
+                            <img width="100%" src="assets/img/testimonies-thumbnail/JavierFransiscusPhoto.png" alt="Javier Fransiscus">
+                        </picture>
+                        <div class="col-12 col-md-9 col-xl-12 p-lg-3 pb-xl-0">
+                            <h1 class="name fs-3">
+                                Javier Fransiscus
+                            </h1>
+                            <p class="job">
+                                Peserta (<i>Learner</i>), Apple Developer Academy
+                            </p>
+                            <p class="experience">
+                                <b>Kepengurusan HIMTI:</b> 2019 - 2020
+                            </p>
+                            <ul class="experience">
+                                <li><b>Anggota Divisi Web Development</b> (2019)</li>
+                                <li><b>Koordinator Divisi Web Development</b> (2020)</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="story">
-                        <br>
                         Banyak kenangan seru yang tak terlupakan dari acara bareng-bareng,
                         perform di farewell/HTTP, latihan HIMTI band, main tournament valorant
                         semuanya sangat berkesan. Berada di HIMTI memungkinkan aku untuk bertemu
@@ -209,26 +212,29 @@
             </div>
             <div class="col-12 col-xl-3 d-flex flex-column">
                 <div class="card p-3 m-3 mx-xl-1 flex-grow-1">
-                    <picture class="img-thumbnail rounded p-0">
-                        <source srcset="/assets/img/testimonies/Kenny%20Ongko.webp" type="image/webp">
-                        <source srcset="/assets/img/testimonies/Kenny%20Ongko.jxr" type="image/jxr">
-                        <source srcset="/assets/img/testimonies/Kenny%20Ongko.jp2" type="image/jp2">
-                        <source srcset="/assets/img/testimonies/Kenny%20Ongko.jpg" type="image/jpeg">
-                        <img class="img-thumbnail rounded p-0" src="/assets/img/testimonies/Kenny%20Ongko.jpg" alt="Kenny Ongko" />
-                    </picture>
-                    <div class="name">
-                        Kenny Ongko
-                    </div>
-                    <div class="job">
-                        Google Bangkit, Cloud Computing
-                    </div>
-                    <div class="experience">
-                        Kepengurusan HIMTI : 2019 - 2020 <br>
-                        Divisi PM (2019) <br>
-                        President of HIMTI Alam Sutera (2020)
+                    <div class="row">
+                        <picture class="col-12 col-sm-4 col-md-3 col-xl-12">
+                            <source srcset="assets/img/testimonies-thumbnail/KennyOngkoPhoto.webp" type="image/webp">
+                            <source srcset="assets/img/testimonies-thumbnail/KennyOngkoPhoto.png" type="image/png">
+                            <img width="100%" src="assets/img/testimonies-thumbnail/KennyOngkoPhoto.png" alt="Kenny Ongko">
+                        </picture>
+                        <div class="col-12 col-md-9 col-xl-12 p-lg-3 pb-xl-0">
+                            <h1 class="name fs-3">
+                                Kenny Ongko
+                            </h1>
+                            <p class="job">
+                                Cloud Computing, Google Bangkit
+                            </p>
+                            <p class="experience">
+                                <b>Kepengurusan HIMTI:</b> 2019 - 2020
+                            </p>
+                            <ul class="experience">
+                                <li><b>Anggota Divisi Publication and Marketing</b> (2019)</li>
+                                <li><b>President of HIMTI Alam Sutera</b> (2020)</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="story">
-                        <br>
                         “Dari kesan, aku sangat senang sudah menjadi salah satu keluarga HIMTI.
                         Menurut aku HIMTI udah merupakan rumah kedua, yang mana aku bisa berbagi cerita dan pengamalan.
                         Buatlah himti sebagai taman bermain, bukan hanya untuk mencari teman dan bersenang,
@@ -243,24 +249,30 @@
                         <div class="card m-3 p-3 ms-xl-1">
                             <div class="row">
                                 <div class="col-12 col-xl-5 d-flex flex-column">
-                                    <picture class="img-thumbnail rounded p-0">
-                                        <source srcset="/assets/img/testimonies/Felix.webp" type="image/webp">
-                                        <source srcset="/assets/img/testimonies/Felix.jxr" type="image/jxr">
-                                        <source srcset="/assets/img/testimonies/Felix.jp2" type="image/jp2">
-                                        <source srcset="/assets/img/testimonies/Felix.jpg" type="image/jpeg">
-                                        <img class="img-thumbnail rounded p-0" src="/assets/img/testimonies/Felix.jpg" alt="Felix" />
-                                    </picture>
-                                    <div class="name">
-                                        Felix
-                                    </div>
-                                    <div class="job">
-                                        Application Developer di PT Mayora Indah Tbk <br>
-                                        UIUX Designer di Corn Learning
-                                    </div>
-                                    <div class="experience">
-                                        Kepengurusan HIMTI : 2019 - 2020 <br>
-                                        Divisi PM (2019) <br>
-                                        General Manager of Commission Thre HIMTI Alam Sutera (2020)
+                                    <div class="row">
+                                        <picture class="col-12 col-sm-4 col-md-3 col-xl-12">
+                                            <source srcset="assets/img/testimonies-thumbnail/FelixPhoto.webp" type="image/webp">
+                                            <source srcset="assets/img/testimonies-thumbnail/FelixPhoto.png" type="image/png">
+                                            <img width="100%" src="assets/img/testimonies-thumbnail/FelixPhoto.png" alt="Felix">
+                                        </picture>
+                                        <div class="col-12 col-md-9 col-xl-12 p-lg-3">
+                                            <h1 class="name fs-3">
+                                                Felix
+                                            </h1>
+                                            <p class="job">
+                                                Application Developer, PT. Mayora Indah Tbk.
+                                            </p>
+                                            <p class="job">
+                                                UIUX Designer di Corn Learning
+                                            </p>
+                                            <p class="experience">
+                                                <b>Kepengurusan HIMTI:</b> 2019 - 2020
+                                            </p>
+                                            <ul class="experience">
+                                                <li><b>Anggota Divisi Publication and Marketing</b> (2019)</li>
+                                                <li><b>General Manager Commission III, HIMTI Alam Sutera</b> (2020)</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="story col-12 col-xl-7">
@@ -280,22 +292,26 @@
                         <div class="card m-3 p-3 ms-xl-1">
                             <div class="row">
                                 <div class="col-12 col-xl-5 d-flex flex-column">
-                                    <picture class="img-thumbnail rounded p-0">
-                                        <source srcset="/assets/img/testimonies/Marissa%20Leviana.webp" type="image/webp">
-                                        <source srcset="/assets/img/testimonies/Marissa%20Leviana.jxr" type="image/jxr">
-                                        <source srcset="/assets/img/testimonies/Marissa%20Leviana.jp2" type="image/jp2">
-                                        <source srcset="/assets/img/testimonies/Marissa%20Leviana.jpg" type="image/jpeg">
-                                        <img class="img-thumbnail rounded p-0" src="/assets/img/testimonies/Marissa%20Leviana.jpg" alt="Marissa Leviana" />
-                                    </picture>
-                                    <div class="name">
-                                        Marissa Leviana
-                                    </div>
-                                    <div class="job">
-                                        Google Bangkit, Cloud Computing
-                                    </div>
-                                    <div class="experience">
-                                        Kepengurusan HIMTI : 2019 - 2020 <br>
-                                        Secretary of HIMTI Alam Sutera
+                                    <div class="row">
+                                        <picture class="col-12 col-sm-4 col-md-3 col-xl-12">
+                                            <source srcset="assets/img/testimonies-thumbnail/MarissaLevianiPhoto.webp" type="image/webp">
+                                            <source srcset="assets/img/testimonies-thumbnail/MarissaLevianiPhoto.png" type="image/png">
+                                            <img width="100%" src="assets/img/testimonies-thumbnail/MarissaLevianiPhoto.png" alt="Marrisa Leviani">
+                                        </picture>
+                                        <div class="col-12 col-md-9 col-xl-12 p-lg-3">
+                                            <h1 class="name fs-3">
+                                                Marissa Leviani
+                                            </h1>
+                                            <p class="job">
+                                                Cloud Computing, Google Bangkit
+                                            </p>
+                                            <p class="experience">
+                                                <b>Kepengurusan HIMTI:</b> 2019 - 2020
+                                            </p>
+                                            <ul class="experience">
+                                                <li><b>Secretary of HIMTI Alam Sutera</b> (2020)</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="story col-12 col-xl-7">
@@ -321,23 +337,30 @@
                         <div class="card m-3 p-3 me-xl-1">
                             <div class="row">
                                 <div class="col-12 col-xl-5 d-flex flex-column">
-                                    <picture class="img-thumbnail rounded p-0">
-                                        <source srcset="/assets/img/testimonies/Hanif%20Kusuma.webp" type="image/webp">
-                                        <source srcset="/assets/img/testimonies/Hanif%20Kusuma.jxr" type="image/jxr">
-                                        <source srcset="/assets/img/testimonies/Hanif%20Kusuma.jp2" type="image/jp2">
-                                        <source srcset="/assets/img/testimonies/Hanif%20Kusuma.jpg" type="image/jpeg">
-                                        <img class="img-thumbnail rounded p-0" src="/assets/img/testimonies/Hanif%20Kusuma.jpg" alt="Hanif Kusuma" />
-                                    </picture>
-                                    <div class="name">
-                                        Hanif Kusuma
-                                    </div>
-                                    <div class="job">
-                                        Web Developer Intern at PT Kalbe Farma Tbk & Co-Founder of Ignitivent.Id
-                                    </div>
-                                    <div class="experience">
-                                        Kepengurusan HIMTI : 2019 - 2020 <br>
-                                        Vice President if HISHOT (2020) <br>
-                                        President of HIMTI Anniversary (2020)
+                                    <div class="row">
+                                        <picture class="col-12 col-sm-4 col-md-3 col-xl-12">
+                                            <source srcset="assets/img/testimonies-thumbnail/HanifKusumaPhoto.webp" type="image/webp">
+                                            <source srcset="assets/img/testimonies-thumbnail/HanifKusumaPhoto.png" type="image/png">
+                                            <img width="100%" src="assets/img/testimonies-thumbnail/HanifKusumaPhoto.png" alt="Hanif Kusuma">
+                                        </picture>
+                                        <div class="col-12 col-md-9 col-xl-12 p-lg-3">
+                                            <h1 class="name fs-3">
+                                                Hanif Kusuma
+                                            </h1>
+                                            <p class="job">
+                                                Web Developer Intern, PT. Kalbe Farma Tbk.
+                                            </p>
+                                            <p class="job">
+                                               Co-Founder of ignitevent.id
+                                            </p>
+                                            <p class="experience">
+                                                <b>Kepengurusan HIMTI:</b> 2019 - 2020
+                                            </p>
+                                            <ul class="experience">
+                                                <li><b>Vice President of HISHOT 2020: IGNITE</b> (2020)</li>
+                                                <li><b>President of HIMTI Anniversary</b> (2020)</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="story col-12 col-xl-7">
@@ -364,22 +387,26 @@
                         <div class="card m-3 p-3 me-xl-1">
                             <div class="row">
                                 <div class="col-12 col-xl-5 d-flex flex-column">
-                                    <picture class="img-thumbnail rounded p-0">
-                                        <source srcset="/assets/img/testimonies/Mesyella.webp" type="image/webp">
-                                        <source srcset="/assets/img/testimonies/Mesyella.jxr" type="image/jxr">
-                                        <source srcset="/assets/img/testimonies/Mesyella.jp2" type="image/jp2">
-                                        <source srcset="/assets/img/testimonies/Mesyella.jpg" type="image/jpeg">
-                                        <img class="img-thumbnail rounded p-0" src="/assets/img/testimonies/Mesyella.jpg" alt="Mesyella" />
-                                    </picture>
-                                    <div class="name">
-                                        Mesyella
-                                    </div>
-                                    <div class="job">
-                                        Data Science di PT Global Digital Niaga (Blibli.com)
-                                    </div>
-                                    <div class="experience">
-                                        Kepengurusan HIMTI : 2019 - 2020 <br>
-                                        Vice President of HIMTI Alam Sutera
+                                    <div class="row">
+                                        <picture class="col-12 col-sm-4 col-md-3 col-xl-12">
+                                            <source srcset="assets/img/testimonies-thumbnail/MesyellaPhoto.webp" type="image/webp">
+                                            <source srcset="assets/img/testimonies-thumbnail/MesyellaPhoto.png" type="image/png">
+                                            <img width="100%" src="assets/img/testimonies-thumbnail/MesyellaPhoto.png" alt="Mesyella">
+                                        </picture>
+                                        <div class="col-12 col-md-9 col-xl-12 p-lg-3">
+                                            <h1 class="name fs-3">
+                                                Mesyella
+                                            </h1>
+                                            <p class="job">
+                                                Data Science, Blibli.com (PT. Global Digital Niaga)
+                                            </p>
+                                            <p class="experience">
+                                                <b>Kepengurusan HIMTI:</b> 2019 - 2020
+                                            </p>
+                                            <ul class="experience">
+                                                <li><b>Vice President of HIMTI Alam Sutera</b> (2020)</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="story col-12 col-xl-7">
@@ -398,27 +425,30 @@
             </div>
             <div class="col-12 col-xl-3 d-flex flex-column">
                 <div class="card p-3 m-3 mx-xl-1 flex-grow-1">
-                    <picture class="img-thumbnail rounded p-0">
-                        <source srcset="/assets/img/testimonies/Bayu%20Ardana.webp" type="image/webp">
-                        <source srcset="/assets/img/testimonies/Bayu%20Ardana.jxr" type="image/jxr">
-                        <source srcset="/assets/img/testimonies/Bayu%20Ardana.jp2" type="image/jp2">
-                        <source srcset="/assets/img/testimonies/Bayu%20Ardana.jpg" type="image/jpeg">
-                        <img class="img-thumbnail rounded p-0" src="/assets/img/testimonies/Bayu%20Ardana.jpg" alt="Bayu Ardana" />
-                    </picture>
-                    <div class="name">
-                        Bayu Ardana
-                    </div>
-                    <div class="job">
-                        Co-Founder of Ignitivent.Id
-                    </div>
-                    <div class="experience">
-                        Kepengurusan HIMTI : 2019 - 2020 <br>
-                        Vice President of HISHOT (2020) <br>
-                        PIC of HIMTIBAND (2020) <br>
-                        Publication & Marketing Staff (2020)
+                    <div class="row">
+                        <picture class="col-12 col-sm-4 col-md-3 col-xl-12">
+                            <source srcset="assets/img/testimonies-thumbnail/BayuArdanaPhoto.webp" type="image/webp">
+                            <source srcset="assets/img/testimonies-thumbnail/BayuArdanaPhoto.png" type="image/png">
+                            <img width="100%" src="assets/img/testimonies-thumbnail/BayuArdanaPhoto.png" alt="Bayu Ardana">
+                        </picture>
+                        <div class="col-12 col-md-9 col-xl-12 p-lg-3">
+                            <h1 class="name fs-3">
+                                Bayu Ardana
+                            </h1>
+                            <p class="job">
+                                Co-Founder of ignitevent.id
+                            </p>
+                            <p class="experience">
+                                <b>Kepengurusan HIMTI:</b> 2019 - 2020
+                            </p>
+                            <ul class="experience">
+                                <li><b>Vice President of HISHOT 2020: IGNITE</b> (2020)</li>
+                                <li><b>PIC of HIMTI BAND</b> (2020)</li>
+                                <li><b>Anggota Divisi Publication and Marketing</b> (2019-2020)</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="story">
-                        <br>
                         “Kesan aku selama di HIMTI ya.. gimana ya.. yang pasti seru, dan yang lebih pasti lagi capek.
                         tapi aku bener-bener tidak nyesel sih dulu memutuskan untuk join HIMTI. Pastinya aku belajar
                         banyak sekali di HIMTI. Di HIMTI, aku juga ketemu orang-orang yang sekarang jadi teman-teman
@@ -438,26 +468,28 @@
             </div>
             <div class="col-12 col-xl-3 d-flex flex-column">
                 <div class="card p-3 m-3 ms-xl-1 flex-grow-1">
-                    <picture class="img-thumbnail rounded p-0">
-                        <source srcset="/assets/img/testimonies/Salsabila%20Azaria.webp" type="image/webp">
-                        <source srcset="/assets/img/testimonies/Salsabila%20Azaria.jxr" type="image/jxr">
-                        <source srcset="/assets/img/testimonies/Salsabila%20Azaria.jp2" type="image/jp2">
-                        <source srcset="/assets/img/testimonies/Salsabila%20Azaria.jpg" type="image/jpeg">
-                        <img class="img-thumbnail rounded p-0" src="/assets/img/testimonies/Salsabila%20Azaria.jpg" alt="Salsabila Azaria" />
-                    </picture>
-                    <div class="name" >
-                        Salsabila Azaria
-                    </div>
-                    <div class="job">
-                        Software Development Engineer <br>
-                        Intern at DANA Indonesia
-                    </div>
-                    <div class="experience">
-                        Kepengurusan HIMTI : 2019 - 2020 <br>
-                        HRD Alsut (2020)
+                    <div class="row">
+                        <picture class="col-12 col-sm-4 col-md-3 col-xl-12">
+                            <source srcset="assets/img/testimonies-thumbnail/SalsabilaAzariaPhoto.webp" type="image/webp">
+                            <source srcset="assets/img/testimonies-thumbnail/SalsabilaAzariaPhoto.png" type="image/png">
+                            <img width="100%" src="assets/img/testimonies-thumbnail/SalsabilaAzariaPhoto.png" alt="Salsabila Azaria">
+                        </picture>
+                        <div class="col-12 col-md-9 col-xl-12 p-lg-3">
+                            <h1 class="name fs-3">
+                                Salsabila Azaria
+                            </h1>
+                            <p class="job">
+                                Software Development Engineer Intern, DANA Indonesia (PT. Espay Debit Indonesia Koe)
+                            </p>
+                            <p class="experience">
+                                <b>Kepengurusan HIMTI:</b> 2019 - 2020
+                            </p>
+                            <ul class="experience">
+                                <li><b>Head of Human Resources Department, HIMTI Alam Sutera</b> (2020)</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="story">
-                        <br>
                         “HIMTI is really something for me. Di HIMTI ini aku belajar banyak banget, bukan hanya belajar
                         gimana caranya handle event / menjalankan organisasi secara umum, tapi belajar juga tipe-tipe
                         orang tuh kayak apa aja dan gimana handlenya, belajar buat terus beradaptasi dan berinovasi

@@ -141,9 +141,9 @@
                     <div class="testimonicarousel">
                         <div class="left">
                             <picture width="100%">
-                                <source srcset="assets/img/testimonies-thumbnail/JavierPhoto.webp" type="image/webp">
-                                <source srcset="assets/img/testimonies-thumbnail/JavierPhoto.png" type="image/png">
-                                <img width="100%" src="assets/img/testimonies-thumbnail/JavierPhoto.png" alt="Javier">
+                                <source srcset="assets/img/testimonies-thumbnail/JavierFransiscusPhoto.webp" type="image/webp">
+                                <source srcset="assets/img/testimonies-thumbnail/JavierFransiscusPhoto.png" type="image/png">
+                                <img width="100%" src="assets/img/testimonies-thumbnail/JavierFransiscusPhoto.png" alt="Javier Fransiscus">
                             </picture>
                             <div class="testimoniprofile">
                                 <p class="testimoniname">Javier Fransiscus</p>
