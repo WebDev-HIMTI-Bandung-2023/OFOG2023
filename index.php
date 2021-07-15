@@ -519,7 +519,7 @@
 
         </div>
     </div>
-    <div class="titlewhite" style="background-color: #0c0217;">
+    <div class="title white" style="background-color: #0c0217;">
         <span>Our Journey</span>
     </div>
     <div class="OURJOURNEY">
@@ -722,22 +722,22 @@
         <div class="container-lg pt-5">
             <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
                 <div class="col">
-                    <img src="Assets/img/gallery/1.JPG" class="gallery-item" alt="gallery">
+                    <img src="assets/img/gallery/1.jpg" class="gallery-item" alt="gallery">
                 </div>
                 <div class="col">
-                    <img src="Assets/img/gallery/2.JPG" class="gallery-item" alt="gallery">
+                    <img src="assets/img/gallery/2.jpg" class="gallery-item" alt="gallery">
                 </div>
                 <div class="col">
-                    <img src="Assets/img/gallery/3.JPG" class="gallery-item" alt="gallery">
+                    <img src="assets/img/gallery/3.jpg" class="gallery-item" alt="gallery">
                 </div>
                 <div class="col">
-                    <img src="Assets/img/gallery/4.JPG" class="gallery-item" alt="gallery">
+                    <img src="assets/img/gallery/4.jpg" class="gallery-item" alt="gallery">
                 </div>
                 <div class="col">
-                    <img src="Assets/img/gallery/5.JPG" class="gallery-item" alt="gallery">
+                    <img src="assets/img/gallery/5.jpg" class="gallery-item" alt="gallery">
                 </div>
                 <div class="col">
-                    <img src="Assets/img/gallery/6.JPG" class="gallery-item" alt="gallery">
+                    <img src="assets/img/gallery/6.jpg" class="gallery-item" alt="gallery">
                 </div>
             </div>
         </div>
