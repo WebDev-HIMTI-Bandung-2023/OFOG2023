@@ -78,7 +78,7 @@
                     <div class="row">
                         <div class="col-12 col-xl-5 d-flex flex-column">
                             <div class="row">
-                                <picture class="col-12 col-sm-4 col-md-3 col-xl-12">
+                                <picture class="col-6 col-sm-4 col-md-3 col-xl-12">
                                     <source srcset="assets/img/testimonies-thumbnail/FeliciaAngelinePhoto.webp" type="image/webp">
                                     <source srcset="assets/img/testimonies-thumbnail/FeliciaAngelinePhoto.png" type="image/png">
                                     <img width="100%" src="assets/img/testimonies-thumbnail/FeliciaAngelinePhoto.png" alt="Felicia Angeline">
@@ -124,7 +124,7 @@
                     <div class="row">
                         <div class="col-12 col-xl-5 d-flex flex-column">
                             <div class="row">
-                                <picture class="col-12 col-sm-4 col-md-3 col-xl-12">
+                                <picture class="col-6 col-sm-4 col-md-3 col-xl-12">
                                     <source srcset="assets/img/testimonies-thumbnail/ErikaNataliaNugrohoPhoto.webp" type="image/webp">
                                     <source srcset="assets/img/testimonies-thumbnail/ErikaNataliaNugrohoPhoto.png" type="image/png">
                                     <img width="100%" src="assets/img/testimonies-thumbnail/ErikaNataliaNugrohoPhoto.png" alt="Erika Natalia Nugroho">
@@ -159,9 +159,9 @@
         </div>
         <div class="row d-flex flex-row align-items-stretch justify-content-between align-items-center">
             <div class="col-12 col-xl-3 d-flex flex-column">
-                <div class="card p-3 m-3 mx-xl-1 flex-grow-1">
+                <div class="card p-3 m-3 mx-xl-1 flex-grow-1" id="javier-fransiscus">
                     <div class="row">
-                        <picture class="col-12 col-sm-4 col-md-3 col-xl-12">
+                        <picture class="col-6 col-sm-4 col-md-3 col-xl-12">
                             <source srcset="assets/img/testimonies-thumbnail/JavierFransiscusPhoto.webp" type="image/webp">
                             <source srcset="assets/img/testimonies-thumbnail/JavierFransiscusPhoto.png" type="image/png">
                             <img width="100%" src="assets/img/testimonies-thumbnail/JavierFransiscusPhoto.png" alt="Javier Fransiscus">
@@ -197,7 +197,7 @@
             <div class="col-12 col-xl-3 d-flex flex-column">
                 <div class="card p-3 m-3 mx-xl-1 flex-grow-1">
                     <div class="row">
-                        <picture class="col-12 col-sm-4 col-md-3 col-xl-12">
+                        <picture class="col-6 col-sm-4 col-md-3 col-xl-12">
                             <source srcset="assets/img/testimonies-thumbnail/KennyOngkoPhoto.webp" type="image/webp">
                             <source srcset="assets/img/testimonies-thumbnail/KennyOngkoPhoto.png" type="image/png">
                             <img width="100%" src="assets/img/testimonies-thumbnail/KennyOngkoPhoto.png" alt="Kenny Ongko">
@@ -234,7 +234,7 @@
                             <div class="row">
                                 <div class="col-12 col-xl-5 d-flex flex-column">
                                     <div class="row">
-                                        <picture class="col-12 col-sm-4 col-md-3 col-xl-12">
+                                        <picture class="col-6 col-sm-4 col-md-3 col-xl-12">
                                             <source srcset="assets/img/testimonies-thumbnail/FelixPhoto.webp" type="image/webp">
                                             <source srcset="assets/img/testimonies-thumbnail/FelixPhoto.png" type="image/png">
                                             <img width="100%" src="assets/img/testimonies-thumbnail/FelixPhoto.png" alt="Felix">
@@ -277,10 +277,10 @@
                             <div class="row">
                                 <div class="col-12 col-xl-5 d-flex flex-column">
                                     <div class="row">
-                                        <picture class="col-12 col-sm-4 col-md-3 col-xl-12">
+                                        <picture class="col-6 col-sm-4 col-md-3 col-xl-12">
                                             <source srcset="assets/img/testimonies-thumbnail/MarissaLevianiPhoto.webp" type="image/webp">
                                             <source srcset="assets/img/testimonies-thumbnail/MarissaLevianiPhoto.png" type="image/png">
-                                            <img width="100%" src="assets/img/testimonies-thumbnail/MarissaLevianiPhoto.png" alt="Marrisa Leviani">
+                                            <img width="100%" src="assets/img/testimonies-thumbnail/MarissaLevianiPhoto.png" alt="Marissa Leviani">
                                         </picture>
                                         <div class="col-12 col-md-9 col-xl-12 p-lg-3 mt-3 mt-md-0">
                                             <h1 class="name fs-3">
@@ -322,7 +322,7 @@
                             <div class="row">
                                 <div class="col-12 col-xl-5 d-flex flex-column">
                                     <div class="row">
-                                        <picture class="col-12 col-sm-4 col-md-3 col-xl-12">
+                                        <picture class="col-6 col-sm-4 col-md-3 col-xl-12">
                                             <source srcset="assets/img/testimonies-thumbnail/HanifKusumaPhoto.webp" type="image/webp">
                                             <source srcset="assets/img/testimonies-thumbnail/HanifKusumaPhoto.png" type="image/png">
                                             <img width="100%" src="assets/img/testimonies-thumbnail/HanifKusumaPhoto.png" alt="Hanif Kusuma">
@@ -372,7 +372,7 @@
                             <div class="row">
                                 <div class="col-12 col-xl-5 d-flex flex-column">
                                     <div class="row">
-                                        <picture class="col-12 col-sm-4 col-md-3 col-xl-12">
+                                        <picture class="col-6 col-sm-4 col-md-3 col-xl-12">
                                             <source srcset="assets/img/testimonies-thumbnail/MesyellaPhoto.webp" type="image/webp">
                                             <source srcset="assets/img/testimonies-thumbnail/MesyellaPhoto.png" type="image/png">
                                             <img width="100%" src="assets/img/testimonies-thumbnail/MesyellaPhoto.png" alt="Mesyella">
@@ -410,7 +410,7 @@
             <div class="col-12 col-xl-3 d-flex flex-column">
                 <div class="card p-3 m-3 mx-xl-1 flex-grow-1">
                     <div class="row">
-                        <picture class="col-12 col-sm-4 col-md-3 col-xl-12">
+                        <picture class="col-6 col-sm-4 col-md-3 col-xl-12">
                             <source srcset="assets/img/testimonies-thumbnail/BayuArdanaPhoto.webp" type="image/webp">
                             <source srcset="assets/img/testimonies-thumbnail/BayuArdanaPhoto.png" type="image/png">
                             <img width="100%" src="assets/img/testimonies-thumbnail/BayuArdanaPhoto.png" alt="Bayu Ardana">
@@ -438,9 +438,8 @@
                         banyak sekali di HIMTI. Di HIMTI, aku juga ketemu orang-orang yang sekarang jadi teman-teman
                         aku yang paling berharga.  Momen yang paling memorable selama 2 tahun aku di HIMTI tidak lain
                         tidak bukan adalah pas aku lagi mempersiapkan visu bareng yg lain untuk HTTP 2019. Wah dari
-                        mulai senang, sedih, cape, malu, dan bangga aku rasain semua selama visu hahahahah.
-
-                        <br>
+                        mulai senang, sedih, cape, malu, dan bangga aku rasain semua selama visu hahahahah
+                        <br><br>
                         Sampai kapanpun, HIMTI adalah highlight dari kehidupan kuliah aku. Pesan aku buat HIMTI kedepannya
                         tidak banyak kok, hehe. Pertama, aku mau ngingetin aja <b>HIMTI itu adalah wadah buat nambah pengalaman
                         dan wawasan, tapi tetap tergantung orangnya dulu mau atau tidak untuk pakai wadah tersebut.</b> Kalau
@@ -453,7 +452,7 @@
             <div class="col-12 col-xl-3 d-flex flex-column">
                 <div class="card p-3 m-3 mx-xl-1 flex-grow-1">
                     <div class="row">
-                        <picture class="col-12 col-sm-4 col-md-3 col-xl-12">
+                        <picture class="col-6 col-sm-4 col-md-3 col-xl-12">
                             <source srcset="assets/img/testimonies-thumbnail/SalsabilaAzariaPhoto.webp" type="image/webp">
                             <source srcset="assets/img/testimonies-thumbnail/SalsabilaAzariaPhoto.png" type="image/png">
                             <img width="100%" src="assets/img/testimonies-thumbnail/SalsabilaAzariaPhoto.png" alt="Salsabila Azaria">
@@ -483,8 +482,7 @@
                         Sepusing-pusingnya, sepadat-padatnya jadwal, entah kenapa ada aja waktu buat HIMTI. Waktu yang
                         dipake buat HIMTI gak pernah sia-sia sih, justru malah merasa tumbuh menjadi orang yang lebih
                         baik dan nge-recharge diri dengan ketemu anak-anak HIMTI.
-
-                        <br>
+                        <br><br>
                         Semoga HIMTI kedepannya bisa semakin sukses, visi dan misinya tercapai dengan baik, dan terus
                         berguna untuk sekitar! <b>#OneFamilyOneGoal</b>
                     </div>
