@@ -684,6 +684,10 @@ button {
 }
 
 /* Custom Accordation */
+.accordion-button {
+  padding-right: 2.5rem;
+}
+
 .accordion-button::before {
   content: "";
   width: 14px;
