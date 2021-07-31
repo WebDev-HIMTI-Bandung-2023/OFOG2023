@@ -9,7 +9,7 @@
 </head>
 </head>
 <body>
-    <nav id="Navbar" class="nav sticky shadow-2xl">
+    <!-- <nav id="Navbar" class="nav sticky shadow-2xl">
         <div class="max-w-screen-2xl m-auto py-4 px-12 flex justify-between items-center text-white">
             <a href="#">
                 <img id="himti-icon" src="assets/img/icons/himti-icon.svg" alt="">
@@ -22,8 +22,9 @@
                 <li class="p inline-block pl-10"><a href="index.html">Events</a></li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
 
+    <?php require('components/navbar.php'); ?>
     <div class="wrapper-dark">
         <div class="container">
             <h1 class="title white">

@@ -2,10 +2,11 @@
 ## Current Status
 ### DONE
 + **about.php**
++ **faq.php**
++ **index.php**
 + **testimonies.php**
 
 ### Under Checking
-+ **index.php**
 
 ### Submitted
 + **tellus.php**

@@ -69,6 +69,36 @@ body {
   --bs-font-sans-serif: "Public Sans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Cantarell, Ubuntu, 'Noto Sans', 'Open Sans', 'Helvetica Neue', sans-serif;
   font-family: "Public Sans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Cantarell, Ubuntu, 'Noto Sans', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+/* Navbar */
+#topmenu {
+  padding: 1rem 3rem;
+}
+#topmenu #himti-icon {
+  height: 4rem;
+  width: auto;
+}
+#topmenu li {
+  font-size: 1.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+#topmenu a {
+  color: inherit;
+  text-decoration: none;
+}
+@media (min-width: 576px){
+  #topmenu li:nth-child(n+2) {
+    padding-left: 2.5rem;
+  }
+}
+#topmenu a:hover {
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+}
+#topmenu a.active {
+  font-weight: 700;
+}
+
 .title {
   text-align: center;
   font-size: 300%;
@@ -261,6 +291,7 @@ body {
   border-radius: 20px;
 }
 .testimoniisi {
+  width: 100%;
   font-weight: 200;
 }
 .testimoniisi b {
@@ -277,9 +308,6 @@ body {
 }
 .right {
   width: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 /* .right p {
   overflow: hidden;
@@ -321,7 +349,7 @@ body {
 
 @media (min-width: 768px){
   .testimoniprofile{
-    min-height: 16rem;
+    min-height: 17rem;
   }
 
   .testimonicarousel{
@@ -392,9 +420,7 @@ body {
     height: auto;
   }
   .right {
-    width: 90%;
     margin-top: 10%;
-    text-align: center;
   }
 }
 
@@ -467,7 +493,7 @@ body {
     right: 18%;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   .upcomingeventdata {
     display: block;
     width: 100%;
