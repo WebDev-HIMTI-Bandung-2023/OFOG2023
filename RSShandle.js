@@ -9,7 +9,7 @@ $.ajax({
             var dataarticle = datas[i];
             console.log(dataarticle.title);
             console.log(dataarticle.enclosure["@attributes"].url);
-            var linkimg = dataarticle.enclosure["@attributes"].url
+            var linkimg = dataarticle.enclosure ? dataarticle.enclosure["@attributes"].url : "#";
             const template = `
                 <a href="${dataarticle.link}?utm_source=himti.or.id&utm_campaign=himti2021" class="card article">
                     <div >
