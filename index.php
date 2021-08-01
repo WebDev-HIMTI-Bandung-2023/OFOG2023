@@ -257,7 +257,7 @@
                         </div>
                         <div class="right mt-3 mt-md-0">
                             <p class="testimoniisi fs-5">
-                                &ldquo;<b>Di HIMTI ini aku belajar banyak banget,</b> bukan hanya belajar gimana caranya handle event / menjalankan organisasi secara umum, tapi juga <b>banyak belajar nilai-nilai kehidupan yang akhirnya sampai sekarang ilmunya diterapin di daily-life aku sendiri</b>.&rdquo;
+                                &ldquo;Di HIMTI ini aku bukan hanya belajar gimana caranya menjalankan event dan organisasi secara umum, tapi juga <b>nilai-nilai kehidupan yang akhirnya sampai sekarang ilmunya diterapin di daily-life aku sendiri</b>.&rdquo;
                                 <br><br><a href="/testimonies#salsabila-azaria" class="readmorebutton">Read Full Story</a>
                             </p>
                         </div>
