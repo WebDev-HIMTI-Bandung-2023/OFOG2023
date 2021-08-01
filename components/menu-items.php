@@ -3,13 +3,13 @@
 $MENU_ITEMS = [
     [
         'label' => 'Home',
-        'href' => 'https://himti.or.id',
+        'href' => '/',
         'icon' => 'bi bi-house',
         'icon_fill' => 'bi bi-house-fill',
     ],
     [
         'label' => 'About Us',
-        'href' => 'https://himti.or.id/about.php',
+        'href' => '/about.php',
         'icon' => 'bi bi-people',
         'icon_fill' => 'bi bi-people-fill',
     ],
@@ -18,6 +18,11 @@ $MENU_ITEMS = [
         'href' => 'https://registration.himti.or.id',
         'icon' => 'bi bi-calendar-date',
         'icon_fill' => 'bi bi-calendar-date-fill',
+    ],
+    [
+        'label' => 'HISHOT 2021',
+        'href' => 'https://hishot.himti.or.id',
+        'icon' => 'hi hi-hishot hi-white hi-sm-lg',
     ],
     [
         'label' => 'Contact Us',

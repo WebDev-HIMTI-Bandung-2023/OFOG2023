@@ -68,6 +68,7 @@
     </style>
 </head>
 <body>
+    <?php require_once('components/navbar.php'); ?>
     <main>
         <h1 class="title white">
             <span>TESTIMONIES</span>

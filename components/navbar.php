@@ -1,6 +1,6 @@
 <nav id="topmenu" class="row position-fixed fixed-top justify-content-between align-items-center | m-auto text-white | flex flex-wrap fixed top-0 right-0 left-0 z-1030 justify-between items-center">
     <div class="col-2 p-0 || w-2/12">
-        <a href="#">
+        <a href="/">
             <img id="himti-icon" src="assets/img/icons/himti-icon.svg" alt="HIMTI BINUS">
         </a>
     </div>
@@ -15,7 +15,7 @@
         <hr class="d-sm-none || sm:hidden">
         <ul class="list-unstyled m-0 || list-none">
             <?php require_once('./components/menu-items.php');
-            $current_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+            $current_url = $_SERVER[REQUEST_URI];
             foreach($MENU_ITEMS as $menu): ?>
                 <li class="d-sm-inline-block || sm:inline-block">
                     <?php if ($menu['href'] == $current_url): ?>
@@ -74,20 +74,26 @@
     function topMenuScroll(){
         var offset = window.pageYOffset;
         var threshold = 400;
-        if (showMobileMenu == true){
-            // Ignore
-            return
-        } if (deviceMemory > 1){
-            // Use smoother transitions
-            var percent = offset / threshold;
-            if (percent > 1) percent = 1;
-            topmenu.style.backgroundColor = "rgba(65, 89, 167, " + percent + ")";
-        } else if (offset <= threshold / 2){
-            topmenu.style.backgroundColor = "#4159A7";
-        } else {
-            topmenu.style.backgroundColor = null;
-        }
+        <?php if (isset($NAVBAR_SET_IMMERSIVE) && $NAVBAR_SET_IMMERSIVE == true): ?>
+            if (showMobileMenu == true){
+                // Ignore
+                return
+            } if (deviceMemory > 1){
+                // Use smoother transitions
+                var percent = offset / threshold;
+                if (percent > 1) percent = 1;
+                topmenu.style.backgroundColor = "rgba(65, 89, 167, " + percent + ")";
+            } else if (offset <= threshold / 2){
+                topmenu.style.backgroundColor = "#4159A7";
+            } else {
+                topmenu.style.backgroundColor = null;
+            }
+        <?php endif; ?>
     }
 
-    window.addEventListener("scroll", topMenuScroll, {passive: true});
+    <?php if (isset($NAVBAR_SET_IMMERSIVE) && $NAVBAR_SET_IMMERSIVE == true): ?>
+        window.addEventListener("scroll", topMenuScroll, {passive: true});
+    <?php else: ?>
+        topmenu.style.backgroundColor = "#4159A7";
+    <?php endif; ?>
 </script>

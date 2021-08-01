@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <?php require('components/navbar.php'); ?>
+    <?php $NAVBAR_SET_IMMERSIVE = true; require_once('components/navbar.php'); ?>
     <div id="carouselExampleIndicators" class="carousel slide carouselmain" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"

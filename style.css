@@ -88,7 +88,7 @@ body {
 }
 @media (min-width: 576px){
   #topmenu li:nth-child(n+2) {
-    padding-left: 2.5rem;
+    padding-left: 2.5vw;
   }
 }
 #topmenu a:hover {
@@ -777,4 +777,49 @@ button {
 }
 .gallery-item:hover {
   transform: scale(1.05);
+}
+
+/* Custom icons */
+.hi {
+  font-style: normal;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+}
+.hi-lg {
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: -.375em;
+}
+.hi-2x {
+  width: 2em;
+  height: 2em;
+  vertical-align: -.625em;
+}
+.hi-white {
+  filter: saturate(0) brightness(1.75);
+}
+.hi:hover, *:hover > .hi {
+  filter: brightness(0.9);
+}
+.hi-hishot {
+  background-image: url('https://hishot.himti.or.id/Assets/images/logo.svg');
+}
+@media (min-width: 576px){
+  .hi-sm-lg {
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: -.375em;
+  }
+  .hi-sm-2x {
+    width: 2em;
+    height: 2em;
+    vertical-align: -.625em;
+  }
 }

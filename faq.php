@@ -8,6 +8,7 @@
     ?>
 </head>
 <body>
+    <?php require_once('components/navbar.php'); ?>
     <div class="container-fluid py-5 shadow-lg">
 
         <h1 class="title">

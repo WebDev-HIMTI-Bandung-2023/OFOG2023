@@ -24,7 +24,7 @@
         </div>
     </nav> -->
 
-    <?php require('components/navbar.php'); ?>
+    <?php $NAVBAR_SET_IMMERSIVE = true; require_once('components/navbar.php'); ?>
     <div class="wrapper-dark">
         <div class="container">
             <h1 class="title white">
