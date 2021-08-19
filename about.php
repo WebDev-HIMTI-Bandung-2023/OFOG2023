@@ -105,7 +105,7 @@
         </div>
 
         <div class="container h-64 md:h-96">
-            <h1 class="title">
+            <h1 class="title" style="padding-top: 0%;">
                 <span>Our Logo</span>
             </h1>
         </div>
