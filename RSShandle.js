@@ -10,20 +10,7 @@ $.ajax({
             // console.log(dataarticle.title);
             // console.log(dataarticle.enclosure["@attributes"].url);
             var linkimg = dataarticle.enclosure ? dataarticle.enclosure["@attributes"].url : "https://picsum.photos/id/1/300/200";
-            var template;
-            template = `
-                <a href="${dataarticle.link}?utm_source=himti.or.id&utm_campaign=himti2021" class="card article">
-                    <div >
-                        <div class="imagecontainer">
-                            <img src="${linkimg}">
-                        </div>
-                        <p class="card-text">${dataarticle.title}</p>
-                    </div>
-                </a>
-                    
-                    `;
-            
-            template = `
+            var template = `
             <a href="${dataarticle.link}?utm_source=himti.or.id&utm_campaign=himti2021" class="card article bg-dark text-white p-0">
                 <img src="${linkimg}" class="card-img" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.5)">
                 <div class="card-img-overlay" style="margin-top: auto">
