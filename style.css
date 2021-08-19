@@ -86,7 +86,7 @@ body {
   color: inherit;
   text-decoration: none;
 }
-@media (min-width: 576px){
+@media (min-width: 768px){
   #topmenu li:nth-child(n+2) {
     padding-left: 2.5vw;
   }
@@ -98,7 +98,13 @@ body {
 #topmenu a.active {
   font-weight: 700;
 }
-
+#carouselExampleIndicators::before {
+  content: "";
+  display: block;
+  height: calc(8em - 8vw);
+  width: 100%;
+  background-color: black;
+}
 .title {
   text-align: center;
   font-size: 300%;
@@ -811,7 +817,10 @@ button {
 .hi-hishot {
   background-image: url('https://hishot.himti.or.id/Assets/images/logo.svg');
 }
-@media (min-width: 576px){
+.hi-techno {
+  background-image: url('https://techno.himti.or.id/assets/apple-touch-icon.png');
+}
+@media (min-width: 678px){
   .hi-sm-lg {
     width: 1.5em;
     height: 1.5em;
@@ -822,4 +831,9 @@ button {
     height: 2em;
     vertical-align: -.625em;
   }
+}
+.himti-header-img {
+  border-radius: 0 0 45px 45px;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 25%);
+  margin-bottom: 15px;
 }

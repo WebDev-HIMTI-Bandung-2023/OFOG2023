@@ -26,6 +26,8 @@
                 aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -34,7 +36,10 @@
                 <!-- <img class="d-block w-100" src="assets/Carouselfoto2.png" alt="Second slide"> -->
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="assets/Carouselfoto1.png" alt="First slide">
+                <img class="d-block w-100 himti-header-img" src="assets/carousel/himtiexpo.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 himti-header-img" src="assets/carousel/techno2021.jpg" alt="First slide">
             </div>
 
         </div>
@@ -457,6 +462,8 @@
         <div class="articledata d-flex" style="overflow-x: auto;">
 
         </div>
+
+        <div class="viewtestimoni mt-3"><a href="https://student-activity.binus.ac.id/himti" class="btn btn-light btn-lg text-dark">View All Articles</a></div>
     </div>
     <div class="title white" style="background-color: #0c0217;">
         <span>Our Journey</span>

@@ -25,6 +25,16 @@ $MENU_ITEMS = [
         'icon' => 'hi hi-hishot hi-white hi-sm-lg',
     ],
     [
+        'label' => 'TECHNO 2021',
+        'href' => 'https://techno.himti.or.id',
+        'icon' => 'hi hi-techno hi-white hi-sm-lg',
+    ],
+    [
+        'label' => 'Join Us!',
+        'href' => 'https://bit.ly/CavisHIMTI2022',
+        'icon' => 'bi bi-person-plus',
+    ],
+    [
         'label' => 'Contact Us',
         'href' => 'https://student-activity.binus.ac.id/himti/contact-us',
         'icon' => 'bi bi-chat-quote',
