@@ -1,7 +1,7 @@
 <?php
 // Combines RSS feeds from multiple sources
-header('Content-Type: application/json; charset=UTF-8');
-header('Access-Control-Allow-Origin: *');
+// header('Content-Type: application/json; charset=UTF-8');
+// header('Access-Control-Allow-Origin: *');
 
 $sources = [
   // HIMTI Greater Jakarta
@@ -23,6 +23,12 @@ $sources = [
     'content_type' => 'gallery',
     'regional' => ['als', 'kmg'],
   ],
+  [
+    'feed_url' => 'https://www.youtube.com/feeds/videos.xml?channel_id=UCnxjFlgW3YpKVkSshFHP_SQ',
+    'source_type' => 'rss',
+    'content_type' => 'video',
+    'regional' => ['bdg'],
+  ],
   // HIMTI Senayan (BINARY)
   [
     'feed_url' => 'https://student-activity.binus.ac.id/binary/category/articles/feed/atom',
@@ -41,6 +47,20 @@ $sources = [
     'source_type' => 'atom',
     'content_type' => 'gallery',
     'regional' => ['sny'],
+  ],
+  // HIMTI Bandung
+  [
+    'feed_url' => 'https://www.youtube.com/feeds/videos.xml?channel_id=UC_bIW8-akHLWn9Mj7PAV8zQ',
+    'source_type' => 'rss',
+    'content_type' => 'video',
+    'regional' => ['bdg'],
+  ],
+  // HIMTI Malang (HIMFO)
+  [
+    'feed_url' => 'https://www.youtube.com/feeds/videos.xml?channel_id=UCv5_20gYnK6uv4bp3ESSO9w',
+    'source_type' => 'rss',
+    'content_type' => 'video',
+    'regional' => ['mlg'],
   ],
 ];
 
@@ -93,4 +113,9 @@ foreach ($sources as $source){
 }
 
 ksort($articles, SORT_NUMERIC);
-echo json_encode($articles);
+$json = json_encode($articles);
+
+// Write into a file
+$file = fopen('feed.json', 'w');
+fwrite($file, $json);
+fclose($file);

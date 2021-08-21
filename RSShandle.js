@@ -1,5 +1,5 @@
 $.ajax({
-    url      : './feed.php',
+    url      : './feed.json',
     dataType : 'json',
     success  : function (data) {
         console.log(data);
