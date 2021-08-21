@@ -25,7 +25,7 @@ $sources = [
   ],
   [
     'feed_url' => 'https://www.youtube.com/feeds/videos.xml?channel_id=UCnxjFlgW3YpKVkSshFHP_SQ',
-    'source_type' => 'rss',
+    'source_type' => 'atom',
     'content_type' => 'video',
     'regional' => ['bdg'],
   ],
@@ -51,14 +51,14 @@ $sources = [
   // HIMTI Bandung
   [
     'feed_url' => 'https://www.youtube.com/feeds/videos.xml?channel_id=UC_bIW8-akHLWn9Mj7PAV8zQ',
-    'source_type' => 'rss',
+    'source_type' => 'atom',
     'content_type' => 'video',
     'regional' => ['bdg'],
   ],
   // HIMTI Malang (HIMFO)
   [
     'feed_url' => 'https://www.youtube.com/feeds/videos.xml?channel_id=UCv5_20gYnK6uv4bp3ESSO9w',
-    'source_type' => 'rss',
+    'source_type' => 'atom',
     'content_type' => 'video',
     'regional' => ['mlg'],
   ],
@@ -71,6 +71,8 @@ foreach ($sources as $source){
   if ($source['source_type'] == 'atom' || $source['source_type'] == 'rss'){
     $feed = simplexml_load_file($source['feed_url']);
     $entries = ($source['source_type'] == 'atom') ? $feed->entry : $feed->channel->item;
+
+    var_dump($feed);
 
     foreach ($entries as $entry){
       // Title
