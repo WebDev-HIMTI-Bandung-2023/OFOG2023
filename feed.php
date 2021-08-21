@@ -27,7 +27,7 @@ $sources = [
     'feed_url' => 'https://www.youtube.com/feeds/videos.xml?channel_id=UCnxjFlgW3YpKVkSshFHP_SQ',
     'source_type' => 'atom',
     'content_type' => 'video',
-    'regional' => ['bdg'],
+    'regional' => ['als', 'kmg'],
   ],
   // HIMTI Senayan (BINARY)
   [
@@ -71,8 +71,6 @@ foreach ($sources as $source){
   if ($source['source_type'] == 'atom' || $source['source_type'] == 'rss'){
     $feed = simplexml_load_file($source['feed_url']);
     $entries = ($source['source_type'] == 'atom') ? $feed->entry : $feed->channel->item;
-
-    var_dump($feed);
 
     foreach ($entries as $entry){
       // Title
@@ -121,3 +119,5 @@ $json = json_encode($articles);
 $file = fopen('feed.json', 'w');
 fwrite($file, $json);
 fclose($file);
+
+echo $json;
