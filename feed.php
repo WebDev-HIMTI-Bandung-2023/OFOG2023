@@ -3,11 +3,94 @@
 header('Content-Type: application/json; charset=UTF-8');
 header('Access-Control-Allow-Origin: *');
 
-$base_url = 'https://student-activity.binus.ac.id/himti';
+$sources = [
+  // HIMTI Greater Jakarta
+  [
+    'feed_url' => 'https://student-activity.binus.ac.id/himti/category/articles/feed/atom',
+    'source_type' => 'atom',
+    'content_type' => 'articles',
+    'regional' => ['als', 'kmg'],
+  ],
+  [
+    'feed_url' => 'https://student-activity.binus.ac.id/himti/category/news/feed/atom',
+    'source_type' => 'atom',
+    'content_type' => 'news',
+    'regional' => ['als', 'kmg'],
+  ],
+  [
+    'feed_url' => 'https://student-activity.binus.ac.id/himti/gallery/feed/atom',
+    'source_type' => 'atom',
+    'content_type' => 'gallery',
+    'regional' => ['als', 'kmg'],
+  ],
+  // HIMTI Senayan (BINARY)
+  [
+    'feed_url' => 'https://student-activity.binus.ac.id/binary/category/articles/feed/atom',
+    'source_type' => 'atom',
+    'content_type' => 'articles',
+    'regional' => ['sny'],
+  ],
+  [
+    'feed_url' => 'https://student-activity.binus.ac.id/binary/category/news/feed/atom',
+    'source_type' => 'atom',
+    'content_type' => 'news',
+    'regional' => ['sny'],
+  ],
+  [
+    'feed_url' => 'https://student-activity.binus.ac.id/binary/gallery/feed/atom',
+    'source_type' => 'atom',
+    'content_type' => 'gallery',
+    'regional' => ['sny'],
+  ],
+];
 
-if ($_GET['postType'] == 'gallery') $base_url .= '/gallery';
-else if (strlen($_GET['category']) > 0) $base_url .= '/category/' . $category;
+$articles = [];
 
-$feed = implode(file($base_url . '/feed'));
-$xml = simplexml_load_string($feed);
-echo json_encode($xml);
+foreach ($sources as $source){
+  // Fetch data
+  if ($source['source_type'] == 'atom' || $source['source_type'] == 'rss'){
+    $feed = simplexml_load_file($source['feed_url']);
+    $entries = ($source['source_type'] == 'atom') ? $feed->entry : $feed->channel->item;
+
+    foreach ($entries as $entry){
+      // Title
+      $item = [
+        'title' => (string) $entry->title,
+        'content_type' => $source['content_type'],
+        'regional' => $source['regional'],
+        'categories' => [],
+      ];
+
+      // URL
+      if ($source['source_type'] == 'atom') {
+        $item['url'] = (string) $entry->link->attributes()->{'href'};
+      } else {
+        $item['url'] = (string) $entry->link;
+      }
+
+      // Timestamp
+      if (isset($entry->pubDate)) $item['timestamp'] = (int) strtotime($entry->pubDate . " UTC");
+      else if (isset($entry->published)) $item['timestamp'] = (int) strtotime($entry->published . " UTC");
+      else $item['timestamp'] = (int) $entry->timestamp;
+
+      // Cover Image
+      if (isset($entry->enclosure)) $item['cover_image'] = (string) $entry->enclosure->attributes()->{'url'};
+      else if (isset($entry->children('media', TRUE)->content)) $item['cover_image'] = (string) $entry->children('media', TRUE)->content->attributes()->url;
+      else if (isset($entry->children('media', TRUE)->group)) $item['cover_image'] = (string) $entry->children('media', TRUE)->group->children('media', TRUE)->thumbnail->attributes()->url;
+
+      // Categories and Tags
+      if (isset($entry->category)){
+        // if (!is_array($entry->category)) $entry->category = array($entry->category);
+        foreach ($entry->category as $category){
+          array_push($item['categories'], (string) $category->attributes()->term);
+        }
+      }
+
+      // Push into article list
+      $articles[$item['timestamp']] = $item;
+    }
+  }
+}
+
+ksort($articles, SORT_NUMERIC);
+echo json_encode($articles);
