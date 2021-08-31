@@ -5,8 +5,7 @@ const listyear = ["deg108", "deg144", "deg180", "deg216", "deg252", "deg288", "d
 
 // JUST ADD A NEW EVENT ID AND ADD TIME WITH THE SAME FORMAT
 // MAKE SURE TO PUT THE EVENT AND TIME IN THE SAME INDEX
-const listevent= ["timetechno", "timehishot"];
-const listtime = ["Sep 18, 2021 15:37:25", "Sep 18, 2021 15:37:25"];
+const listevent = document.querySelectorAll("[data-countdown-enabled='true']");
 
 // EDITABLE ITEM END
 
@@ -68,18 +67,21 @@ var y = setInterval(function () {
 var x = setInterval(function () {
     var now = new Date().getTime();
     for(var i =0; i<listevent.length;i++){
-        // console.log(listtime[i]);
-        var eventtime = new Date(listtime[i]).getTime();
+        var timestamp = listevent[i].attributes.getNamedItem("data-countdown-timestamp");
+        console.log(timestamp.value + " UTC");
+        if (!timestamp) continue;
+        // console.log(listevent[i]);
+        var eventtime = new Date(timestamp.value + " UTC").getTime();
         var distance = eventtime - now;
         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        document.getElementById(listevent[i]).innerHTML = days + "D " + hours + "H "
+        listevent[i].innerHTML = days + "D " + hours + "H "
             + minutes + "M " + seconds + "S ";
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById(listevent[i]).innerHTML = "Now";
+            listevent[i].innerHTML = "Now";
         }
     }
 }, 1000);

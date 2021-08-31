@@ -60,33 +60,34 @@
             <span>Upcoming Event</span>
         </div>
         <div class="upcomingeventdata">
-            <a href="http://http.himti.or.id/" class="linkupcoming" target="_blank">
+            <a href="http://techno.himti.or.id/" class="linkupcoming" target="_blank">
                 <div class="upcomingeventrow">
                     <div style="height: 100%; display: flex;">
                         <img src="assets/TECHNOLOGO.png" alt="" class="logo">
                     </div>
 
                     <div class="upcomingeventitem">
-                        <p>Techno 2021: ERA</p>
-                        <p id="timetechno"></p>
-                        <p>16 September 2021</p>
+                        <p>TECHNO 2021: ERA</p>
+                        <p data-countdown-enabled="true" data-countdown-timestamp="2021-09-25 13:00:00"></p>
+                        <p>25 September 2021</p>
                     </div>
                 </div>
             </a>
-            <a href="http://hishot.himti.or.id/" class="linkupcoming" target="_blank">
+            <a href="http://techno.himti.or.id/" class="linkupcoming" target="_blank">
                 <div class="upcomingeventrow">
                     <div style="height: 100%; display: flex;">
-                        <img src="assets/HISHOTLOGO.png" alt="" class="logo">
+                        <img src="assets/TECHNOLOGO.png" alt="" class="logo">
                     </div>
+
                     <div class="upcomingeventitem">
-                        <p>HISHOT 2021: Stronger</p>
-                        <p id="timehishot"></p>
-                        <p>18 September 2021</p>
+                        <p>TECHNO 2021: ERA</p>
+                        <p data-countdown-enabled="true" data-countdown-timestamp="2021-09-25 13:00:00"></p>
+                        <p>25 September 2021</p>
                     </div>
                 </div>
             </a>
         </div>
-        <div class="upcomingeventdata">
+        <!-- <div class="upcomingeventdata">
             <a href="http://http.himti.or.id/" class="linkupcoming" target="_blank">
                 <div class="upcomingeventrow">
                     <div style="height: 100%; display: flex;">
@@ -112,7 +113,7 @@
                     </div>
                 </div>
             </a>
-        </div>
+        </div> -->
     </div>
     <div class="testimonies">
         <div class="title">
