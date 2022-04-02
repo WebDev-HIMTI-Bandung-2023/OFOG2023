@@ -2,9 +2,9 @@ $.ajax({
     url      : './feed.json',
     dataType : 'json',
     success  : function (data) {
-        console.log(data);
+        // console.log(data);
         var datas = Object.values(data);
-        console.log(datas);
+        // console.log(datas);
         for (var i = datas.length - 1; i >= 0; i--) {
             var h = document.getElementById("RSSarticle");
             var dataarticle = datas[i];

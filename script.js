@@ -68,7 +68,7 @@ var x = setInterval(function () {
     var now = new Date().getTime();
     for(var i =0; i<listevent.length;i++){
         var timestamp = listevent[i].attributes.getNamedItem("data-countdown-timestamp");
-        console.log(timestamp.value + " UTC");
+        // console.log(timestamp.value + " UTC");
         if (!timestamp) continue;
         // console.log(listevent[i]);
         var eventtime = new Date(timestamp.value + " UTC").getTime();
