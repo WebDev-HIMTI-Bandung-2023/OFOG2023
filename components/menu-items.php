@@ -29,11 +29,11 @@ $MENU_ITEMS = [
         'href' => 'https://techno.himti.or.id',
         'icon' => 'hi hi-techno hi-white hi-sm-lg',
     ],
-    [
-        'label' => 'Join Us!',
-        'href' => 'https://bit.ly/CavisHIMTI2022',
-        'icon' => 'bi bi-person-plus',
-    ],
+    // [
+    //     'label' => 'Join Us!',
+    //     'href' => 'https://bit.ly/CavisHIMTI2022',
+    //     'icon' => 'bi bi-person-plus',
+    // ],
     [
         'label' => 'Contact Us',
         'href' => 'https://student-activity.binus.ac.id/himti/contact-us',

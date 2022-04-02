@@ -24,10 +24,10 @@
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+                aria-label="Slide 3"></button> -->
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -35,12 +35,12 @@
                     style="background-color: black; border-bottom-left-radius: 50px;border-bottom-right-radius: 50px;"></object>
                 <!-- <img class="d-block w-100" src="assets/Carouselfoto2.png" alt="Second slide"> -->
             </div>
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
                 <img class="d-block w-100 himti-header-img" src="assets/carousel/himtiexpo.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100 himti-header-img" src="assets/carousel/techno2021.jpg" alt="First slide">
-            </div>
+            </div> -->
 
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -73,14 +73,14 @@
                     </div>
                 </div>
             </a>
-            <a href="http://techno.himti.or.id/" class="linkupcoming" target="_blank">
+            <a href="http://hishot.himti.or.id/" class="linkupcoming" target="_blank">
                 <div class="upcomingeventrow">
                     <div style="height: 100%; display: flex;">
-                        <img src="assets/TECHNOLOGO.png" alt="" class="logo">
+                        <img src="assets/HISHOTLOGO.png" alt="" class="logo">
                     </div>
 
                     <div class="upcomingeventitem">
-                        <p>TECHNO 2021: ERA</p>
+                        <p>HISHOT 2021: STRONGER</p>
                         <p data-countdown-enabled="true" data-countdown-timestamp="2021-09-25 13:00:00"></p>
                         <p>25 September 2021</p>
                     </div>
@@ -147,22 +147,29 @@
                     <div class="testimonicarousel">
                         <div class="left row m-0">
                             <picture class="col-6 col-md-12 offset-sm-3 offset-md-0">
-                                <source srcset="assets/img/testimonies-thumbnail/JavierFransiscusPhoto.webp" type="image/webp">
-                                <source srcset="assets/img/testimonies-thumbnail/JavierFransiscusPhoto.png" type="image/png">
-                                <img src="assets/img/testimonies-thumbnail/JavierFransiscusPhoto.png" alt="Javier Fransiscus">
+                                <source srcset="assets/img/testimonies-thumbnail/JavierFransiscusPhoto.webp"
+                                    type="image/webp">
+                                <source srcset="assets/img/testimonies-thumbnail/JavierFransiscusPhoto.png"
+                                    type="image/png">
+                                <img src="assets/img/testimonies-thumbnail/JavierFransiscusPhoto.png"
+                                    alt="Javier Fransiscus">
                             </picture>
-                            <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0"col-xl-12 p-lg-3 mt-3 mt-md-0">
+                            <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0" col-xl-12 p-lg-3 mt-3 mt-md-0">
                                 <p class="testimoniname mt-2">Javier Fransiscus</p>
                                 <!-- <p class="testimoniposition">Apple Developer Academy ( Learner)</p>
                                 <p class="testimoniperiode">Kepengurusan HIMTI 2019-2020</p>
                                 <p class="testimoniexperience">Koor WebDev</p> -->
-                                <p>Web Development Coordinator (2020)<br><b>&#8594; Learner, Apple Developer Academy</b></p>
+                                <p>Web Development Coordinator (2020)<br><b>&#8594; Learner, Apple Developer Academy</b>
+                                </p>
                             </div>
                         </div>
                         <div class="right mt-3 mt-md-0">
                             <p class="testimoniisi fs-5">
-                                &ldquo;Berada di HIMTI memungkinkan aku untuk <b>bertemu dengan banyak teman teman SOCS</b> termasuk yang senior yang dapat memberikan insight untuk internship nanti.&rdquo;
-                                <br><br><a href="/testimonies#javier-fransiscus" class="readmorebutton">Read Full Story</a>
+                                &ldquo;Berada di HIMTI memungkinkan aku untuk <b>bertemu dengan banyak teman teman
+                                    SOCS</b> termasuk yang senior yang dapat memberikan insight untuk internship
+                                nanti.&rdquo;
+                                <br><br><a href="/testimonies#javier-fransiscus" class="readmorebutton">Read Full
+                                    Story</a>
                             </p>
                         </div>
                     </div>
@@ -175,19 +182,22 @@
                                 <source srcset="assets/img/testimonies-thumbnail/FelixPhoto.png" type="image/png">
                                 <img src="assets/img/testimonies-thumbnail/FelixPhoto.png" alt="Felix">
                             </picture>
-                            <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0"col-xl-12 p-lg-3 mt-3 mt-md-0">
+                            <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0" col-xl-12 p-lg-3 mt-3 mt-md-0">
                                 <p class="testimoniname mt-2">Felix</p>
                                 <!-- <p class="testimoniposition">Application Developer di PT Mayora Indah Tbk<br>
                                     UIUX Designer di Corn Learning
                                 </p>
                                 <p class="testimoniperiode">Kepengurusan HIMTI 2019-2020</p>
                                 <p class="testimoniexperience">General Manager Commision Three</p> -->
-                                <p>Commission III General Manager (2020)<br><b>&#8594; Application Developer, Mayora</b></p>
+                                <p>Commission III General Manager (2020)<br><b>&#8594; Application Developer, Mayora</b>
+                                </p>
                             </div>
                         </div>
                         <div class="right mt-3 mt-md-0">
                             <p class="testimoniisi fs-5">
-                                &ldquo;HIMTI sendiri menurut aku adalah tempat dimana kita <b>bisa belajar dengan metode trial and error untuk berinovasi membuat hal baru</b>, dimana di dunia pekerjaan tidak bisa asal melakukan kesalahan untuk mencoba hal baru.&rdquo;
+                                &ldquo;HIMTI sendiri menurut aku adalah tempat dimana kita <b>bisa belajar dengan metode
+                                    trial and error untuk berinovasi membuat hal baru</b>, dimana di dunia pekerjaan
+                                tidak bisa asal melakukan kesalahan untuk mencoba hal baru.&rdquo;
                                 <br><br><a href="/testimonies#felix" class="readmorebutton">Read Full Story</a>
                             </p>
                         </div>
@@ -197,11 +207,12 @@
                     <div class="testimonicarousel">
                         <div class="left row m-0">
                             <picture class="col-6 col-md-12 offset-sm-3 offset-md-0">
-                                <source srcset="assets/img/testimonies-thumbnail/BayuArdanaPhoto.webp" type="image/webp">
+                                <source srcset="assets/img/testimonies-thumbnail/BayuArdanaPhoto.webp"
+                                    type="image/webp">
                                 <source srcset="assets/img/testimonies-thumbnail/BayuArdanaPhoto.png" type="image/png">
                                 <img src="assets/img/testimonies-thumbnail/BayuArdanaPhoto.png" alt="Bayu Ardana">
                             </picture>
-                            <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0"col-xl-12 p-lg-3 mt-3 mt-md-0">
+                            <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0" col-xl-12 p-lg-3 mt-3 mt-md-0">
                                 <p class="testimoniname mt-2">Bayu Ardana</p>
                                 <!-- <p class="testimoniposition">Co-Founder of ignitevent.id</p>
                                 <p class="testimoniperiode">Kepengurusan HIMTI 2019-2020</p>
@@ -213,7 +224,8 @@
                         </div>
                         <div class="right mt-3 mt-md-0">
                             <p class="testimoniisi fs-5">
-                                &ldquo;Kalau kalian udah sayang sama HIMTI dari awal, <b>secapek apapun kalian kerjanya bakal tetep ikhlas dan enjoy</b>.&rdquo;
+                                &ldquo;Kalau kalian udah sayang sama HIMTI dari awal, <b>secapek apapun kalian kerjanya
+                                    bakal tetep ikhlas dan enjoy</b>.&rdquo;
                                 <br><br><a href="/testimonies#bayu-ardana" class="readmorebutton">Read Full Story</a>
                             </p>
                         </div>
@@ -223,11 +235,12 @@
                     <div class="testimonicarousel">
                         <div class="left row m-0">
                             <picture class="col-6 col-md-12 offset-sm-3 offset-md-0">
-                                <source srcset="assets/img/testimonies-thumbnail/HanifKusumaPhoto.webp" type="image/webp">
+                                <source srcset="assets/img/testimonies-thumbnail/HanifKusumaPhoto.webp"
+                                    type="image/webp">
                                 <source srcset="assets/img/testimonies-thumbnail/HanifKusumaPhoto.png" type="image/png">
                                 <img src="assets/img/testimonies-thumbnail/HanifKusumaPhoto.png" alt="Hanif Kusuma">
                             </picture>
-                            <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0"col-xl-12 p-lg-3 mt-3 mt-md-0">
+                            <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0" col-xl-12 p-lg-3 mt-3 mt-md-0">
                                 <p class="testimoniname mt-2">Hanif Kusuma</p>
                                 <!-- <p class="testimoniposition">Web Developer Intern at PT Kalbe Farma, Tbk <br> Co-Founder
                                     of ignitevent.id</p>
@@ -239,7 +252,10 @@
                         </div>
                         <div class="right mt-3 mt-md-0">
                             <p class="testimoniisi fs-5">
-                                &ldquo;Selama di HIMTI tidak pernah ada yang disesali sih, <b>walaupun ada masa-masa down-nya tapi karena dilewati bareng temen-temen yang lain jadi dibawa enjoy aja</b>. Masa-masa itu sekarang jadi cerita yang berkesan kalau diinget-inget lagi.&rdquo;
+                                &ldquo;Selama di HIMTI tidak pernah ada yang disesali sih, <b>walaupun ada masa-masa
+                                    down-nya tapi karena dilewati bareng temen-temen yang lain jadi dibawa enjoy
+                                    aja</b>. Masa-masa itu sekarang jadi cerita yang berkesan kalau diinget-inget
+                                lagi.&rdquo;
                                 <br><br><a href="/testimonies#hanif-kusuma" class="readmorebutton">Read Full Story</a>
                             </p>
                         </div>
@@ -249,22 +265,29 @@
                     <div class="testimonicarousel">
                         <div class="left row m-0">
                             <picture class="col-6 col-md-12 offset-sm-3 offset-md-0">
-                                <source srcset="assets/img/testimonies-thumbnail/SalsabilaAzariaPhoto.webp" type="image/webp">
-                                <source srcset="assets/img/testimonies-thumbnail/SalsabilaAzariaPhoto.png" type="image/png">
-                                <img src="assets/img/testimonies-thumbnail/SalsabilaAzariaPhoto.png" alt="Salsabila Azaria">
+                                <source srcset="assets/img/testimonies-thumbnail/SalsabilaAzariaPhoto.webp"
+                                    type="image/webp">
+                                <source srcset="assets/img/testimonies-thumbnail/SalsabilaAzariaPhoto.png"
+                                    type="image/png">
+                                <img src="assets/img/testimonies-thumbnail/SalsabilaAzariaPhoto.png"
+                                    alt="Salsabila Azaria">
                             </picture>
-                            <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0"col-xl-12 p-lg-3 mt-3 mt-md-0">
+                            <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0" col-xl-12 p-lg-3 mt-3 mt-md-0">
                                 <p class="testimoniname mt-2">Salsabila Azaria</p>
                                 <!-- <p class="testimoniposition">Software Development Engineer Intern at DANA Indonesia</p>
                                 <p class="testimoniperiode">Kepengurusan HIMTI 2019-2020</p>
                                 <p class="testimoniexperience">Head of HRD HIMTI Alam Sutera (2020)</p> -->
-                                <p>Head of HRD HIMTI Alam Sutera (2020)<br><b>&#8594; Software Engineer, DANA Indonesia</b></p>
+                                <p>Head of HRD HIMTI Alam Sutera (2020)<br><b>&#8594; Software Engineer, DANA
+                                        Indonesia</b></p>
                             </div>
                         </div>
                         <div class="right mt-3 mt-md-0">
                             <p class="testimoniisi fs-5">
-                                &ldquo;Di HIMTI ini aku bukan hanya belajar gimana caranya menjalankan event dan organisasi secara umum, tapi juga <b>nilai-nilai kehidupan yang akhirnya sampai sekarang ilmunya diterapin di daily-life aku sendiri</b>.&rdquo;
-                                <br><br><a href="/testimonies#salsabila-azaria" class="readmorebutton">Read Full Story</a>
+                                &ldquo;Di HIMTI ini aku bukan hanya belajar gimana caranya menjalankan event dan
+                                organisasi secara umum, tapi juga <b>nilai-nilai kehidupan yang akhirnya sampai sekarang
+                                    ilmunya diterapin di daily-life aku sendiri</b>.&rdquo;
+                                <br><br><a href="/testimonies#salsabila-azaria" class="readmorebutton">Read Full
+                                    Story</a>
                             </p>
                         </div>
                     </div>
@@ -273,21 +296,25 @@
                     <div class="testimonicarousel">
                         <div class="left row m-0">
                             <picture class="col-6 col-md-12 offset-sm-3 offset-md-0">
-                                <source srcset="assets/img/testimonies-thumbnail/KennyOngkoPhoto.webp" type="image/webp">
+                                <source srcset="assets/img/testimonies-thumbnail/KennyOngkoPhoto.webp"
+                                    type="image/webp">
                                 <source srcset="assets/img/testimonies-thumbnail/KennyOngkoPhoto.png" type="image/png">
                                 <img src="assets/img/testimonies-thumbnail/KennyOngkoPhoto.png" alt="Kenny Ongko">
                             </picture>
-                            <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0"col-xl-12 p-lg-3 mt-3 mt-md-0">
+                            <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0" col-xl-12 p-lg-3 mt-3 mt-md-0">
                                 <p class="testimoniname mt-2">Kenny Ongko</p>
                                 <!-- <p class="testimoniposition">Google Bangkit, Cloud Computing</p>
                                 <p class="testimoniperiode">Kepengurusan HIMTI 2019-2020</p>
                                 <p class="testimoniexperience">President of HIMTI Alam Sutera </p> -->
-                                <p>President of HIMTI Alam Sutera (2020)<br><b>&#8594; Cloud Computing, Google Bangkit</b></p>
+                                <p>President of HIMTI Alam Sutera (2020)<br><b>&#8594; Cloud Computing, Google
+                                        Bangkit</b></p>
                             </div>
                         </div>
                         <div class="right mt-3 mt-md-0">
                             <p class="testimoniisi fs-5">
-                                &ldquo;<b>Buatlah HIMTI sebagai taman bermain,</b> bukan hanya untuk mencari teman dan bersenang, <b>tapi juga sebagai tempat bereskperimen untuk tumbuh dan berkembang</b>.&rdquo;
+                                &ldquo;<b>Buatlah HIMTI sebagai taman bermain,</b> bukan hanya untuk mencari teman dan
+                                bersenang, <b>tapi juga sebagai tempat bereskperimen untuk tumbuh dan
+                                    berkembang</b>.&rdquo;
                                 <br><br><a href="/testimonies#kenny-ongko" class="readmorebutton">Read Full Story</a>
                             </p>
                         </div>
@@ -301,17 +328,20 @@
                                 <source srcset="assets/img/testimonies-thumbnail/MesyellaPhoto.png" type="image/png">
                                 <img src="assets/img/testimonies-thumbnail/MesyellaPhoto.png" alt="Mesyella">
                             </picture>
-                            <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0"col-xl-12 p-lg-3 mt-3 mt-md-0">
+                            <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0" col-xl-12 p-lg-3 mt-3 mt-md-0">
                                 <p class="testimoniname mt-2">Mesyella</p>
                                 <!-- <p class="testimoniposition">Data Science di PT Global Digital Niaga (Blibli.com)</p>
                                 <p class="testimoniperiode">Kepengurusan HIMTI 2019-2020</p>
                                 <p class="testimoniexperience">Vice President of HIMTI Alam Sutera</p> -->
-                                <p>Vice President of HIMTI Alam Sutera (2020)<br><b>&#8594; Data Science, Blibli.com</b></p>
+                                <p>Vice President of HIMTI Alam Sutera (2020)<br><b>&#8594; Data Science, Blibli.com</b>
+                                </p>
                             </div>
                         </div>
                         <div class="right mt-3 mt-md-0">
                             <p class="testimoniisi fs-5">
-                                &ldquo;Di sini, aku juga belajar banyak banget hal karena di HIMTI <b>aku dikasih kesempatan buat bisa keluar dari comfort zone</b> dan mencoba hal-hal yang mungkin ga akan aku bisa coba di masa kerja ataupun ketika lulus kuliah.&rdquo;
+                                &ldquo;Di sini, aku juga belajar banyak banget hal karena di HIMTI <b>aku dikasih
+                                    kesempatan buat bisa keluar dari comfort zone</b> dan mencoba hal-hal yang mungkin
+                                ga akan aku bisa coba di masa kerja ataupun ketika lulus kuliah.&rdquo;
                                 <br><br><a href="/testimonies#mesyella" class="readmorebutton">Read Full Story</a>
                             </p>
                         </div>
@@ -321,21 +351,27 @@
                     <div class="testimonicarousel">
                         <div class="left row m-0">
                             <picture class="col-6 col-md-12 offset-sm-3 offset-md-0">
-                                <source srcset="assets/img/testimonies-thumbnail/MarissaLevianiPhoto.webp" type="image/webp">
-                                <source srcset="assets/img/testimonies-thumbnail/MarissaLevianiPhoto.png" type="image/png">
-                                <img src="assets/img/testimonies-thumbnail/MarissaLevianiPhoto.png" alt="Marissa Leviani">
+                                <source srcset="assets/img/testimonies-thumbnail/MarissaLevianiPhoto.webp"
+                                    type="image/webp">
+                                <source srcset="assets/img/testimonies-thumbnail/MarissaLevianiPhoto.png"
+                                    type="image/png">
+                                <img src="assets/img/testimonies-thumbnail/MarissaLevianiPhoto.png"
+                                    alt="Marissa Leviani">
                             </picture>
-                            <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0"col-xl-12 p-lg-3 mt-3 mt-md-0">
+                            <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0" col-xl-12 p-lg-3 mt-3 mt-md-0">
                                 <p class="testimoniname mt-2">Marissa Leviani </p>
                                 <!-- <p class="testimoniposition">Google Bangkit, Cloud Computing</p>
                                 <p class="testimoniperiode">Kepengurusan HIMTI 2019-2020</p>
                                 <p class="testimoniexperience">Secretary of HIMTI Alam Sutera </p> -->
-                                <p>HIMTI Alam Sutera Secretary (2020)<br><b>&#8594; Cloud Computing, Google Bangkit</b></p>
+                                <p>HIMTI Alam Sutera Secretary (2020)<br><b>&#8594; Cloud Computing, Google Bangkit</b>
+                                </p>
                             </div>
                         </div>
                         <div class="right mt-3 mt-md-0">
                             <p class="testimoniisi fs-5">
-                                &ldquo;<b>Jangan sia-sia in masa-masa kuliah kalian dengan pasif</b>, ga ikut berorganisasi apalagi ga ikut HIMTI, karena <b>banyak hal yang ga bisa kalian coba atau lakuin setelah lulus kuliah nanti</b>.&rdquo;
+                                &ldquo;<b>Jangan sia-sia in masa-masa kuliah kalian dengan pasif</b>, ga ikut
+                                berorganisasi apalagi ga ikut HIMTI, karena <b>banyak hal yang ga bisa kalian coba atau
+                                    lakuin setelah lulus kuliah nanti</b>.&rdquo;
                                 <br><br><a href="/testimonies" class="readmorebutton">Read Full Story</a>
                             </p>
                         </div>
@@ -345,11 +381,14 @@
                     <div class="testimonicarousel">
                         <div class="left row m-0">
                             <picture class="col-6 col-md-12 offset-sm-3 offset-md-0">
-                                <source srcset="assets/img/testimonies-thumbnail/ErikaNataliaNugrohoPhoto.webp" type="image/webp">
-                                <source srcset="assets/img/testimonies-thumbnail/ErikaNataliaNugrohoPhoto.png" type="image/png">
-                                <img src="assets/img/testimonies-thumbnail/ErikaNataliaNugrohoPhoto.png" alt="Erika Natalia Nugroho">
+                                <source srcset="assets/img/testimonies-thumbnail/ErikaNataliaNugrohoPhoto.webp"
+                                    type="image/webp">
+                                <source srcset="assets/img/testimonies-thumbnail/ErikaNataliaNugrohoPhoto.png"
+                                    type="image/png">
+                                <img src="assets/img/testimonies-thumbnail/ErikaNataliaNugrohoPhoto.png"
+                                    alt="Erika Natalia Nugroho">
                             </picture>
-                            <div class="testimoniprofile col-12 col-md-9 mt-3 mt-md-0"col-xl-12 p-lg-3 mt-3 mt-md-0">
+                            <div class="testimoniprofile col-12 col-md-9 mt-3 mt-md-0" col-xl-12 p-lg-3 mt-3 mt-md-0">
                                 <p class="testimoniname mt-2">Erika Natalia Nugroho</p>
                                 <!-- <p class="testimoniposition">Front end developer maybank</p>
                                 <p class="testimoniperiode">Kepengurusan HIMTI 2019-2020</p>
@@ -359,8 +398,11 @@
                         </div>
                         <div class="right mt-3 mt-md-0">
                             <p class="testimoniisi fs-5">
-                                &ldquo;Selama dulu di HIMTI, banyak banget pengalaman pengalaman seru yang ga bisa dilupain. <b>Seneng banget bisa ketemu banyak temen teman baru yang udah kaya keluarga sendiri.</b>&rdquo;
-                                <br><br><a href="/testimonies#erika-natalia-nugroho" class="readmorebutton">Read Full Story</a>
+                                &ldquo;Selama dulu di HIMTI, banyak banget pengalaman pengalaman seru yang ga bisa
+                                dilupain. <b>Seneng banget bisa ketemu banyak temen teman baru yang udah kaya keluarga
+                                    sendiri.</b>&rdquo;
+                                <br><br><a href="/testimonies#erika-natalia-nugroho" class="readmorebutton">Read Full
+                                    Story</a>
                             </p>
                         </div>
                     </div>
@@ -369,11 +411,14 @@
                     <div class="testimonicarousel">
                         <div class="left row m-0">
                             <picture class="col-6 col-md-12 offset-sm-3 offset-md-0">
-                                <source srcset="assets/img/testimonies-thumbnail/FeliciaAngelinePhoto.webp" type="image/webp">
-                                <source srcset="assets/img/testimonies-thumbnail/FeliciaAngelinePhoto.png" type="image/png">
-                                <img src="assets/img/testimonies-thumbnail/FeliciaAngelinePhoto.png" alt="Felicia Angeline">
+                                <source srcset="assets/img/testimonies-thumbnail/FeliciaAngelinePhoto.webp"
+                                    type="image/webp">
+                                <source srcset="assets/img/testimonies-thumbnail/FeliciaAngelinePhoto.png"
+                                    type="image/png">
+                                <img src="assets/img/testimonies-thumbnail/FeliciaAngelinePhoto.png"
+                                    alt="Felicia Angeline">
                             </picture>
-                            <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0"col-xl-12 p-lg-3 mt-3 mt-md-0">
+                            <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0" col-xl-12 p-lg-3 mt-3 mt-md-0">
                                 <p class="testimoniname mt-2">Felicia Angeline</p>
                                 <!-- <p class="testimoniposition">Data Engineer BCA</p>
                                 <p class="testimoniperiode">Kepengurusan HIMTI 2019-2020</p>
@@ -383,8 +428,11 @@
                         </div>
                         <div class="right mt-3 mt-md-0">
                             <p class="testimoniisi fs-5">
-                                &ldquo;Dulu pas pertama kali daftar HIMTI kiranya pas keluar cuman buat menuh-menuhin CV, tapi nyatanya <b>aku dapat keluarga baru yang ngasih aku banyak banget pengalaman berharga</b>.&rdquo;
-                                <br><br><a href="/testimonies#felicia-angeline" class="readmorebutton">Read Full Story</a>
+                                &ldquo;Dulu pas pertama kali daftar HIMTI kiranya pas keluar cuman buat menuh-menuhin
+                                CV, tapi nyatanya <b>aku dapat keluarga baru yang ngasih aku banyak banget pengalaman
+                                    berharga</b>.&rdquo;
+                                <br><br><a href="/testimonies#felicia-angeline" class="readmorebutton">Read Full
+                                    Story</a>
                             </p>
                         </div>
                     </div>
@@ -397,7 +445,8 @@
                 <picture width="100%">
                     <source srcset="assets/img/testimonies-thumbnail/FeliciaAngelinePhoto.webp" type="image/webp">
                     <source srcset="assets/img/testimonies-thumbnail/FeliciaAngelinePhoto.png" type="image/png">
-                    <img width="100%" src="assets/img/testimonies-thumbnail/FeliciaAngelinePhoto.png" alt="Felicia Angeline">
+                    <img width="100%" src="assets/img/testimonies-thumbnail/FeliciaAngelinePhoto.png"
+                        alt="Felicia Angeline">
                 </picture>
                 <div class="testimoniitem">
                     <p class="testimoniname mt-2">Felicia Angeline</p>
@@ -410,7 +459,8 @@
                 <picture width="100%">
                     <source srcset="assets/img/testimonies-thumbnail/SalsabilaAzariaPhoto.webp" type="image/webp">
                     <source srcset="assets/img/testimonies-thumbnail/SalsabilaAzariaPhoto.png" type="image/png">
-                    <img width="100%" src="assets/img/testimonies-thumbnail/SalsabilaAzariaPhoto.png" alt="Salsabila Azaria">
+                    <img width="100%" src="assets/img/testimonies-thumbnail/SalsabilaAzariaPhoto.png"
+                        alt="Salsabila Azaria">
                 </picture>
                 <div class="testimoniitem">
                     <p class="testimoniname mt-2">Salsabila Azaria</p>
@@ -464,7 +514,8 @@
 
         </div>
 
-        <div class="viewtestimoni mt-3"><a href="https://student-activity.binus.ac.id/himti" class="btn btn-light btn-lg text-dark">View All Articles</a></div>
+        <div class="viewtestimoni mt-3"><a href="https://student-activity.binus.ac.id/himti"
+                class="btn btn-light btn-lg text-dark">View All Articles</a></div>
     </div>
     <div class="title white" style="background-color: #0c0217;">
         <span>Our Journey</span>
