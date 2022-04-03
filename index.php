@@ -496,7 +496,8 @@
                 </div>
             </div>
         </div>
-        <div class="viewtestimoni"><a href="/testimonies" class="btn btn-sm animated-button thar-three ">Testimoni</a>
+        <div class="viewtestimoni"><a href="/testimonies.php"
+                class="btn btn-sm animated-button thar-three ">Testimoni</a>
         </div>
     </div>
     <div class="ourarticle">
@@ -736,7 +737,7 @@
                 </div>
             </div>
         </div>
-        <div class="viewtestimoni"><a href="/faq" class="btn btn-sm animated-button thar-three ">View FAQ</a>
+        <div class="viewtestimoni"><a href="/faq.php" class="btn btn-sm animated-button thar-three ">View FAQ</a>
         </div>
     </div>
     <script src="script.js" defer></script>
