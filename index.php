@@ -15,7 +15,6 @@
         $USE_BOOTSTRAP = true;
         require('components/head.php');
     ?>
-    <script src="./RSShandle.js"></script>
 </head>
 
 <body>
@@ -754,6 +753,7 @@
     //It also supports NodeList
     VanillaTilt.init(document.querySelectorAll(".upcomingeventrow"));
     </script>
+    <script src="./RSShandle.js"></script>
 </body>
 
 </html>
