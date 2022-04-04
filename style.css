@@ -107,7 +107,7 @@ body {
 }
 .title {
   text-align: center;
-  font-size: 300%;
+  font-size: 2.5rem;
   padding-top: 10%;
   text-transform: uppercase;
   font-weight: bold;
@@ -278,7 +278,7 @@ body {
   transition: 2s;
 }
 .journeylist {
-  height: 400px;
+  height: 450px;
   margin-left: 3%;
   transition: 2s;
   font-family: "Public Sans", sans-serif;
@@ -323,7 +323,8 @@ body {
 } */
 .readmorebutton {
   background-color: white;
-  padding: 7px;
+  padding: 10px 15px;
+  font-size: 1.15rem;
   text-decoration: none;
   color: black;
   border-radius: 5px;
@@ -736,6 +737,7 @@ button {
 /* Custom Accordation */
 .accordion-button {
   padding-right: 2.5rem;
+  font-size: 1.15rem;
 }
 
 .accordion-button::before {
@@ -1003,6 +1005,10 @@ button {
 @media (min-width: 768px) {
   .w-md-50{
     width: 50%!important;
+  }
+
+  .datajourney{
+    font-size: 1.15rem;
   }
 }
 

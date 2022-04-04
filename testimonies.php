@@ -69,7 +69,7 @@
 </head>
 <body>
     <?php require_once('components/navbar.php'); ?>
-    <main>
+    <main class="mx-auto" style="max-width: 1536px;">
         <h1 class="title white">
             <span>TESTIMONIES</span>
         </h1>

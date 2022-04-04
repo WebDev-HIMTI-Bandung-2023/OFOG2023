@@ -56,7 +56,7 @@
 
     <div class="upcomingevent container">
         <div class="title">
-            <span>Upcoming Event</span>
+            <span>Upcoming Events</span>
         </div>
         <div class="upcomingeventdata">
             <a href="http://techno.himti.or.id/" class="linkupcoming" target="_blank">
@@ -116,7 +116,7 @@
     </div>
     <div class="testimonies">
         <div class="title">
-            <span>TESTIMONI</span>
+            <span>TESTIMONIES</span>
         </div>
         <div id="carouselExampleIndicators1" class="carousel slide container" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -497,12 +497,12 @@
             </div>
         </div>
         <div class="viewtestimoni"><a href="/testimonies.php"
-                class="btn btn-sm animated-button thar-three ">Testimoni</a>
+                class="btn btn-sm animated-button thar-three ">View All Testimonies</a>
         </div>
     </div>
     <div class="ourarticle">
         <div class="title">
-            <span>Our Article</span>
+            <span>Our Articles</span>
         </div>
         <div class="container">
             <div class="row" id="RSSarticle">
@@ -522,7 +522,7 @@
     </div>
     <div class="OURJOURNEY">
 
-        <div class="circletab">
+        <div class="circletab" style="max-width: 1536px; margin: 0 auto;">
             <div class="journeylist">
 
                 <div id="journey4" class="datajourney">
@@ -737,7 +737,7 @@
                 </div>
             </div>
         </div>
-        <div class="viewtestimoni"><a href="/faq.php" class="btn btn-sm animated-button thar-three ">View FAQ</a>
+        <div class="viewtestimoni"><a href="/faq.php" class="btn btn-sm animated-button thar-three ">View All FAQs</a>
         </div>
     </div>
 
