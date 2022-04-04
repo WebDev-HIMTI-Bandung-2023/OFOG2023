@@ -167,7 +167,7 @@
                                 &ldquo;Berada di HIMTI memungkinkan aku untuk <b>bertemu dengan banyak teman teman
                                     SOCS</b> termasuk yang senior yang dapat memberikan insight untuk internship
                                 nanti.&rdquo;
-                                <br><br><a href="/testimonies#javier-fransiscus" class="readmorebutton">Read Full
+                                <br><br><a href="/testimonies.php#javier-fransiscus" class="readmorebutton">Read Full
                                     Story</a>
                             </p>
                         </div>
@@ -197,7 +197,7 @@
                                 &ldquo;HIMTI sendiri menurut aku adalah tempat dimana kita <b>bisa belajar dengan metode
                                     trial and error untuk berinovasi membuat hal baru</b>, dimana di dunia pekerjaan
                                 tidak bisa asal melakukan kesalahan untuk mencoba hal baru.&rdquo;
-                                <br><br><a href="/testimonies#felix" class="readmorebutton">Read Full Story</a>
+                                <br><br><a href="/testimonies.php#felix" class="readmorebutton">Read Full Story</a>
                             </p>
                         </div>
                     </div>
@@ -225,7 +225,7 @@
                             <p class="testimoniisi fs-5">
                                 &ldquo;Kalau kalian udah sayang sama HIMTI dari awal, <b>secapek apapun kalian kerjanya
                                     bakal tetep ikhlas dan enjoy</b>.&rdquo;
-                                <br><br><a href="/testimonies#bayu-ardana" class="readmorebutton">Read Full Story</a>
+                                <br><br><a href="/testimonies.php#bayu-ardana" class="readmorebutton">Read Full Story</a>
                             </p>
                         </div>
                     </div>
@@ -255,7 +255,7 @@
                                     down-nya tapi karena dilewati bareng temen-temen yang lain jadi dibawa enjoy
                                     aja</b>. Masa-masa itu sekarang jadi cerita yang berkesan kalau diinget-inget
                                 lagi.&rdquo;
-                                <br><br><a href="/testimonies#hanif-kusuma" class="readmorebutton">Read Full Story</a>
+                                <br><br><a href="/testimonies.php#hanif-kusuma" class="readmorebutton">Read Full Story</a>
                             </p>
                         </div>
                     </div>
@@ -285,7 +285,7 @@
                                 &ldquo;Di HIMTI ini aku bukan hanya belajar gimana caranya menjalankan event dan
                                 organisasi secara umum, tapi juga <b>nilai-nilai kehidupan yang akhirnya sampai sekarang
                                     ilmunya diterapin di daily-life aku sendiri</b>.&rdquo;
-                                <br><br><a href="/testimonies#salsabila-azaria" class="readmorebutton">Read Full
+                                <br><br><a href="/testimonies.php#salsabila-azaria" class="readmorebutton">Read Full
                                     Story</a>
                             </p>
                         </div>
@@ -314,7 +314,7 @@
                                 &ldquo;<b>Buatlah HIMTI sebagai taman bermain,</b> bukan hanya untuk mencari teman dan
                                 bersenang, <b>tapi juga sebagai tempat bereskperimen untuk tumbuh dan
                                     berkembang</b>.&rdquo;
-                                <br><br><a href="/testimonies#kenny-ongko" class="readmorebutton">Read Full Story</a>
+                                <br><br><a href="/testimonies.php#kenny-ongko" class="readmorebutton">Read Full Story</a>
                             </p>
                         </div>
                     </div>
@@ -341,7 +341,7 @@
                                 &ldquo;Di sini, aku juga belajar banyak banget hal karena di HIMTI <b>aku dikasih
                                     kesempatan buat bisa keluar dari comfort zone</b> dan mencoba hal-hal yang mungkin
                                 ga akan aku bisa coba di masa kerja ataupun ketika lulus kuliah.&rdquo;
-                                <br><br><a href="/testimonies#mesyella" class="readmorebutton">Read Full Story</a>
+                                <br><br><a href="/testimonies.php#mesyella" class="readmorebutton">Read Full Story</a>
                             </p>
                         </div>
                     </div>
@@ -371,7 +371,7 @@
                                 &ldquo;<b>Jangan sia-sia in masa-masa kuliah kalian dengan pasif</b>, ga ikut
                                 berorganisasi apalagi ga ikut HIMTI, karena <b>banyak hal yang ga bisa kalian coba atau
                                     lakuin setelah lulus kuliah nanti</b>.&rdquo;
-                                <br><br><a href="/testimonies" class="readmorebutton">Read Full Story</a>
+                                <br><br><a href="/testimonies.php#marissa-leviani" class="readmorebutton">Read Full Story</a>
                             </p>
                         </div>
                     </div>
@@ -400,7 +400,7 @@
                                 &ldquo;Selama dulu di HIMTI, banyak banget pengalaman pengalaman seru yang ga bisa
                                 dilupain. <b>Seneng banget bisa ketemu banyak temen teman baru yang udah kaya keluarga
                                     sendiri.</b>&rdquo;
-                                <br><br><a href="/testimonies#erika-natalia-nugroho" class="readmorebutton">Read Full
+                                <br><br><a href="/testimonies.php#erika-natalia-nugroho" class="readmorebutton">Read Full
                                     Story</a>
                             </p>
                         </div>
@@ -430,7 +430,7 @@
                                 &ldquo;Dulu pas pertama kali daftar HIMTI kiranya pas keluar cuman buat menuh-menuhin
                                 CV, tapi nyatanya <b>aku dapat keluarga baru yang ngasih aku banyak banget pengalaman
                                     berharga</b>.&rdquo;
-                                <br><br><a href="/testimonies#felicia-angeline" class="readmorebutton">Read Full
+                                <br><br><a href="/testimonies.php#felicia-angeline" class="readmorebutton">Read Full
                                     Story</a>
                             </p>
                         </div>
