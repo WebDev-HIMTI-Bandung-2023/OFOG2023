@@ -976,3 +976,48 @@ button {
     transform: rotate(270deg);
   }
 }
+
+#footer{
+  background-color: #0c0217;
+  color: rgb(255,255,255);
+}
+
+#footer a{
+  text-decoration: none;
+  color: inherit;
+}
+
+#footer ul li a:hover{
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+#footer i.bi{
+  font-size: 1.25rem;
+}
+
+#footer i.bi:hover{
+  opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .w-md-50{
+    width: 50%!important;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-social{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  .ul-container{
+   margin-bottom: 2rem; 
+  }
+
+  .ul-label{
+    font-size: 1rem!important;
+  }
+}

@@ -654,7 +654,7 @@
             </div>
         </div>
     </div>
-    <div class="FAQ">
+    <div class="FAQ mb-5">
         <div class="title" style="padding-top: 0;">
             <span>FREQUENTLY ASKED QUESTIONS</span>
         </div>
@@ -740,6 +740,8 @@
         <div class="viewtestimoni"><a href="/faq.php" class="btn btn-sm animated-button thar-three ">View FAQ</a>
         </div>
     </div>
+
+    <?php require_once('components/footer.php') ?>
     <script src="script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">

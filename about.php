@@ -313,46 +313,8 @@
         </div>
     </div>
 
-    <!-- <footer class="wrapper-dark">
-        <div class="container">
-            <div class="flex border-b border-gray-100 text-left pt-6 pb-12">
-                <div class="map-container">
-                    <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4800629344318!2d106.78322081431001!3d-6.200221562464728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6c2f89d2b67%3A0xe18cf42b220d8e7d!2sBINUS%20University%2C%20Kampus%20Syahdan!5e0!3m2!1sen!2sid!4v1625374795883!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                <div class="half">
-                    <div class="flex items-center py-6">
-                        <img class="inline-block pr-4 w-14" src="assets/icon/location-icon.svg" alt="">
-                        <h2 class="h2 normal-case text-left inline-block">Location</h2>
-                    </div>
-                    <h3 class="h3 pb-2">BINUS @ Kemanggisan</h3>
-                    <p class="text-xl">Jl. Kyai H. Syahdan No. 9, RW 12, Palmerah, Kec. Palmerah, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11480</p>
-                </div>
-            </div>
-
-            <div class="flex justify-between items-end py-4">
-                <div>
-                    <img class="w-4/5" src="assets/himti-logo.svg" alt="">
-                </div>
-                <div>
-                    <div class="flex items-center justify-end pb-2">
-                        <a class="ic-social" href="mailto:himti.binusuniv@gmail.com">
-                            <img src="assets/icon/mail-icon.svg" alt="">
-                        </a>
-                        <a class="ic-social w-10" href="https://twitter.com/HimtiBinus">
-                            <img src="assets/icon/twitter-icon.svg" alt="">
-                        </a>
-                        <a class="ic-social" href="https://www.instagram.com/himti_binus">
-                            <img src="assets/icon/instagram-icon.svg" alt="">
-                        </a>
-                        <a class="ic-social w-14" href="https://www.youtube.com/user/HimtiBinus">
-                            <img src="assets/icon/youtube-icon.svg" alt="">
-                        </a>
-                    </div>
-                    <p class="text-xl">© Copyright HIMTI BINUS University. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer> -->
+    
+    <?php require_once('components/footer.php') ?>
 
     <!-- <script src="script.js"></script> -->
 </body>
