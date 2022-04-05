@@ -1,23 +1,23 @@
 <nav id="topmenu" class="row <?= (isset($NAVBAR_SET_IMMERSIVE) && $NAVBAR_SET_IMMERSIVE == true) ? 'position-fixed' : 'position-sticky' ?> fixed-top justify-content-between align-items-center | m-auto text-white | flex flex-wrap <?= (isset($NAVBAR_SET_IMMERSIVE) && $NAVBAR_SET_IMMERSIVE == true) ? 'fixed' : 'sticky' ?> top-0 right-0 left-0 z-1030 justify-between items-center">
-    <div class="col-1 p-0 || w-1/12">
+    <div class="col-1 p-0 || w-1/2 xl:w-1/12">
         <a href="/">
             <img id="himti-icon" src="assets/img/icons/himti-icon.svg" alt="HIMTI BINUS University">
         </a>
     </div>
     <!-- Mobile Menu -->
-    <div id="mobileMenu" class="col-11 text-end p-0 d-lg-none || w-11/12 text-right lg:hidden">
+    <div id="mobileMenu" class="col-11 text-end p-0 d-xl-none || w-1/2 xl:w-11/12 text-right xl:hidden">
         <ul class="list-unstyled m-0 || list-none">
-            <li class="btn-menu-toggle d-inline-block fs-bold || inline-block font-bold cursor-pointer" onClick="toggleMobileMenu()"><i class="bi bi-list" aria-hidden="true"></i> MENU</li>
+            <li class="btn-menu-toggle d-inline-block fw-bold || inline-block font-bold cursor-pointer" onClick="toggleMobileMenu()"><i class="bi bi-list" aria-hidden="true"></i> MENU</li>
         </ul>
     </div>
     <!-- Desktop Menu -->
-    <div id="desktopMenu" class="col-12 col-lg-11 text-lg-end p-0 d-none d-lg-inline || w-full lg:w-11/12 lg:text-right hidden lg:inline">
-        <hr class="d-lg-none || lg:hidden">
+    <div id="desktopMenu" class="col-12 col-xl-11 text-xl-end p-0 d-none d-xl-inline || w-full xl:w-11/12 xl:text-right hidden xl:inline">
+        <hr class="d-xl-none || xl:hidden opacity-30" style="margin: 1rem 0;">
         <ul class="list-unstyled m-0 || list-none">
             <?php require_once('./components/menu-items.php');
             $current_url = $_SERVER['REQUEST_URI'];
             foreach($MENU_ITEMS as $menu): ?>
-                <li class="d-lg-inline-block || lg:inline-block">
+                <li class="d-xl-inline-block || xl:inline-block">
                     <?php if ($menu['href'] == $current_url): ?>
                         <b>
                         <?php if (isset($menu['icon_fill'])) $menu['icon'] = $menu['icon_fill']; ?>
