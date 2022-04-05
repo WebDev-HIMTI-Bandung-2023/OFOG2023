@@ -71,14 +71,14 @@ body {
 }
 /* Navbar */
 #topmenu {
-  padding: 1rem 3rem;
+  padding: 0.75rem 3rem 1.25rem 3rem;
 }
 #topmenu #himti-icon {
-  height: 4rem;
+  height: 3.5rem;
   width: auto;
 }
 #topmenu li {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
@@ -86,7 +86,7 @@ body {
   color: inherit;
   text-decoration: none;
 }
-@media (min-width: 768px){
+@media (min-width: 1024px){
   #topmenu li:nth-child(n+2) {
     padding-left: 2.5vw;
   }
@@ -1026,4 +1026,12 @@ button {
   .ul-label{
     font-size: 1rem!important;
   }
+}
+
+nav .btn-menu-toggle{
+  cursor: pointer;
+}
+
+nav .btn-menu-toggle:hover{
+  opacity: 0.8;
 }
