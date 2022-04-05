@@ -16,8 +16,8 @@ $.ajax({
                 als: "Alam Sutera",
                 bdg: "Bandung",
                 kmg: "Kemanggisan",
-                mlg: "Malang (HIMFO)",
-                sny: "Senayan (BINARY)"
+                mlg: "Malang",
+                sny: "Senayan"
             }
             for (var j = 0; j < dataarticle.regional.length; j++){
                 if (j > 0) regionalhtml += " | ";
