@@ -66,15 +66,19 @@ html {
   overflow-x: hidden;
 }
 body {
-  --bs-font-sans-serif: "Public Sans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Cantarell, Ubuntu, 'Noto Sans', 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-family: "Public Sans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Cantarell, Ubuntu, 'Noto Sans', 'Open Sans', 'Helvetica Neue', sans-serif;
+  --bs-font-sans-serif: "Public Sans", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Cantarell, Ubuntu, "Noto Sans",
+    "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Public Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Cantarell, Ubuntu, "Noto Sans", "Open Sans",
+    "Helvetica Neue", sans-serif;
 }
 /* Navbar */
 #topmenu {
   padding: 0.75rem 3rem 1.25rem 3rem;
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
   #topmenu {
     padding: 0.5rem 1.5rem 1rem 1.5rem;
   }
@@ -93,13 +97,13 @@ body {
   color: inherit;
   text-decoration: none;
 }
-@media (min-width: 1024px){
-  #topmenu li:nth-child(n+2) {
+@media (min-width: 1024px) {
+  #topmenu li:nth-child(n + 2) {
     padding-left: 2.5vw;
   }
 }
 #topmenu a:hover {
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
 }
 #topmenu a.active {
@@ -336,7 +340,7 @@ body {
   color: black;
   border-radius: 5px;
   transition: 1s;
-  font-weight: 700; 
+  font-weight: 700;
 }
 .readmorebutton:hover {
   color: white;
@@ -355,18 +359,18 @@ body {
   margin-top: 2%;
 }
 
-@media (min-width: 576px){
-  .testimonicarousel{
+@media (min-width: 576px) {
+  .testimonicarousel {
     min-height: 35rem;
   }
 }
 
-@media (min-width: 768px){
-  .testimoniprofile{
+@media (min-width: 768px) {
+  .testimoniprofile {
     min-height: 17rem;
   }
 
-  .testimonicarousel{
+  .testimonicarousel {
     min-height: auto;
   }
 }
@@ -805,40 +809,41 @@ button {
   background-position: center;
   text-transform: none;
   line-height: 1;
-  vertical-align: -.125em;
+  vertical-align: -0.125em;
 }
 .hi-lg {
   width: 1.5em;
   height: 1.5em;
-  vertical-align: -.375em;
+  vertical-align: -0.375em;
 }
 .hi-2x {
   width: 2em;
   height: 2em;
-  vertical-align: -.625em;
+  vertical-align: -0.625em;
 }
 .hi-white {
   filter: saturate(0) brightness(1.75);
 }
-.hi:hover, *:hover > .hi {
+.hi:hover,
+*:hover > .hi {
   filter: brightness(0.9);
 }
 .hi-hishot {
-  background-image: url('https://hishot.himti.or.id/Assets/images/logo.svg');
+  background-image: url("https://hishot.himti.or.id/Assets/images/logo.svg");
 }
 .hi-techno {
-  background-image: url('https://techno.himti.or.id/assets/apple-touch-icon.png');
+  background-image: url("https://techno.himti.or.id/assets/apple-touch-icon.png");
 }
-@media (min-width: 678px){
+@media (min-width: 678px) {
   .hi-sm-lg {
     width: 1.5em;
     height: 1.5em;
-    vertical-align: -.375em;
+    vertical-align: -0.375em;
   }
   .hi-sm-2x {
     width: 2em;
     height: 2em;
-    vertical-align: -.625em;
+    vertical-align: -0.625em;
   }
 }
 .himti-header-img {
@@ -986,59 +991,225 @@ button {
   }
 }
 
-#footer{
+#footer {
   background-color: #0c0217;
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
 }
 
-#footer a{
+#footer a {
   text-decoration: none;
   color: inherit;
 }
 
-#footer ul li a:hover{
+#footer ul li a:hover {
   opacity: 0.8;
   text-decoration: underline;
 }
 
-#footer i.bi{
+#footer i.bi {
   font-size: 1.25rem;
 }
 
-#footer i.bi:hover{
+#footer i.bi:hover {
   opacity: 0.8;
 }
 
 @media (min-width: 768px) {
-  .w-md-50{
-    width: 50%!important;
+  .w-md-50 {
+    width: 50% !important;
   }
 
-  .datajourney{
+  .datajourney {
     font-size: 1.15rem;
   }
 }
 
 @media (max-width: 480px) {
-  .footer-social{
+  .footer-social {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0.5rem;
   }
-  
-  .ul-container{
-   margin-bottom: 2rem; 
+
+  .ul-container {
+    margin-bottom: 2rem;
   }
 
-  .ul-label{
-    font-size: 1rem!important;
+  .ul-label {
+    font-size: 1rem !important;
   }
 }
 
-nav .btn-menu-toggle{
+nav .btn-menu-toggle {
   cursor: pointer;
 }
 
-nav .btn-menu-toggle:hover{
+nav .btn-menu-toggle:hover {
   opacity: 0.8;
+}
+#Preloader {
+  z-index: 1500;
+  position: fixed;
+  color: white;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #425ba8;
+}
+
+.Line {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  fill: none;
+  animation: fill 2s ease forwards 3s;
+}
+
+@media (max-width: 1080px) {
+  .Line {
+    width: 50%;
+  }
+}
+
+#Logo path {
+  fill: none;
+}
+
+#Logo polygon {
+  fill: none;
+}
+
+#NewLogo2 path {
+  fill: none;
+  animation: fill 1s ease forwards 9.5s;
+}
+
+#NewLogo2 polygon {
+  fill: none;
+  animation: fill 1s ease forwards 9.5s;
+}
+
+#Line1 {
+  stroke-dasharray: 924.2089233398438;
+  stroke-dashoffset: 924.2089233398438;
+  animation: dash 2s ease forwards 0s;
+}
+
+#Line2 {
+  stroke-dasharray: 844.0354614257812;
+  stroke-dashoffset: 844.0354614257812;
+  animation: dash 2s ease forwards 1s;
+}
+
+#Line3 {
+  stroke-dasharray: 845.2944946289062;
+  stroke-dashoffset: 845.2944946289062;
+  animation: dash 2s ease forwards 2s;
+}
+
+#Line4 {
+  stroke-dasharray: 962.7130126953125;
+  stroke-dashoffset: 962.7130126953125;
+  animation: dash 2s ease forwards 3s;
+}
+
+#Line5 {
+  stroke-dasharray: 845.0272827148438;
+  stroke-dashoffset: 845.0272827148438;
+  animation: dash 2s ease forwards 4s;
+}
+
+#Line6 {
+  stroke-dasharray: 845.3660888671875;
+  stroke-dashoffset: 845.3660888671875;
+  animation: dash 2s ease forwards 5s;
+}
+
+#Line7 {
+  stroke-dasharray: 363.48114013671875;
+  stroke-dashoffset: 363.48114013671875;
+  animation: dash 2s ease forwards 6s;
+}
+
+#Line8 {
+  stroke-dasharray: 328.4219970703125;
+  stroke-dashoffset: 328.4219970703125;
+  animation: dash 2s ease forwards 6s;
+}
+
+#Line9 {
+  stroke-dasharray: 349.6482849121094;
+  stroke-dashoffset: 349.6482849121094;
+  animation: dash 2s ease forwards 6s;
+}
+
+#Line10 {
+  stroke-dasharray: 572.7504272460938;
+  stroke-dashoffset: 572.7504272460938;
+  animation: dash 2s ease forwards 6s;
+}
+
+#Line11 {
+  stroke-dasharray: 105.23030090332031;
+  stroke-dashoffset: 105.23030090332031;
+  animation: dash 2s ease forwards 7s;
+}
+
+#Line12 {
+  stroke-dasharray: 180.75070190429688;
+  stroke-dashoffset: 180.75070190429688;
+  animation: dash 2s ease forwards 7s;
+}
+
+#Line13 {
+  stroke-dasharray: 180.7417755126953;
+  stroke-dashoffset: 180.7417755126953;
+  animation: dash 2s ease forwards 7s;
+}
+
+#Line14 {
+  stroke-dasharray: 3252.256591796875;
+  stroke-dashoffset: 3252.256591796875;
+  animation: dash 4s ease forwards 8s;
+}
+
+#Line15 {
+  stroke-dasharray: 2211.351074218755;
+  stroke-dashoffset: 2211.35107421875;
+  animation: dash 4s ease forwards 8s;
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+
+  to {
+    fill: white;
+  }
+}
+
+@keyframes FadeOut {
+  0% {
+    opacity: 100%;
+  }
+
+  99% {
+    opacity: 0%;
+  }
+
+  100% {
+    display: none;
+  }
 }
