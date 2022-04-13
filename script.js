@@ -86,7 +86,7 @@ var x = setInterval(function () {
     }
 }, 1000);
 
-setTimeout(ClosePreloader, 11000);
+setTimeout(ClosePreloader, 3500);
 
 function ClosePreloader() {
     var Div = document.getElementById("Preloader");
