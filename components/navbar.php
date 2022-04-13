@@ -47,7 +47,7 @@
 
 <script>
     // Minimum width
-    const maxWidth = 1023;
+    const maxWidth = 1199;
     var showMobileMenu = false;
 
     // Function to toggle mobile menu
