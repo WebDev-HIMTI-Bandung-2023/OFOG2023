@@ -150,17 +150,3 @@
     fill: white;
   }
 }
-
-@keyframes FadeOut {
-  0% {
-    opacity: 100%;
-  }
-
-  99% {
-    opacity: 0%;
-  }
-
-  100% {
-    display: none;
-  }
-}

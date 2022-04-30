@@ -1,10 +1,11 @@
 <?php
-    $req_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-    $path_alias = ['about', 'faq', 'tellus', 'tellus-thanks', 'testimonies'];
-    for ($i = 0; $i < count($path_alias); $i++) if ($req_path == "/$path_alias[$i]"){
-        header("Location: /$path_alias[$i].php");
-        die();
-    }
+
+$req_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+$path_alias = ['about', 'faq', 'tellus', 'tellus-thanks', 'testimonies'];
+for ($i = 0; $i < count($path_alias); $i++) if ($req_path == "$path_alias[$i]") {
+    header("Location: $path_alias[$i].php");
+    die();
+}
 ?>
 
 <!DOCTYPE html>
@@ -12,8 +13,14 @@
 
 <head>
     <?php
-        $USE_BOOTSTRAP = true;
-        require('components/head.php');
+    $USE_BOOTSTRAP = true;
+    require('components/head.php');
+    include('function/connection.php');
+    $query = mysqli_query($koneksi, "SELECT * FROM carousel WHERE ActiveUntil >= current_timestamp");
+    $CarouselData = array();
+    while ($row = mysqli_fetch_array($query)) {
+        $CarouselData[] = $row;
+    }
     ?>
 </head>
 
@@ -22,31 +29,55 @@
         <object data="./assets/LogoAnimationHIMTI.svg" class="Line"></object>
         <object data="./assets/LogoFillHIMTI.svg" class="Line"></object>
     </div>
-    <?php $NAVBAR_SET_IMMERSIVE = true; require_once('components/navbar.php'); ?>
+    <?php $NAVBAR_SET_IMMERSIVE = true;
+    require_once('components/navbar.php'); ?>
     <div id="carouselExampleIndicators" class="carousel slide carouselmain" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button> -->
+            <?php
+            if ($CarouselData != null || count($CarouselData) != 0) {
+                $Number = 0;
+                foreach ($CarouselData as $row) {
+                    if ($Number == 0) {
+                        echo '<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>';
+                        $Number += 1;
+                    } else {
+                        echo '<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="' . $Number . '"
+                aria-label="Slide ' . $Number + 1 . '"></button>';
+                        $Number += 1;
+                    }
+                }
+            } else {
+                echo '<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>';
+            }
+            ?>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <object data="assets/OFOGAnimation.svg" type=""
-                    style="background-color: black; border-bottom-left-radius: 50px;border-bottom-right-radius: 50px;"></object>
-                <!-- <img class="d-block w-100" src="assets/Carouselfoto2.png" alt="Second slide"> -->
-            </div>
-            <!-- <div class="carousel-item">
-                <img class="d-block w-100 himti-header-img" src="assets/carousel/himtiexpo.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100 himti-header-img" src="assets/carousel/techno2021.jpg" alt="First slide">
-            </div> -->
+
+            <?php
+            $Number = 0;
+            if ($CarouselData != null || count($CarouselData) != 0) {
+                foreach ($CarouselData as $row) {
+                    if ($Number == 0) {
+                        echo '<div class="carousel-item active"><img class="d-block w-100 himti-header-img" src="' . $row['ImageLink'] . '" alt="' . $row['ImageName'] . '"></div>';
+                        $Number += 1;
+                    } else {
+                        echo '<div class="carousel-item"><img class="d-block w-100 himti-header-img" src="' . $row['ImageLink'] . '" alt="' . $row['ImageName'] . '"></div>';
+                        $Number += 1;
+                    }
+                }
+            } else {
+                echo '<div class="carousel-item active">
+                            <object data="assets/OFOGAnimation.svg" type=""
+                                style="background-color: black; border-bottom-left-radius: 50px;border-bottom-right-radius: 50px;"></object>
+                        </div>';
+            }
+            ?>
 
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        <?php
+        if ($CarouselData != null && count($CarouselData) > 1) {
+            echo '<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -55,7 +86,9 @@
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-        </button>
+        </button>';
+        }
+        ?>
     </div>
 
     <div class="upcomingevent container">
@@ -90,33 +123,6 @@
                 </div>
             </a>
         </div>
-        <!-- <div class="upcomingeventdata">
-            <a href="http://http.himti.or.id/" class="linkupcoming" target="_blank">
-                <div class="upcomingeventrow">
-                    <div style="height: 100%; display: flex;">
-                        <img src="assets/TECHNOLOGO.png" alt="" class="logo">
-                    </div>
-
-                    <div class="upcomingeventitem">
-                        <p>Techno 2021: ERA</p>
-                        <p>TIME</p>
-                        <p>16 September 2021</p>
-                    </div>
-                </div>
-            </a>
-            <a href="http://hishot.himti.or.id/" class="linkupcoming" target="_blank">
-                <div class="upcomingeventrow">
-                    <div style="height: 100%; display: flex;">
-                        <img src="assets/HISHOTLOGO.png" alt="" class="logo">
-                    </div>
-                    <div class="upcomingeventitem">
-                        <p>HISHOT 2021: Stronger</p>
-                        <p> TIME</p>
-                        <p>18 September 2021</p>
-                    </div>
-                </div>
-            </a>
-        </div> -->
     </div>
     <div class="testimonies">
         <div class="title">
@@ -159,9 +165,6 @@
                             </picture>
                             <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0" col-xl-12 p-lg-3 mt-3 mt-md-0">
                                 <p class="testimoniname mt-2">Javier Fransiscus</p>
-                                <!-- <p class="testimoniposition">Apple Developer Academy ( Learner)</p>
-                                <p class="testimoniperiode">Kepengurusan HIMTI 2019-2020</p>
-                                <p class="testimoniexperience">Koor WebDev</p> -->
                                 <p>Web Development Coordinator (2020)<br><b>&#8594; Learner, Apple Developer Academy</b>
                                 </p>
                             </div>
@@ -187,11 +190,6 @@
                             </picture>
                             <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0" col-xl-12 p-lg-3 mt-3 mt-md-0">
                                 <p class="testimoniname mt-2">Felix</p>
-                                <!-- <p class="testimoniposition">Application Developer di PT Mayora Indah Tbk<br>
-                                    UIUX Designer di Corn Learning
-                                </p>
-                                <p class="testimoniperiode">Kepengurusan HIMTI 2019-2020</p>
-                                <p class="testimoniexperience">General Manager Commision Three</p> -->
                                 <p>Commission III General Manager (2020)<br><b>&#8594; Application Developer, Mayora</b>
                                 </p>
                             </div>
@@ -217,10 +215,6 @@
                             </picture>
                             <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0" col-xl-12 p-lg-3 mt-3 mt-md-0">
                                 <p class="testimoniname mt-2">Bayu Ardana</p>
-                                <!-- <p class="testimoniposition">Co-Founder of ignitevent.id</p>
-                                <p class="testimoniperiode">Kepengurusan HIMTI 2019-2020</p>
-                                <p class="testimoniexperience">Vice President of HISHOT 2020 <br> PIC of HIMTIBAND 2020
-                                    <br>Publication & Marketing Staff -->
                                 <p>PIC of HIMTI Band (2020)<br><b>&#8594; Co-Founder, ignitevent.id</b></p>
                                 </p>
                             </div>
@@ -246,11 +240,6 @@
                             </picture>
                             <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0" col-xl-12 p-lg-3 mt-3 mt-md-0">
                                 <p class="testimoniname mt-2">Hanif Kusuma</p>
-                                <!-- <p class="testimoniposition">Web Developer Intern at PT Kalbe Farma, Tbk <br> Co-Founder
-                                    of ignitevent.id</p>
-                                <p class="testimoniperiode">Kepengurusan HIMTI 2019-2020</p>
-                                <p class="testimoniexperience">Vice President of HISHOT 2020 <br> President of HIMTI
-                                    Anniversary 2020</p> -->
                                 <p>President of HIMTI Anniversary 2020<br><b>&#8594; Co-Founder, ignitevent.id</b></p>
                             </div>
                         </div>
@@ -279,9 +268,6 @@
                             </picture>
                             <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0" col-xl-12 p-lg-3 mt-3 mt-md-0">
                                 <p class="testimoniname mt-2">Salsabila Azaria</p>
-                                <!-- <p class="testimoniposition">Software Development Engineer Intern at DANA Indonesia</p>
-                                <p class="testimoniperiode">Kepengurusan HIMTI 2019-2020</p>
-                                <p class="testimoniexperience">Head of HRD HIMTI Alam Sutera (2020)</p> -->
                                 <p>Head of HRD HIMTI Alam Sutera (2020)<br><b>&#8594; Software Engineer, DANA
                                         Indonesia</b></p>
                             </div>
@@ -308,9 +294,6 @@
                             </picture>
                             <div class="testimoniprofile col-12 col-md-9  mt-3 mt-md-0" col-xl-12 p-lg-3 mt-3 mt-md-0">
                                 <p class="testimoniname mt-2">Kenny Ongko</p>
-                                <!-- <p class="testimoniposition">Google Bangkit, Cloud Computing</p>
-                                <p class="testimoniperiode">Kepengurusan HIMTI 2019-2020</p>
-                                <p class="testimoniexperience">President of HIMTI Alam Sutera </p> -->
                                 <p>President of HIMTI Alam Sutera (2020)<br><b>&#8594; Cloud Computing, Google
                                         Bangkit</b></p>
                             </div>
