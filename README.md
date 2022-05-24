@@ -1,13 +1,3 @@
-# The (all-new) himti.or.id website
-## Current Status
-### DONE
-+ **about.php**
-+ **faq.php**
-+ **index.php**
-+ **testimonies.php**
+# himti.or.id
 
-### Under Checking
-
-### Submitted
-+ **tellus.php**
-+ **tellus-thanks.php**
+The official git repository of [himti.or.id](https://himti.or.id/).
