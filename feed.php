@@ -27,7 +27,7 @@ $sources = [
     'feed_url' => 'https://www.youtube.com/feeds/videos.xml?channel_id=UCnxjFlgW3YpKVkSshFHP_SQ',
     'source_type' => 'atom',
     'content_type' => 'video',
-    'regional' => ['als', 'kmg', 'bdg', 'sny', 'mlg'],
+    'regional' => ['als', 'kmg'],
   ],
   // HIMTI Senayan (BINARY)
   [
