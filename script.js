@@ -30,7 +30,7 @@ function changeposition(id) {
     for (var i = 0; i < tablist.length; i++) {
         var position = listyear.indexOf(tablist[i].classList[1]);
         // console.log(position);
-        for(var j=0; j<totalposition;j++){
+        for (var j = 0; j < totalposition; j++) {
             tablist[i].classList.remove(listyear[j]);
         }
         let perubahan;
@@ -58,7 +58,7 @@ var y = setInterval(function () {
         }
     }
     if (datalama <= 1) {
-        datalama = totalposition+1;
+        datalama = totalposition + 1;
     }
     changeposition((datalama - 1));
 }, 10000);
@@ -66,7 +66,7 @@ var y = setInterval(function () {
 
 var x = setInterval(function () {
     var now = new Date().getTime();
-    for(var i =0; i<listevent.length;i++){
+    for (var i = 0; i < listevent.length; i++) {
         var timestamp = listevent[i].attributes.getNamedItem("data-countdown-timestamp");
         // console.log(timestamp.value + " UTC");
         if (!timestamp) continue;
@@ -85,3 +85,17 @@ var x = setInterval(function () {
         }
     }
 }, 1000);
+
+setTimeout(ClosePreloader, 3500);
+
+function ClosePreloader() {
+    var Div = document.getElementById("Preloader");
+    Div.style.animation = "FadeOut 0.5s linear";
+    setTimeout(Hide, 500);
+
+}
+
+function Hide() {
+    var Div = document.getElementById("Preloader");
+    Div.style.display = "none";
+}

@@ -1047,3 +1047,43 @@ nav .btn-menu-toggle {
 nav .btn-menu-toggle:hover {
   opacity: 0.8;
 }
+#Preloader {
+  z-index: 1500;
+  position: fixed;
+  color: white;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #425ba8;
+}
+.Line {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  fill: none;
+  animation: fill 2s ease forwards 3s;
+}
+
+@media (max-width: 1080px) {
+  .Line {
+    width: 50%;
+  }
+}
+@keyframes FadeOut {
+  0% {
+    opacity: 100%;
+  }
+
+  99% {
+    opacity: 0%;
+  }
+
+  100% {
+    display: none;
+  }
+}
