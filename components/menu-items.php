@@ -20,12 +20,12 @@ $MENU_ITEMS = [
         'icon_fill' => 'bi bi-calendar-date-fill',
     ],
     [
-        'label' => 'HISHOT 2021',
+        'label' => 'HISHOT 2022',
         'href' => 'https://hishot.himti.or.id',
         'icon' => 'hi hi-hishot hi-white hi-sm-lg',
     ],
     [
-        'label' => 'TECHNO 2021',
+        'label' => 'TECHNO 2022',
         'href' => 'https://techno.himti.or.id',
         'icon' => 'hi hi-techno hi-white hi-sm-lg',
     ],

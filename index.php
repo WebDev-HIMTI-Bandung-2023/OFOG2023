@@ -1,10 +1,10 @@
 <?php
-    $req_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-    $path_alias = ['about', 'faq', 'tellus', 'tellus-thanks', 'testimonies'];
-    for ($i = 0; $i < count($path_alias); $i++) if ($req_path == "/$path_alias[$i]"){
-        header("Location: /$path_alias[$i].php");
-        die();
-    }
+$req_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+$path_alias = ['about', 'faq', 'tellus', 'tellus-thanks', 'testimonies'];
+for ($i = 0; $i < count($path_alias); $i++) if ($req_path == "/$path_alias[$i]") {
+    header("Location: /$path_alias[$i].php");
+    die();
+}
 ?>
 
 <!DOCTYPE html>
@@ -12,37 +12,67 @@
 
 <head>
     <?php
-        $USE_BOOTSTRAP = true;
-        require('components/head.php');
+    $USE_BOOTSTRAP = true;
+    require('components/head.php');
+    include('function/connection.php');
+    $query = mysqli_query($koneksi, "SELECT * FROM carousel WHERE ActiveUntil >= current_timestamp");
+    $CarouselData = array();
+    while ($row = mysqli_fetch_array($query)) {
+        $CarouselData[] = $row;
+    }
     ?>
 </head>
 
 <body>
-    <?php $NAVBAR_SET_IMMERSIVE = true; require_once('components/navbar.php'); ?>
+    <?php $NAVBAR_SET_IMMERSIVE = true;
+    require_once('components/navbar.php'); ?>
     <div id="carouselExampleIndicators" class="carousel slide carouselmain" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button> -->
+            <?php
+            if ($CarouselData != null || count($CarouselData) != 0) {
+                $Number = 0;
+                foreach ($CarouselData as $row) {
+                    if ($Number == 0) {
+                        echo '<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>';
+                        $Number += 1;
+                    } else {
+                        echo '<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="' . $Number . '"
+                aria-label="Slide ' . $Number + 1 . '"></button>';
+                        $Number += 1;
+                    }
+                }
+            } else {
+                echo '<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>';
+            }
+            ?>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <object data="assets/OFOGAnimation.svg" type=""
-                    style="background-color: black; border-bottom-left-radius: 50px;border-bottom-right-radius: 50px;"></object>
-                <!-- <img class="d-block w-100" src="assets/Carouselfoto2.png" alt="Second slide"> -->
-            </div>
-            <!-- <div class="carousel-item">
-                <img class="d-block w-100 himti-header-img" src="assets/carousel/himtiexpo.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100 himti-header-img" src="assets/carousel/techno2021.jpg" alt="First slide">
-            </div> -->
+
+            <?php
+            $Number = 0;
+            if ($CarouselData != null || count($CarouselData) != 0) {
+                foreach ($CarouselData as $row) {
+                    if ($Number == 0) {
+                        echo '<div class="carousel-item active"><img class="d-block w-100 himti-header-img" src="' . $row['ImageLink'] . '" alt="' . $row['ImageName'] . '"></div>';
+                        $Number += 1;
+                    } else {
+                        echo '<div class="carousel-item"><img class="d-block w-100 himti-header-img" src="' . $row['ImageLink'] . '" alt="' . $row['ImageName'] . '"></div>';
+                        $Number += 1;
+                    }
+                }
+            } else {
+                echo '<div class="carousel-item active">
+                            <object data="assets/OFOGAnimation.svg" type=""
+                                style="background-color: black; border-bottom-left-radius: 50px;border-bottom-right-radius: 50px;"></object>
+                        </div>';
+            }
+            ?>
 
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        <?php
+        if ($CarouselData != null && count($CarouselData) > 1) {
+            echo '<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -51,7 +81,9 @@
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-        </button>
+        </button>';
+        }
+        ?>
     </div>
 
     <div class="upcomingevent container">
@@ -62,26 +94,26 @@
             <a href="http://techno.himti.or.id/" class="linkupcoming" target="_blank">
                 <div class="upcomingeventrow">
                     <div style="height: 100%; display: flex;">
-                        <img src="assets/TECHNOLOGO.png" alt="" class="logo">
+                        <img src="assets/ComingSoon.png" alt="" class="logo">
                     </div>
 
                     <div class="upcomingeventitem">
-                        <p>TECHNO 2021: ERA</p>
-                        <p data-countdown-enabled="true" data-countdown-timestamp="2021-09-25 13:00:00"></p>
-                        <p>25 September 2021</p>
+                        <p>TECHNO 2022</p>
+                        <!-- <p data-countdown-enabled="true" data-countdown-timestamp="2021-09-25 13:00:00"></p> -->
+                        <p>COMING SOON</p>
                     </div>
                 </div>
             </a>
             <a href="http://hishot.himti.or.id/" class="linkupcoming" target="_blank">
                 <div class="upcomingeventrow">
                     <div style="height: 100%; display: flex;">
-                        <img src="assets/HISHOTLOGO.png" alt="" class="logo">
+                        <img src="assets/HISHOT2022.png" alt="" class="logo">
                     </div>
 
                     <div class="upcomingeventitem">
-                        <p>HISHOT 2021: STRONGER</p>
-                        <p data-countdown-enabled="true" data-countdown-timestamp="2021-09-25 13:00:00"></p>
-                        <p>25 September 2021</p>
+                        <p>HISHOT 2022: CONNECT</p>
+                        <p data-countdown-enabled="true" data-countdown-timestamp="2022-06-09 13:00:00"></p>
+                        <p>09 June 2022</p>
                     </div>
                 </div>
             </a>
@@ -225,7 +257,8 @@
                             <p class="testimoniisi fs-5">
                                 &ldquo;Kalau kalian udah sayang sama HIMTI dari awal, <b>secapek apapun kalian kerjanya
                                     bakal tetep ikhlas dan enjoy</b>.&rdquo;
-                                <br><br><a href="/testimonies.php#bayu-ardana" class="readmorebutton">Read Full Story</a>
+                                <br><br><a href="/testimonies.php#bayu-ardana" class="readmorebutton">Read Full
+                                    Story</a>
                             </p>
                         </div>
                     </div>
@@ -255,7 +288,8 @@
                                     down-nya tapi karena dilewati bareng temen-temen yang lain jadi dibawa enjoy
                                     aja</b>. Masa-masa itu sekarang jadi cerita yang berkesan kalau diinget-inget
                                 lagi.&rdquo;
-                                <br><br><a href="/testimonies.php#hanif-kusuma" class="readmorebutton">Read Full Story</a>
+                                <br><br><a href="/testimonies.php#hanif-kusuma" class="readmorebutton">Read Full
+                                    Story</a>
                             </p>
                         </div>
                     </div>
@@ -314,7 +348,8 @@
                                 &ldquo;<b>Buatlah HIMTI sebagai taman bermain,</b> bukan hanya untuk mencari teman dan
                                 bersenang, <b>tapi juga sebagai tempat bereskperimen untuk tumbuh dan
                                     berkembang</b>.&rdquo;
-                                <br><br><a href="/testimonies.php#kenny-ongko" class="readmorebutton">Read Full Story</a>
+                                <br><br><a href="/testimonies.php#kenny-ongko" class="readmorebutton">Read Full
+                                    Story</a>
                             </p>
                         </div>
                     </div>
@@ -371,7 +406,8 @@
                                 &ldquo;<b>Jangan sia-sia in masa-masa kuliah kalian dengan pasif</b>, ga ikut
                                 berorganisasi apalagi ga ikut HIMTI, karena <b>banyak hal yang ga bisa kalian coba atau
                                     lakuin setelah lulus kuliah nanti</b>.&rdquo;
-                                <br><br><a href="/testimonies.php#marissa-leviani" class="readmorebutton">Read Full Story</a>
+                                <br><br><a href="/testimonies.php#marissa-leviani" class="readmorebutton">Read Full
+                                    Story</a>
                             </p>
                         </div>
                     </div>
@@ -400,7 +436,8 @@
                                 &ldquo;Selama dulu di HIMTI, banyak banget pengalaman pengalaman seru yang ga bisa
                                 dilupain. <b>Seneng banget bisa ketemu banyak temen teman baru yang udah kaya keluarga
                                     sendiri.</b>&rdquo;
-                                <br><br><a href="/testimonies.php#erika-natalia-nugroho" class="readmorebutton">Read Full
+                                <br><br><a href="/testimonies.php#erika-natalia-nugroho" class="readmorebutton">Read
+                                    Full
                                     Story</a>
                             </p>
                         </div>
@@ -496,8 +533,8 @@
                 </div>
             </div>
         </div>
-        <div class="viewtestimoni"><a href="/testimonies.php"
-                class="btn btn-sm animated-button thar-three ">View All Testimonies</a>
+        <div class="viewtestimoni"><a href="/testimonies.php" class="btn btn-sm animated-button thar-three ">View All
+                Testimonies</a>
         </div>
     </div>
     <div class="ourarticle">

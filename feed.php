@@ -9,25 +9,25 @@ $sources = [
     'feed_url' => 'https://student-activity.binus.ac.id/himti/category/articles/feed/atom',
     'source_type' => 'atom',
     'content_type' => 'articles',
-    'regional' => ['als', 'kmg'],
+    'regional' => ['als', 'kmg', 'bdg', 'sny', 'mlg'],
   ],
   [
     'feed_url' => 'https://student-activity.binus.ac.id/himti/category/news/feed/atom',
     'source_type' => 'atom',
     'content_type' => 'news',
-    'regional' => ['als', 'kmg'],
+    'regional' => ['als', 'kmg', 'bdg', 'sny', 'mlg'],
   ],
   [
     'feed_url' => 'https://student-activity.binus.ac.id/himti/gallery/feed/atom',
     'source_type' => 'atom',
     'content_type' => 'gallery',
-    'regional' => ['als', 'kmg'],
+    'regional' => ['als', 'kmg', 'bdg', 'sny', 'mlg'],
   ],
   [
     'feed_url' => 'https://www.youtube.com/feeds/videos.xml?channel_id=UCnxjFlgW3YpKVkSshFHP_SQ',
     'source_type' => 'atom',
     'content_type' => 'video',
-    'regional' => ['als', 'kmg'],
+    'regional' => ['als', 'kmg', 'bdg', 'sny', 'mlg'],
   ],
   // HIMTI Senayan (BINARY)
   [
@@ -66,13 +66,13 @@ $sources = [
 
 $articles = [];
 
-foreach ($sources as $source){
+foreach ($sources as $source) {
   // Fetch data
-  if ($source['source_type'] == 'atom' || $source['source_type'] == 'rss'){
+  if ($source['source_type'] == 'atom' || $source['source_type'] == 'rss') {
     $feed = simplexml_load_file($source['feed_url']);
     $entries = ($source['source_type'] == 'atom') ? $feed->entry : $feed->channel->item;
 
-    foreach ($entries as $entry){
+    foreach ($entries as $entry) {
       // Title
       $item = [
         'title' => (string) $entry->title,
@@ -99,9 +99,9 @@ foreach ($sources as $source){
       else if (isset($entry->children('media', TRUE)->group)) $item['cover_image'] = (string) $entry->children('media', TRUE)->group->children('media', TRUE)->thumbnail->attributes()->url;
 
       // Categories and Tags
-      if (isset($entry->category)){
+      if (isset($entry->category)) {
         // if (!is_array($entry->category)) $entry->category = array($entry->category);
-        foreach ($entry->category as $category){
+        foreach ($entry->category as $category) {
           array_push($item['categories'], (string) $category->attributes()->term);
         }
       }
