@@ -221,7 +221,9 @@
         </div>
 	  	<?php
 		if($testimonies != NULL && count($testimonies) > 0){
+			// Active profile = pertama, kecuali kalo ada request.
 			$first = true;
+			$valid_ids = array(); //Validation biar ga ada XSS.
 			foreach ($testimonies as $testimony) {
 				echo '<div id="', $testimony["id"], 'Profile" class="profdesc', $first ? '' : ' profdesc--hidden', '">';
 					echo '<div class="profdesc__summary">';
@@ -240,10 +242,14 @@
 					echo '</div>';
 					echo '<div class="profdesc__story">', $testimony["testimony"],'</div>';
 				echo'</div>';
+				array_push($valid_ids, $testimony["id"]);
 				if($first){
 					echo '<script type="text/javascript">activeProfile="',$testimony["id"],'"</script>';
 				}
 				$first = false;
+			}
+			if(array_key_exists("profile", $_GET) && in_array($_GET["profile"], $valid_ids)){
+				echo '<script type="text/javascript">testimoniesImgClick("',$_GET["profile"],'")</script>';
 			}
 		}
 		?>
