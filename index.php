@@ -26,10 +26,10 @@ for ($i = 0; $i < count($path_alias); $i++) if ($req_path == "/$path_alias[$i]")
 </head>
 
 <body>
-    <!-- <div id="Preloader">
+    <div id="Preloader">
         <object data="./assets/LogoAnimationHIMTI.svg" class="Line"></object>
         <object data="./assets/LogoFillHIMTI.svg" class="Line"></object>
-    </div> -->
+    </div>
     <?php $NAVBAR_SET_IMMERSIVE = true;
     require_once('components/navbar.php'); ?>
     <div id="carouselExampleIndicators" class="carousel slide carouselmain" data-bs-ride="carousel">
