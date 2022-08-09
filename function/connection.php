@@ -1,6 +1,6 @@
 <?php
 
-$server = "himti.or.id";
+$server = "localhost";
 $username = "himtiorg_himtijkt";
 $password = "OFOG_2022";
 $database = "himtiorg_himtijkt";
