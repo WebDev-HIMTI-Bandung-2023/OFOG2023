@@ -7,9 +7,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    font-family: 'Mulish', sans-serif;
     color: white;
-    background-color: black;
+    background-color: #0c0217;;
 }
 
 .title-white {
@@ -43,11 +42,12 @@
 }
 
 #journeylist-content .event {
+    width: 1024px;
     position: relative;
-    width: 1086px;
     height: auto;
     padding: 5%;
-    font-size: 32px;
+    padding-right: 0%;
+    font-size: 1.1rem;
     border-left: 1px dotted white;
 }
 
@@ -180,7 +180,7 @@
         align-items: center;
         font-family: 'Mulish', sans-serif;
         color: white;
-        background-color: black;
+        background-color: #0c0217;
     }
 
     .title-white {
@@ -218,7 +218,7 @@
         width: 750px;
         height: auto;
         padding: 5%;
-        font-size: 25px;
+        font-size: 1.1rem;
         border-left: 1px dotted white;
     }
 
@@ -350,7 +350,7 @@
         align-items: center;
         font-family: 'Mulish', sans-serif;
         color: white;
-        background-color: black;
+        background-color: #0c0217;
     }
 
     .title-white {
@@ -388,7 +388,7 @@
         width: 500px;
         height: auto;
         padding: 5%;
-        font-size: 20px;
+        font-size: 1.1rem;
         border-left: 1px dotted white;
     }
 

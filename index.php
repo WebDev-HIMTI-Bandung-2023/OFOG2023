@@ -21,13 +21,15 @@ for ($i = 0; $i < count($path_alias); $i++) if ($req_path == "/$path_alias[$i]")
         $CarouselData[] = $row;
     }
     ?>
+    
+    <link rel="stylesheet" href="ourjourney.css">
 </head>
 
 <body>
-    <div id="Preloader">
+    <!-- <div id="Preloader">
         <object data="./assets/LogoAnimationHIMTI.svg" class="Line"></object>
         <object data="./assets/LogoFillHIMTI.svg" class="Line"></object>
-    </div>
+    </div> -->
     <?php $NAVBAR_SET_IMMERSIVE = true;
     require_once('components/navbar.php'); ?>
     <div id="carouselExampleIndicators" class="carousel slide carouselmain" data-bs-ride="carousel">
@@ -514,113 +516,37 @@ for ($i = 0; $i < count($path_alias); $i++) if ($req_path == "/$path_alias[$i]")
         <div class="viewtestimoni mt-3"><a href="https://student-activity.binus.ac.id/himti"
                 class="btn btn-light btn-lg text-dark">View All Articles</a></div>
     </div>
-    <div class="title white" style="background-color: #0c0217;">
-        <span>Our Journey</span>
-    </div>
+    
+    
     <div class="OURJOURNEY">
-
-        <div class="circletab" style="max-width: 1536px; margin: 0 auto;">
-            <div class="journeylist">
-
-                <div id="journey4" class="datajourney">
-                    Acara HIMTI Togetherness & Top Performance (HTTP) pertama kali diselenggarakan pada tahun 2012.
-                    Event ini khusus dibuat untuk menyambut mahasiswa/i baru yang berada di naungan School of
-                    Computer
-                    Science (SOCS). Pada tahun pertama diselenggarakan, HTTP mengambil tema TRUST (Together Reach
-                    Unique
-                    & Solid Team). Acara ini diselenggarakan pada tanggal 15 September 2012 di Gedung BPPT II.
-                </div>
-                <div id="journey5" class="datajourney">
-                    HIMTI mengadakan event HIESTA (HIMTI Seminar Workshop and Study Tour Alam Sutera) yang bertema
-                    “BEAT
-                    (Be Experienced in Advanced Technology)". Dalam acara ini selain Seminar dan Workshop, tersedia
-                    acara Study Tour Luar Negeri ke Singapore.
-
-                    HIMTI juga mengadakan event Euphoria yang merupakan event khusus yang dibuat bagi para mahasiswa
-                    untuk melepas penat setelah UTS. Dalam event ini, HIMTI sukses memecahkan rekor MURI: "Papan
-                    Permainan Ular Tangga berisi Fakta Teknologi Terbanyak dan Terpanjang di Indonesia".
-
-                </div>
-                <div id="journey3" class="datajourney activejourney">
-                    <img src="assets/HEXIONLOGO.png" alt="" width="25%"><br>
-                    Tahun ini menjadi tahun pertama HIMTI menyelenggarakan acara “HEXION”. HEXION merupakan HIMTI
-                    Expo
-                    and
-                    Competition, disini adanya expo HIMTI serta lomba-lomba yang bertujuan untuk mengasah skill
-                    peserta
-                    tentunya dalam bidang teknologi. HEXION pertama kali diselenggarakan pada tanggal 29 November
-                    2011 -
-                    3
-                    Desember 2011 di Kampus Anggrek Binus University.<br><br>
-
-                    Pada tahun ini juga, HIMTI mengadakan event "HISTORIA". HISTORIA merupakan HIMTI Study Tour In
-                    Asia.
-                    Event bertema "Learn.Fun.Experience." ini dibagi menjadi 2, yaitu study tour dalam negeri dan
-                    study
-                    tour
-                    luar negeri. Acara ini berlangsung dari tanggal 5 - 9 September 2011. Study tour dalam negeri
-                    pertama
-                    kali kita mengunjungi Pabrik Sari Roti dan perusahaan Indogamers. Untuk study tour luar negeri,
-                    kita
-                    mengunjungi Thailand (Bangkok - Pattaya).
-                </div>
-                <div id="journey1" class="datajourney">
-                    HIMTI dipimpin oleh Sdr. Petrus Rudy dan Sdr. Bayu Waseso sebagai ketua dan wakil. Pada masa
-                    kepengurusan ini, mulai banyak kegiatan-kegiatan HIMTI yang dilakukan. Salah satu kegiatannya
-                    adalah
-                    Responsi.
-                </div>
-                <div id="journey2" class="datajourney">
-                    Pada tahun ini, ide Bapak Ir. Toto Widyanto, MSc. direalisasikan yaitu mendirikan suatu wadah
-                    bagi
-                    para mahasiswa jurusan Teknik Informatika sehingga memberikan sumbangsih yang nyata dalam
-                    perkembangan IT di Indonesia sekaligus melatih kemampuan manajemen kepemimpinan dalam
-                    berorganisasi.
-                    Organisasi itu diberi nama HIMTI (Himpunan Mahasiswa Teknik Informatika).
-                </div>
-
-                <div id="journey6" class="datajourney">
-                    Di tahun ini, HIMTI berhasil menyelenggarakan event kolaborasi baru bersama HIMSISFO yaitu
-                    Computerun. Computerun merupakan acara terbesar yang dibuat untuk menantang mahasiswa/i dalam
-                    membuat karyanya di bidang Business-IT. Untuk pertama kalinya, Computerun mengambil tema
-                    “Insight”
-                    dan diselenggarakan mulai dari bulan Oktober 2020 hingga bulan Januari 2021.
-
-                </div>
-                <div id="journey7" class="datajourney">
-                    Di tahun 2018, HIMTI pertama kali berkolaborasi dengan tiga organisasi kemahasiswaan lainnya.
-                    Event
-                    kolaborasi ini dinamai ICF yang merupakan kepanjangan dari International Computer Festival.
-                    Event
-                    ini bertujuan untuk mengasah skill-skill mahasiswa/i dalam bidang IT tentunya.
-
-                </div>
-            </div>
+        <div class="title white">
+            <span>Our Journey</span>
         </div>
-        <div>
-            <div id="circularMenu1" class="circular-menu circular-menu-left active">
-
-
-
-                <menu class="items-wrapper">
-                    <!-- <button id="1" onclick="changeposition(this.id)" class="menu-item deg0">2011</button>
-                    <button id="2" onclick="changeposition(this.id)" class="menu-item deg36">1994</button> -->
-                    <!-- <button id="1" onclick="changeposition(this.id)" class="menu-item deg72 ">1992</button> -->
-                    <button id="1" onclick="changeposition(this.id)" class="menu-item deg108">2013</button>
-                    <button id="2" onclick="changeposition(this.id)" class="menu-item deg144">2012</button>
-                    <button id="3" onclick="changeposition(this.id)" class="menu-item deg180 activetab">2011</button>
-                    <button id="4" onclick="changeposition(this.id)" class="menu-item deg216">1994</button>
-                    <button id="5" onclick="changeposition(this.id)" class="menu-item deg252">1992</button>
-                    <button id="6" onclick="changeposition(this.id)" class="menu-item deg288">2020</button>
-                    <button id="7" onclick="changeposition(this.id)" class="menu-item deg324">2018</button>
-
-
-                </menu>
-                <img src="assets//CircleTab.png" alt="" class="backgroundtab">
+        <div id="journeylist-container">
+            <div id="journeylist-content">
+                <?php 
+				$result = mysqli_query($koneksi, "select * from journeys");
+				while ($row = mysqli_fetch_assoc($result)) : ?>
+                    <div class="event">
+                        <?php
+                        if ($row["img"] != NULL) :
+                            echo '<img id="journeylist-img" src="data:image/jpeg;base64,' . base64_encode($row['img']) . '"/>';
+                            echo '<div id="data-year-img"' . base64_encode($row['year']);
+                        endif
+                        ?>
+                        <div id="data-year">
+                            <?php echo ($row["year"]) ?>
+                        </div>
+                        <div id="journey1-modal">
+                            <?php echo ($row["journey"]) ?>
+                        </div>
+                    </div>
+                <?php endwhile; ?>
             </div>
-        </div>
 
+        </div>
     </div>
+                                        
     <div class="pattern">
         <object data="assets/Transition.svg" alt="pattern-contact" class="objectdata"></object>
     </div>
