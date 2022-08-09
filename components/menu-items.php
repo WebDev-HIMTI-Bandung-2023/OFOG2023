@@ -27,7 +27,7 @@ $MENU_ITEMS = [
     [
         'label' => 'TECHNO 2022',
         'href' => 'https://techno.himti.or.id',
-        'icon' => 'hi hi-techno hi-white hi-sm-lg',
+        'icon' => 'hi hi-techno-2022 hi-white hi-sm-lg',
     ],
     // [
     //     'label' => 'Join Us!',

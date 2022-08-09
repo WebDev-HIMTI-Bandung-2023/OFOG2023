@@ -835,6 +835,9 @@ button {
 .hi-techno {
   background-image: url("https://techno.himti.or.id/assets/apple-touch-icon.png");
 }
+.hi-techno-2022 {
+  background-image: url("https://drive.google.com/uc?export=view&id=15kZv1wFfkTvRjAXaAY1X-paKDK24meQy");
+}
 @media (min-width: 678px) {
   .hi-sm-lg {
     width: 1.5em;

@@ -21,7 +21,7 @@ for ($i = 0; $i < count($path_alias); $i++) if ($req_path == "/$path_alias[$i]")
         $CarouselData[] = $row;
     }
     ?>
-    
+
     <link rel="stylesheet" href="ourjourney.css">
 </head>
 
@@ -100,13 +100,13 @@ for ($i = 0; $i < count($path_alias); $i++) if ($req_path == "/$path_alias[$i]")
             <a href="http://techno.himti.or.id/" class="linkupcoming" target="_blank">
                 <div class="upcomingeventrow">
                     <div style="height: 100%; display: flex;">
-                        <img src="assets/ComingSoon.png" alt="" class="logo">
+                        <img src="assets/Techno2022.png" alt="" class="logo">
                     </div>
 
                     <div class="upcomingeventitem">
                         <p>TECHNO 2022</p>
-                        <!-- <p data-countdown-enabled="true" data-countdown-timestamp="2021-09-25 13:00:00"></p> -->
-                        <p>COMING SOON</p>
+                        <p data-countdown-enabled="true" data-countdown-timestamp="2022-09-18 13:00:00"></p>
+                        <p>18 September 2022</p>
                     </div>
                 </div>
             </a>
@@ -204,7 +204,8 @@ for ($i = 0; $i < count($path_alias); $i++) if ($req_path == "/$path_alias[$i]")
                                     metode
                                     trial and error untuk berinovasi membuat hal baru</b>, dimana di dunia pekerjaan
                                 tidak bisa asal melakukan kesalahan untuk mencoba hal baru.&rdquo;
-                                <br><br><a href="/testimonies.php?profile=Felix" class="readmorebutton">Read Full Story</a>
+                                <br><br><a href="/testimonies.php?profile=Felix" class="readmorebutton">Read Full
+                                    Story</a>
                             </p>
                         </div>
                     </div>
@@ -285,7 +286,8 @@ for ($i = 0; $i < count($path_alias); $i++) if ($req_path == "/$path_alias[$i]")
                                 organisasi secara umum, tapi juga <b>nilai-nilai kehidupan yang akhirnya sampai
                                     sekarang
                                     ilmunya diterapin di daily-life aku sendiri</b>.&rdquo;
-                                <br><br><a href="/testimonies.php?profile=SalsabilaAzaria" class="readmorebutton">Read Full
+                                <br><br><a href="/testimonies.php?profile=SalsabilaAzaria" class="readmorebutton">Read
+                                    Full
                                     Story</a>
                             </p>
                         </div>
@@ -369,7 +371,8 @@ for ($i = 0; $i < count($path_alias); $i++) if ($req_path == "/$path_alias[$i]")
                                 berorganisasi apalagi ga ikut HIMTI, karena <b>banyak hal yang ga bisa kalian coba
                                     atau
                                     lakuin setelah lulus kuliah nanti</b>.&rdquo;
-                                <br><br><a href="/testimonies.php?profile=MarissaLeviani" class="readmorebutton">Read Full
+                                <br><br><a href="/testimonies.php?profile=MarissaLeviani" class="readmorebutton">Read
+                                    Full
                                     Story</a>
                             </p>
                         </div>
@@ -398,7 +401,8 @@ for ($i = 0; $i < count($path_alias); $i++) if ($req_path == "/$path_alias[$i]")
                                 dilupain. <b>Seneng banget bisa ketemu banyak temen teman baru yang udah kaya
                                     keluarga
                                     sendiri.</b>&rdquo;
-                                <br><br><a href="/testimonies.php?profile=ErikaNataliaNugroho" class="readmorebutton">Read
+                                <br><br><a href="/testimonies.php?profile=ErikaNataliaNugroho"
+                                    class="readmorebutton">Read
                                     Full
                                     Story</a>
                             </p>
@@ -428,7 +432,8 @@ for ($i = 0; $i < count($path_alias); $i++) if ($req_path == "/$path_alias[$i]")
                                 CV, tapi nyatanya <b>aku dapat keluarga baru yang ngasih aku banyak banget
                                     pengalaman
                                     berharga</b>.&rdquo;
-                                <br><br><a href="/testimonies.php?profile=FeliciaAngeline" class="readmorebutton">Read Full
+                                <br><br><a href="/testimonies.php?profile=FeliciaAngeline" class="readmorebutton">Read
+                                    Full
                                     Story</a>
                             </p>
                         </div>
@@ -516,37 +521,37 @@ for ($i = 0; $i < count($path_alias); $i++) if ($req_path == "/$path_alias[$i]")
         <div class="viewtestimoni mt-3"><a href="https://student-activity.binus.ac.id/himti"
                 class="btn btn-light btn-lg text-dark">View All Articles</a></div>
     </div>
-    
-    
+
+
     <div class="OURJOURNEY">
         <div class="title white">
             <span>Our Journey</span>
         </div>
         <div id="journeylist-container">
             <div id="journeylist-content">
-                <?php 
-				$result = mysqli_query($koneksi, "select * from journeys");
-				while ($row = mysqli_fetch_assoc($result)) : ?>
-                    <div class="event">
-                        <?php
+                <?php
+                $result = mysqli_query($koneksi, "select * from journeys");
+                while ($row = mysqli_fetch_assoc($result)) : ?>
+                <div class="event">
+                    <?php
                         if ($row["img"] != NULL) :
                             echo '<img id="journeylist-img" src="data:image/jpeg;base64,' . base64_encode($row['img']) . '"/>';
                             echo '<div id="data-year-img"' . base64_encode($row['year']);
                         endif
                         ?>
-                        <div id="data-year">
-                            <?php echo ($row["year"]) ?>
-                        </div>
-                        <div id="journey1-modal">
-                            <?php echo ($row["journey"]) ?>
-                        </div>
+                    <div id="data-year">
+                        <?php echo ($row["year"]) ?>
                     </div>
+                    <div id="journey1-modal">
+                        <?php echo ($row["journey"]) ?>
+                    </div>
+                </div>
                 <?php endwhile; ?>
             </div>
 
         </div>
     </div>
-                                        
+
     <div class="pattern">
         <object data="assets/Transition.svg" alt="pattern-contact" class="objectdata"></object>
     </div>
