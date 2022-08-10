@@ -53,6 +53,7 @@
       }
 
       .profselector__img {
+        cursor: pointer;
         width: 120px;
         height: 120px;
         opacity: 50%;

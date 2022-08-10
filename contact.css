@@ -11,7 +11,8 @@ body {
 #content-container {
     display: flex;
     flex-direction: row;
-    margin: 5%;
+    max-width: 1280px;
+    margin: 5% auto;
     padding: 5%;
 }
 
@@ -22,7 +23,7 @@ body {
 }
 
 #content-left img {
-    width: 100%;
+    width: 80%;
     margin: auto;
 }
 
