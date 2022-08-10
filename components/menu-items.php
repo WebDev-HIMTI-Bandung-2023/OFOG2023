@@ -36,7 +36,7 @@ $MENU_ITEMS = [
     // ],
     [
         'label' => 'Contact Us',
-        'href' => 'https://student-activity.binus.ac.id/himti/contact-us',
+        'href' => '/contact.php',
         'icon' => 'bi bi-chat-quote',
         'icon_fill' => 'bi bi-chat-quote-fill',
     ],

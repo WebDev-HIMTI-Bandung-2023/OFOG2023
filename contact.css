@@ -1,0 +1,236 @@
+
+
+body {
+    scroll-behavior: smooth;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+}
+
+#content-container {
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    padding: 5%;
+}
+
+#content-left {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#content-left img {
+    width: 100%;
+    margin: auto;
+}
+
+#content-right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+#content-right p {
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+    margin-left: 5%;
+}
+
+#content-center {
+    background-color: #1B97D4;
+    width: 3px;
+}
+
+.dropdown {
+    position: absolute;
+    top: 18%;
+    right: 2%;
+}
+
+
+.btn.btn-secondary {
+    background-color: #1B97D4 !important;
+    width: 100px;
+    height: 100px;
+    border: 0px;
+    border-radius: 10px;
+    margin: 0px;
+}
+
+.btn-secondary.dropdown-toggle:focus {
+    box-shadow: none !important;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.dropdown-menu {
+    width: 80px;
+    min-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dropdown-menu.show {
+    top: -2px !important;
+    left: 10px !important;
+    /* transform: translate3d(10px, 98px, 0px) !important; */
+}
+
+.dropdown-item {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-item img {
+    width: 50px;
+    height: 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #content-container {
+        display: flex;
+        flex-direction: row;
+        margin: 5%;
+        padding: 5%;
+    }
+
+    #content-left {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #content-right {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+    #content-right p {
+        width: auto;
+        height: auto;
+        margin-left: 5%;
+    }
+
+    #content-center {
+        background-color: #1B97D4;
+        width: 3px;
+    }
+
+    .dropdown {
+        position: absolute;
+        top: 18%;
+        right: 2%;
+    }
+
+    .btn.btn-secondary {
+        background-color: #1B97D4 !important;
+        width: 75px;
+        height: 75px;
+        border: 0px;
+        border-radius: 7.5px;
+        margin: 0px;
+    }
+
+    .btn.btn-secondary.dropdown-toggle img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .btn-secondary.dropdown-toggle:focus {
+        box-shadow: none !important;
+    }
+
+    .dropdown-toggle::after {
+        display: none !important;
+    }
+
+    .dropdown-menu {
+        width: 55px;
+        min-width: 0px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .dropdown-menu.show {
+        top: -2px !important;
+        left: 10px !important;
+        /* transform: translate3d(10px, 98px, 0px) !important; */
+    }
+
+    .dropdown-item {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dropdown-item img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #content-left {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #content-left img {
+        width: 75%;
+        max-width: 360px;
+    }
+
+    #content-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #content-right p {
+        width: auto;
+        height: auto;
+        text-align: center;
+        margin: 0%;
+        margin-top: 10%;
+    }
+
+    #content-center {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .dropdown {
+        display: none;
+    }
+}
