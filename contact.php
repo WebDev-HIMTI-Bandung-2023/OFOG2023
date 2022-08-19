@@ -7,7 +7,7 @@
         $TITLE = 'Contact';
         require('components/head.php');
     ?>
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 
     <div id="content-container">
         <div id="content-left">
-            <img src="assets/HIMTI.png" alt="">
+            <img src="assets/img/organization-logo/HIMTI.png" alt="">
         </div>
         <div id="content-center"></div>
         <div id="content-right">

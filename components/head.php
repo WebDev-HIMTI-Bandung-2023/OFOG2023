@@ -9,14 +9,14 @@
 <?php endif;?>
 
 <?php if(isset($USE_TAILWIND) && $USE_TAILWIND == true):?>
-    <link href="/assets/css/tailwind.css" rel="stylesheet">
+    <link href="assets/css/tailwind.css" rel="stylesheet">
 <?php endif;?>
 
 <!-- Bootstrap Icons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
 <!-- Apply custom stylesheet -->
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/css/style.css">
 
 <!-- Icons -->
-<link rel="icon" href="/assets/img/icons/himti-icon.svg" type="image/svg">
+<link rel="icon" href="assets/img/icons/himti-icon.svg" type="image/svg">

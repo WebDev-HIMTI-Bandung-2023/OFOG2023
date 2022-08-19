@@ -22,7 +22,7 @@
             </div>
             <div class="w-md-50 d-flex justify-content-md-end || md:w-1/2 flex md:justify-end"
                 style="margin-bottom: 1.5rem">
-                <img src="assets/img/icons/himti-logo.svg" alt="HIMTI BINUS University">
+                <img src="assets/img/organization-logo/himti-logo.svg" alt="HIMTI BINUS University">
             </div>
         </div>
         <hr class="mx-0 sm:mx-4 lg:mx-12 opacity-30" style="margin-top: 1rem; margin-bottom: 1rem;">

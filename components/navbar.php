@@ -1,7 +1,7 @@
 <nav id="topmenu" class="row <?= (isset($NAVBAR_SET_IMMERSIVE) && $NAVBAR_SET_IMMERSIVE == true) ? 'position-fixed' : 'position-sticky' ?> fixed-top justify-content-between align-items-center | m-auto text-white | flex flex-wrap <?= (isset($NAVBAR_SET_IMMERSIVE) && $NAVBAR_SET_IMMERSIVE == true) ? 'fixed' : 'sticky' ?> top-0 right-0 left-0 z-1030 justify-between items-center">
     <div class="col-1 p-0 || w-1/2 xl:w-1/12">
         <a href="/">
-            <img id="himti-icon" src="assets/img/icons/himti-icon.svg" alt="HIMTI BINUS University">
+            <img id="himti-icon" src="assets/img/organization-logo/himti-icon.svg" alt="HIMTI BINUS University">
         </a>
     </div>
     <!-- Mobile Menu -->

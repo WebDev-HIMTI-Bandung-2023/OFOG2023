@@ -5,13 +5,13 @@
         $USE_BOOTSTRAP = true;
         $TITLE = 'Testimonies';
         require_once('components/head.php');
-		include('function/connection.php');
-		$query = mysqli_query($koneksi, "SELECT * FROM testimonies_main ORDER BY `name` ASC");
+		include('functions/connection.php');
+		$query = mysqli_query($connection, "SELECT * FROM testimonies_main ORDER BY `name` ASC");
     	$testimonies = array();
     	while ($row = mysqli_fetch_array($query)) {
         	$testimonies[] = $row;
     	}
-		$query = mysqli_query($koneksi, "SELECT * FROM testimonies_experiences ORDER BY `priority` ASC");
+		$query = mysqli_query($connection, "SELECT * FROM testimonies_experiences ORDER BY `priority` ASC");
 		$experiences = array();
 		while ($row = mysqli_fetch_array($query)) {
 			$experiences[$row["id"]][] = $row["experience"];
