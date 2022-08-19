@@ -7,16 +7,15 @@
                     <ul class="ps-0 || pl-0" style="list-style: none;">
                         <li><a href="/">Home</a></li>
                         <li><a href="/about.php">About Us</a></li>
-                        <li><a href="https://registration.himti.or.id">Event Registration</a></li>
+                        <li><a href="https://registration.himtibinus.or.id">Event Registration</a></li>
                         <li><a href="/contact.php">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="ul-container w-50 || w-1/2 text-left">
                     <p class="ul-label fw-bold fs-5 || font-bold text-xl" style="margin-bottom: 1rem;">Latest events</p>
                     <ul class="ps-0 || pl-0" style="list-style: none;">
-                        <li><a href="https://hishot.himti.or.id">HISHOT 2022</a></li>
-                        <li><a href="https://techno.himti.or.id">TECHNO 2022</a></li>
-                        <!-- <li><a href="https://computerun.id">COMPUTERUN 2021</a></li> -->
+                        <li><a href="https://hishot.himtibinus.or.id">HISHOT 2022</a></li>
+                        <li><a href="https://techno.himtibinus.or.id">TECHNO 2022</a></li>
                     </ul>
                 </div>
             </div>
@@ -36,7 +35,7 @@
                 <a href="https://github.com/himtibinus/"><i class="bi bi-github"></i></a>
                 <a href="https://www.tiktok.com/@himtibinus"><i class="bi bi-tiktok"></i></a>
             </div>
-            <p class="m-0 text-center sm:text-left">© 2022 HIMTI BINUS University</p>
+            <p class="m-0 text-center sm:text-left">© 2021–2022 HIMTI BINUS University</p>
         </div>
     </div>
 </div>

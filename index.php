@@ -65,10 +65,10 @@ while ($row = mysqli_fetch_array($testimonies_experiences_query)) {
 </head>
 
 <body>
-    <!-- <div id="Preloader">
+    <div id="Preloader">
         <object data="assets/animations/LogoAnimationHIMTI.svg" class="Line"></object>
         <object data="assets/animations/LogoFillHIMTI.svg" class="Line"></object>
-    </div> -->
+    </div>
     <?php $NAVBAR_SET_IMMERSIVE = true;
     require_once('components/navbar.php'); ?>
     <div id="carouselExampleIndicators" class="carousel slide carouselmain" data-bs-ride="carousel">
@@ -136,7 +136,7 @@ while ($row = mysqli_fetch_array($testimonies_experiences_query)) {
             <span>Upcoming Events</span>
         </div>
         <div class="upcomingeventdata">
-            <a href="http://techno.himti.or.id/" class="linkupcoming" target="_blank">
+            <a href="http://techno.himtibinus.or.id/" class="linkupcoming" target="_blank">
                 <div class="upcomingeventrow">
                     <div style="height: 100%; display: flex;">
                         <img src="assets/img/events/Techno2022.png" alt="" class="logo">
@@ -149,7 +149,7 @@ while ($row = mysqli_fetch_array($testimonies_experiences_query)) {
                     </div>
                 </div>
             </a>
-            <a href="http://hishot.himti.or.id/" class="linkupcoming" target="_blank">
+            <a href="http://hishot.himtibinus.or.id/" class="linkupcoming" target="_blank">
                 <div class="upcomingeventrow">
                     <div style="height: 100%; display: flex;">
                         <img src="assets/img/events/HISHOT2022.png" alt="" class="logo">

@@ -34,15 +34,6 @@
             <?php endforeach ?>
         </ul>
     </div>
-    <!-- <div class="max-w-screen-2xl m-auto py-4 px-12 flex justify-between items-center text-white">
-        <ul class="list-none">
-            <li class="p inline-block "><a href="index.html">Home</a></li>
-            <li class="p inline-block font-bold pl-10">About Us</li>
-            <li class="p inline-block pl-10"><a href="index.html">Learn Coding</a></li>
-            <li class="p inline-block pl-10"><a href="index.html">Tell Us</a></li>
-            <li class="p inline-block pl-10"><a href="index.html">Events</a></li>
-        </ul>
-    </div> -->
 </nav>
 
 <script>

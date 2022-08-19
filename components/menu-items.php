@@ -15,18 +15,18 @@ $MENU_ITEMS = [
     ],
     [
         'label' => 'Events',
-        'href' => 'https://registration.himti.or.id',
+        'href' => 'https://registration.himtibinus.or.id',
         'icon' => 'bi bi-calendar-date',
         'icon_fill' => 'bi bi-calendar-date-fill',
     ],
     [
         'label' => 'HISHOT 2022',
-        'href' => 'https://hishot.himti.or.id',
+        'href' => 'https://hishot.himtibinus.or.id',
         'icon' => 'hi hi-hishot hi-white hi-sm-lg',
     ],
     [
         'label' => 'TECHNO 2022',
-        'href' => 'https://techno.himti.or.id',
+        'href' => 'https://techno.himtibinus.or.id',
         'icon' => 'hi hi-techno-2022 hi-white hi-sm-lg',
     ],
     // [
