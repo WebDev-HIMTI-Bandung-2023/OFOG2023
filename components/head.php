@@ -19,4 +19,4 @@
 <link rel="stylesheet" href="assets/css/style.css">
 
 <!-- Icons -->
-<link rel="icon" href="assets/img/icons/himti-icon.svg" type="image/svg">
+<link rel="icon" href="assets/img/organization-logo/himti-icon.svg" type="image/svg">

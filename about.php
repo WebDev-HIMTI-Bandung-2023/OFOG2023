@@ -13,21 +13,21 @@
 
 <body>
     <?php $NAVBAR_SET_IMMERSIVE = true; require_once('components/navbar.php'); ?>
-    <div class="wrapper-dark">
+    <div class="wrapper-dark pt-16 md:pt-0">
         <div class="container">
             <h1 class="title white">
                 <span>Our Vision & Mission</span>
             </h1>
 
-            <div class="lg:flex py-6 lg:py-12 block">
+            <div class="lg:flex block pt-6 lg:pt-12">
                 <div class="half border-b lg:border-b-0 lg:border-r border-gray-100 pb-12 w-full lg:w-1/2">
                     <h2 class="h2 pb-10">Vision</h2>
-                    <p class="text-lg">"Menjadikan HIMTI BINUS University sebagai Himpunan Mahasiswa yang dikenal se-Asia
+                    <p>"Menjadikan HIMTI BINUS University sebagai Himpunan Mahasiswa yang dikenal se-Asia
                         Tenggara pada tahun 2025"</p>
                 </div>
                 <div class="half pt-6 pt-12 lg:pt-0 w-full lg:w-1/2">
                     <h2 class="h2 pb-10">Mission</h2>
-                    <p class="text-lg">
+                    <p>
                         Memperkuat ikatan antar sesama anggota keluarga HIMTI dengan pengetahuan, pengalaman, dan
                         nilai-nilai baik dalam membentuk satu keluarga HIMTI yang solid.
                         <br /><br />
@@ -52,7 +52,7 @@
                         allowfullscreen=""></iframe>
                 </div>
                 <div class="half w-full md:w-1/2">
-                    <p class="text-lg pb-8">
+                    <p class="pb-8">
                         Mari semua melangkah maju
                         <br />
                         Bulatkanlah tekadmu
@@ -61,7 +61,7 @@
                         <br />
                         Wujudkan cita-cita mulia
                     </p>
-                    <p class="text-lg pb-8">
+                    <p class="pb-8">
                         Derapkanlah langkah kakimu
                         <br />
                         Menyosong masa depanmu
@@ -70,7 +70,7 @@
                         <br />
                         Bagi Univ Bina Nusantara
                     </p>
-                    <p class="text-lg pb-8">
+                    <p class="pb-8">
                         Maju terus pantang mundur
                         <br />
                         Membangun pendidikan bangsa
@@ -134,7 +134,7 @@
             </div>
         </div>
 
-        <div class="container pt-8 md:pt-16">
+        <div class="container">
             <h1 class="title white">
                 <span>Commissions</span>
             </h1>
@@ -240,7 +240,7 @@
 
     <div class="wrapper-light">
         <div class="container pb-12">
-            <h1 class="title">
+            <h1 class="title" style="padding-top: 0">
                 <span>History</span>
             </h1>
             <div class="text-justify py-10 px">
@@ -248,7 +248,7 @@
                     <img class="half max-w-screen-sm w-full sm:w-4/5 pb-6 md:pb-0 md:w-1/2 mx-auto pl-0 xl:px-12 w-2/5 animate-pulse"
                         src="assets/img/about/history-img.svg" alt="">
                     <div class="half w-full px-0 sm:px-4 md:pl-0 lg:pr-12 xl:pl-4 w-3/5">
-                        <p class="text-lg">
+                        <p>
                             <b>Himpunan Mahasiswa Teknik Informatika Universitas Bina Nusantara</b> atau yang
                             sering
                             kita sebut <b>HIMTI</b> berdiri pertama kali pada tahun 1992, tepatnya pada 14
@@ -262,7 +262,7 @@
                             himpunan antar jurusan School of Computer Science (SOCS).
                         </p>
                         <br />
-                        <p class="text-lg hidden xl:block">
+                        <p class="hidden xl:block">
                             Bpk. Ir. Toto Widyanto, MSc. berharap dengan didirikannya HIMTI, organisasi ini
                             dapat
                             memberikan bantuan secara nyata demi mengembangkan IT di Indonesia serta mampu
@@ -272,7 +272,7 @@
                     </div>
                 </div>
                 <div class="xl:pt-8 px-0 sm:px-4 lg:px-12">
-                    <p class="text-lg xl:hidden">
+                    <p class="xl:hidden">
                         Bpk. Ir. Toto Widyanto, MSc. berharap dengan didirikannya HIMTI, organisasi ini dapat
                         memberikan
                         bantuan secara nyata demi mengembangkan IT di Indonesia serta mampu menjadi sarana
@@ -280,7 +280,7 @@
                         kemampuan kepemimpinan dan manajemen dalam suatu organisasi.
                         <br /><br />
                     </p>
-                    <p class="text-lg">
+                    <p>
                         Suatu organisasi pasti memiliki visi dan misi, begitu juga dengan HIMTI BINUS. HIMTI
                         BINUS
                         memiliki visi yaitu menjadi Himpunan Mahasiswa yang dikenal se-Asia Tenggara pada tahun
