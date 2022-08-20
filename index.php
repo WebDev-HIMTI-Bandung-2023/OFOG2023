@@ -29,7 +29,7 @@ while ($row = mysqli_fetch_array($testimonies_experiences_query)) {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-y: hidden;">
 
 <head>
     <?php

@@ -64,7 +64,7 @@
   }
 }
 html {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 body {
   --bs-font-sans-serif: "Public Sans", system-ui, -apple-system,
