@@ -97,5 +97,6 @@ function ClosePreloader() {
 
 function Hide() {
     var Div = document.getElementById("Preloader");
+    document.querySelector("html").style.overflowY = "scroll";
     Div.style.display = "none";
 }

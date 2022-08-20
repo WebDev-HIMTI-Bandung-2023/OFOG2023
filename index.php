@@ -195,12 +195,12 @@ while ($row = mysqli_fetch_array($testimonies_experiences_query)) {
 			$first = true;
 			$valid_ids = array(); //Validation biar ga ada XSS.
 			foreach ($testimonies as $testimony) {
-				echo '<div id="', $testimony["id"], 'Profile" class="profdesc', $first ? '' : ' profdesc--hidden', '">';
+				echo '<div id="', $testimony["id"], 'Profile" class="profdesc shadow-lg', $first ? '' : ' profdesc--hidden', '">';
 					echo '<div class="profdesc__summary">';
 						echo '
 						<img class="profdesc__sumimg" src="assets/img/testimonies-thumbnail/', $testimony["id"], 'Photo.webp"/> <br> <br>
-						<div class="profdesc__name">', $testimony["name"] ,'</div>
-						<div class="profdesc__job">', $testimony["job"], '</div> <br>
+						<h2 class="profdesc__name fw-bold">', $testimony["name"] ,'</h2>
+						<h3 class="profdesc__job fs-6 fw-normal mb-4">', $testimony["job"], '</h3>
 						<div class="profdesc__years"> Kepengurusan HIMTI: ', $testimony["active_years"], '</div>';
 						if(array_key_exists($testimony["id"], $experiences)){
 							echo '<ul class="profdesc__experiences">';
@@ -210,7 +210,7 @@ while ($row = mysqli_fetch_array($testimonies_experiences_query)) {
 							echo '</ul>';
 						}
 					echo '</div>';
-					echo '<div class="profdesc__story">', $testimony["testimony"],'</div>';
+					echo '<div class="profdesc__story mt-4">', $testimony["testimony"],'</div>';
 				echo'</div>';
 				array_push($valid_ids, $testimony["id"]);
 				if($first){

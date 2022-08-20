@@ -53,17 +53,6 @@
     width: 100%;
   }
 
-  .profdesc__name{
-    font-size: 40px;
-    font-weight: 900;
-    line-height: 40px;
-  }
-
-  .profdesc__job{
-    font-size: 18px;
-    font-weight: 300;
-  }
-
   .profdesc__years{
     font-weight: 600;
   }
@@ -72,7 +61,7 @@
     font-family: "Jacques Francois", sans serif;
     white-space: pre;
     position:absolute;
-    font-size: 150px;
+    font-size: 120px;
     line-height: 0px;
   }
 
@@ -92,9 +81,9 @@
     text-align: justify;
     position:relative;
     font-weight: 300;
+    padding-top: 50px;
     padding-left: 50px;
     max-width: 65%;
-    padding-top: 50px;
   }
 
   .profdesc__story b {
@@ -105,11 +94,51 @@
     display: none !important;
   }
 
-  @media screen and (max-width: 768px) {
-    .profdesc__experiences li{
-      list-style-type: none;
+  @media screen and (max-width: 1199px) {
+    .profselector{
+      width: 20%;
     }
-    
+    .profdesc{
+      width: 80%;
+      flex-direction: column;
+      text-align: center;
+      align-items:stretch;
+      gap: 1rem;
+    }
+
+    .profdesc__years,
+    .profdesc__experiences{
+      text-align: left;
+    }
+
+    .profdesc__sumimg {
+      width: 25%;
+    }
+
+    .profdesc__story {
+      max-width: 100%;
+      padding-left: 0;
+    }
+
+    .profdesc__story::before{
+      left: 0;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .profselector{
+      width: 25%;
+    }
+    .profdesc{
+      width: 75%;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .profselector__img{
+      height: 80px;
+    }
+
     .profwrapper {
       flex-direction: column;
     }
@@ -118,26 +147,19 @@
       flex-wrap: nowrap;
       overflow-x: scroll;
       justify-content: flex-start;
+      padding: 10px;
     }
     .profdesc {
       width: 100%;
-      flex-direction: column;
-      text-align: center;
-      align-items:stretch;
     }
     .profdesc__story {
-      max-width: 100%;
-      padding-left: 0;
+      padding-top: 45px;
+      padding-bottom: 55px;
     }
     .profdesc__sumimg {
-      width: 50%;
+      width: 37.5%;
     }
-    .profdesc__story::before{
-      left:-90px;
-      top:110px;
-      }
-      .profdesc__story::after{
-      right:-80px;
-      bottom:-20px;
-      }
+    .profdesc__story::after{
+      bottom: -18px;
+    }
   }
