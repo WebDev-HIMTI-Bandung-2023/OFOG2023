@@ -43,7 +43,7 @@ $MENU_ITEMS = [
     ],
     [
         'label' => 'Join Us!',
-        'href' => 'https://student-activity.binus.ac.id/himti/2022/08/31/start-your-journey-with-himti/',
+        'href' => 'http://bit.ly/CavisRegistration',
         'icon' => 'bi bi-person-plus',
         'category' => 'page',
     ],
