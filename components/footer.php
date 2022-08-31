@@ -5,17 +5,23 @@
                 <div class="ul-container w-50 || w-1/2 text-left">
                     <p class="ul-label fw-bold fs-5 || font-bold text-xl" style="margin-bottom: 1rem;">Explore</p>
                     <ul class="ps-0 || pl-0" style="list-style: none;">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about.php">About Us</a></li>
-                        <li><a href="https://registration.himtibinus.or.id">Event Registration</a></li>
-                        <li><a href="/contact.php">Contact Us</a></li>
+                        <?php require_once('./components/menu-items.php');
+                            foreach($MENU_ITEMS as $menu): ?>
+                                <?php if ($menu['category'] == "page"): ?>
+                                    <li><a href="<?= $menu['href'] ?>"><?= $menu['label'] ?></a><li>
+                                <?php endif; ?>
+                        <?php endforeach ?>
                     </ul>
                 </div>
                 <div class="ul-container w-50 || w-1/2 text-left">
                     <p class="ul-label fw-bold fs-5 || font-bold text-xl" style="margin-bottom: 1rem;">Latest events</p>
                     <ul class="ps-0 || pl-0" style="list-style: none;">
-                        <li><a href="https://hishot.himtibinus.or.id">HISHOT 2022</a></li>
-                        <li><a href="https://techno.himtibinus.or.id">TECHNO 2022</a></li>
+                        <?php require_once('./components/menu-items.php');
+                            foreach($MENU_ITEMS as $menu): ?>
+                                <?php if ($menu['category'] == "event"): ?>
+                                    <li><a href="<?= $menu['href'] ?>"><?= $menu['label'] ?></a><li>
+                                <?php endif; ?>
+                        <?php endforeach ?>
                     </ul>
                 </div>
             </div>
