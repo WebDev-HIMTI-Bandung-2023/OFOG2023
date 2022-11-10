@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;400;500;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap");
 /* Editable DEGREE */
 .deg0 {
   transform: translate(7em);
@@ -219,7 +219,11 @@ body {
   color: white;
 }
 .ourarticle {
-  background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(12,2,23,1) 76%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 25%,
+    rgba(12, 2, 23, 1) 76%
+  );
 }
 .ourarticlerow {
   position: relative;
@@ -778,6 +782,9 @@ button {
 }
 .hi-techno-2022 {
   background-image: url("https://drive.google.com/uc?export=view&id=15kZv1wFfkTvRjAXaAY1X-paKDK24meQy");
+}
+.hi-techfest-2022 {
+  background-image: url("https://techfest.himtibinus.or.id/logoAndIcon/tabIcon/android-chrome-192x192.png");
 }
 @media (min-width: 678px) {
   .hi-sm-lg {

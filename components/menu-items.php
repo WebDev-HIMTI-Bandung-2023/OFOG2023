@@ -29,6 +29,12 @@ $MENU_ITEMS = [
         'category' => 'event',
     ],
     [
+        'label' => 'TECHFEST 2022',
+        'href' => 'https://techfest.himtibinus.or.id',
+        'icon' => 'hi hi-techfest-2022 hi-white hi-sm-lg',
+        'category' => 'event',
+    ],
+    [
         'label' => 'TECHNO 2022',
         'href' => 'https://techno.himtibinus.or.id',
         'icon' => 'hi hi-techno-2022 hi-white hi-sm-lg',
@@ -41,10 +47,10 @@ $MENU_ITEMS = [
         'icon_fill' => 'bi bi-chat-quote-fill',
         'category' => 'page',
     ],
-    [
-        'label' => 'Join Us!',
-        'href' => 'http://bit.ly/CavisRegistration',
-        'icon' => 'bi bi-person-plus',
-        'category' => 'page',
-    ],
+    // [
+    //     'label' => 'Join Us!',
+    //     'href' => 'http://bit.ly/CavisRegistration',
+    //     'icon' => 'bi bi-person-plus',
+    //     'category' => 'page',
+    // ],
 ];
