@@ -6,8 +6,8 @@
                     <p class="ul-label fw-bold fs-5 || font-bold text-xl" style="margin-bottom: 1rem;">Explore</p>
                     <ul class="ps-0 || pl-0" style="list-style: none;">
                         <?php require_once('./components/menu-items.php');
-                        foreach ($MENU_ITEMS as $menu) : ?>
-                        <?php if ($menu['category'] == "page") : ?>
+                            foreach($MENU_ITEMS as $menu): ?>
+                        <?php if ($menu['category'] == "page"): ?>
                         <li><a href="<?= $menu['href'] ?>"><?= $menu['label'] ?></a>
                         <li>
                             <?php endif; ?>
@@ -18,8 +18,8 @@
                     <p class="ul-label fw-bold fs-5 || font-bold text-xl" style="margin-bottom: 1rem;">Latest events</p>
                     <ul class="ps-0 || pl-0" style="list-style: none;">
                         <?php require_once('./components/menu-items.php');
-                        foreach ($MENU_ITEMS as $menu) : ?>
-                        <?php if ($menu['category'] == "event") : ?>
+                            foreach($MENU_ITEMS as $menu): ?>
+                        <?php if ($menu['category'] == "event"): ?>
                         <li><a href="<?= $menu['href'] ?>"><?= $menu['label'] ?></a>
                         <li>
                             <?php endif; ?>
@@ -43,7 +43,7 @@
                 <a href="https://github.com/himtibinus/"><i class="bi bi-github"></i></a>
                 <a href="https://www.tiktok.com/@himtibinus"><i class="bi bi-tiktok"></i></a>
             </div>
-            <p class="m-0 text-center sm:text-left">© 2021–2023 HIMTI BINUS University</p>
+            <p class="m-0 text-center sm:text-left">© 2021–2022 HIMTI BINUS University</p>
         </div>
     </div>
 </div>
