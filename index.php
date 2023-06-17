@@ -136,29 +136,29 @@ while ($row = mysqli_fetch_array($testimonies_experiences_query)) {
             <span>Upcoming Events</span>
         </div>
         <div class="upcomingeventdata">
-            <a href="http://techno.himtibinus.or.id/" class="linkupcoming" target="_blank">
+            <a href="https://www.techfest2023.himtibinus.or.id/" class="linkupcoming" target="_blank">
                 <div class="upcomingeventrow">
                     <div style="height: 100%; display: flex;">
-                        <img src="assets/img/events/Techno2022.png" alt="" class="logo">
+                        <img src="https://www.techfest2023.himtibinus.or.id/logoAndIcon/techfest-logo.png" alt="" class="logo">
                     </div>
 
                     <div class="upcomingeventitem shadow">
-                        <p>TECHNO 2022</p>
-                        <p data-countdown-enabled="true" data-countdown-timestamp="2022-09-18 13:00:00"></p>
-                        <p>18 September 2022</p>
+                        <p>TECHFEST 2023</p>
+                        <p data-countdown-enabled="true" data-countdown-timestamp="2023-07-28 13:00:00"></p>
+                        <p>28 July 2023</p>
                     </div>
                 </div>
             </a>
-            <a href="http://hishot.himtibinus.or.id/" class="linkupcoming" target="_blank">
+            <a href="https://hishot2023.himtibinus.or.id/" class="linkupcoming" target="_blank">
                 <div class="upcomingeventrow">
                     <div style="height: 100%; display: flex;">
-                        <img src="assets/img/events/HISHOT2022.png" alt="" class="logo">
+                        <img src="https://hishot2023.himtibinus.or.id/assets/logo%20hishot%202.webp" alt="" class="logo">
                     </div>
 
                     <div class="upcomingeventitem shadow">
-                        <p>HISHOT 2022: CONNECT</p>
-                        <p data-countdown-enabled="true" data-countdown-timestamp="2022-06-09 13:00:00"></p>
-                        <p>09 June 2022</p>
+                        <p>HISHOT 2023: CONNECT</p>
+                        <p data-countdown-enabled="true" data-countdown-timestamp="2023-07-22 13:00:00"></p>
+                        <p>22 July 2023</p>
                     </div>
                 </div>
             </a>

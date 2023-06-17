@@ -43,7 +43,7 @@
                 <a href="https://github.com/himtibinus/"><i class="bi bi-github"></i></a>
                 <a href="https://www.tiktok.com/@himtibinus"><i class="bi bi-tiktok"></i></a>
             </div>
-            <p class="m-0 text-center sm:text-left">© 2021–2022 HIMTI BINUS University</p>
+            <p class="m-0 text-center sm:text-left">© 2022–2023 HIMTI BINUS University</p>
         </div>
     </div>
 </div>
