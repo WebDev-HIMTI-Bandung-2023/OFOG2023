@@ -138,13 +138,13 @@ while ($row = mysqli_fetch_array($testimonies_experiences_query)) {
         <div class="upcomingeventdata">
             <a href="http://techno.himtibinus.or.id/" class="linkupcoming" target="_blank">
                 <div class="upcomingeventrow">
-                    <div style="height: 100%; display: flex;">
-                        <img src="assets/img/events/Techno2022.png" alt="" class="logo">
+                    <div style="position: relative; max-width: 100%; max-height: 100%; display: flex; height: 100%">
+                        <img src="https://www.techfest2023.himtibinus.or.id/logoAndIcon/techfest-logo.png" alt="" class="logo">
                     </div>
 
                     <div class="upcomingeventitem shadow">
                         <p>TECHNO 2022</p>
-                        <p data-countdown-enabled="true" data-countdown-timestamp="2022-09-18 13:00:00"></p>
+                        <p data-countdown-enabled="true" data-countdown-timestamp="2023-09-18 13:00:00"></p>
                         <p>18 September 2022</p>
                     </div>
                 </div>

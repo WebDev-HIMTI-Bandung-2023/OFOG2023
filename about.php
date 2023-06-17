@@ -100,9 +100,9 @@
                         class="block1Custom" />
                     <img src="https://drive.google.com/uc?export=view&amp;id=14QHWPy4hmrci2V-8sr92cv8Ipl3bI7X_" alt=""
                         class="Light1Custom" />
-                    <a href="https://drive.google.com/uc?export=view&amp;id=1Xpcx9oKKELLzmPcBBJLWgo6X9OTeyLix"
+                    <a href="https://drive.google.com/uc?export=view&id=1zSUGKwHOTsx6pkXvnUx78Jqe7oW_egnM"
                         target="_blank"><img style="display: flex; margin: auto;"
-                            src="https://drive.google.com/uc?export=view&amp;id=1Xpcx9oKKELLzmPcBBJLWgo6X9OTeyLix"
+                            src="https://drive.google.com/uc?export=view&id=1zSUGKwHOTsx6pkXvnUx78Jqe7oW_egnM"
                             alt="" Class=" Bagan" /></a>
                     <a href="https://drive.google.com/uc?export=view&amp;id=1EqUY3YH6gfvf_36QdgDTg7veS0nmoaO8"
                         target="_blank"><img style=" display: flex; margin: auto; margin-bottom: 20px"
